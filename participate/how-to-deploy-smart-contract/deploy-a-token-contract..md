@@ -1,10 +1,4 @@
----
-description: >-
-  This example shows how one can deploy a contracts to ETH-ECC using Open
-  Zeppelin's sample code and remix ide.
----
-
-# How to deploy a smart contract.
+# Deploy a token contract.
 
 ### 1 Download Meta-mask and connect to our ETH-ECC.
 

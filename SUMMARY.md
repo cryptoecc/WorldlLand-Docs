@@ -23,7 +23,8 @@
 
 * [How to start a WorldLand node.](participate/how-to-start-a-worldland-node./README.md)
   * [Install and run geth](participate/how-to-start-a-worldland-node./install-and-run-geth.md)
-  * [Testing ETH-ECC](participate/how-to-start-a-worldland-node./testing-eth-ecc.md)
-* [How to check a NFT smart contract](participate/how-to-check-a-nft-smart-contract.md)
-* [How to deploy a smart contract.](participate/how-to-deploy-a-smart-contract..md)
-* [How to run a play-to-earn game.](participate/how-to-run-a-play-to-earn-game..md)
+  * [Testnet](participate/how-to-start-a-worldland-node./testnet.md)
+  * [Testing Worldland](participate/how-to-start-a-worldland-node./testing-worldland.md)
+* [How to Deploy Smart Contract](participate/how-to-deploy-smart-contract/README.md)
+  * [Deploy a non-fungible token contract](participate/how-to-deploy-smart-contract/deploy-a-non-fungible-token-contract.md)
+  * [Deploy a token contract.](participate/how-to-deploy-smart-contract/deploy-a-token-contract..md)
