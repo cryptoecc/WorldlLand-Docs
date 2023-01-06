@@ -1,4 +1,4 @@
-# Testing ETH-ECC
+# Testing Worldland
 
 1. Basic tests
    * making an account, mining block and checking result of mining

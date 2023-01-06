@@ -1,4 +1,4 @@
-# Deploy a non-fungible token contract
+# Deploy a Non-Fungible Token contract
 
 Sadly, the confirmation of the nft you have is only possible in the metamask app, not in the metamask extension.
 
@@ -8,7 +8,7 @@ Below is how to check nft through the metamask app. Contents related to smart co
 
 ### 1. Download MetaMask app in store
 
-\[image1]
+<figure><img src="../../.gitbook/assets/1..PNG" alt=""><figcaption></figcaption></figure>
 
 ### 2. Get account with account seed phrase&#x20;
 
