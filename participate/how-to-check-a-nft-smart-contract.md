@@ -1,4 +1,4 @@
-# How to deploy a non-fungible token contract
+# How to check a NFT smart contract
 
 Sadly, the confirmation of the nft you have is only possible in the metamask app, not in the metamask extension.
 
