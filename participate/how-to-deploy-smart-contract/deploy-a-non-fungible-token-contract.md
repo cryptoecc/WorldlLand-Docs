@@ -8,7 +8,7 @@ Below is how to check nft through the metamask app. Contents related to smart co
 
 ### 1. Download MetaMask app in store
 
-<figure><img src="../../.gitbook/assets/1..PNG" alt=""><figcaption></figcaption></figure>
+\[image1]
 
 ### 2. Get account with account seed phrase&#x20;
 
