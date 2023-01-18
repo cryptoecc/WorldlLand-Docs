@@ -306,4 +306,6 @@ Copy block number(10615) and check it on [explore(LV Scanner)](http://3.39.29.15
 
 &#x20;\[image]
 
-you can confirm Timestamp, Hash, and others about your contract.&#x20;
+{% hint style="success" %}
+You can confirm Timestamp, Hash, and others about your contract.
+{% endhint %}
