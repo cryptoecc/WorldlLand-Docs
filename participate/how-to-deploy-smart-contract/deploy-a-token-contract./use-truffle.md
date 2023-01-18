@@ -49,18 +49,29 @@ npm install dotenv
 
 ### 4. Install `@truffle/hdwallet-provider`
 
-```
+```bash
 // VS Code Terminal: cmd
+npm install @truffle/hdwallet-provider
+```
 
+### 5. Install OpenZepplin
+
+```bash
+// VS Code Terminal: cmd
+npm install --save-dev @openzeppelin/contracts
 ```
 
 ### 5. Open your project directory on VS Code
 
-create "newNFT" folder and move to "newNFT" folder
+Create "newNFT" folder and move to "newNFT" folder.
 
 ```bash
 // VS Code Terminal: cmd
 mkdir newNFT
 cd newNFT
 ```
+
+### 6. Create the .env file
+
+Create a ".env" file and writing your metamask and other information.
 
