@@ -49,6 +49,11 @@ npm install dotenv
 
 ### 4. Install `@truffle/hdwallet-provider`
 
+```
+// VS Code Terminal: cmd
+
+```
+
 ### 5. Open your project directory on VS Code
 
 create "newNFT" folder and move to "newNFT" folder
