@@ -21,7 +21,11 @@ Check your environment and install using that link.
 
 ## Steps
 
-### 1. Install Truffle
+### 1. Fund your WorldLand
+
+When deploying contracts, you need some coins. This a way how to get world land testnet coins! Plz follow these [statements](https://ethworldland.gitbook.io/ethereum-worldland/use/how-to-send-and-receive-coins.):
+
+### 2. Install Truffle
 
 NOW, We start to install "Truffle" using the Node.js package manager on VS Code Terminal:
 
@@ -36,11 +40,16 @@ npm install -g truffle
 When installing all packages, Run the _command prompt_(_CMD_) with administrator privileges.
 {% endhint %}
 
-### 2. Fund your WorldLand
+### 3. Install `dotenv` package&#x20;
 
-When deploying contracts, you need some coins. This a way how to get world land testnet coins! Plz follow these [statements](https://ethworldland.gitbook.io/ethereum-worldland/use/how-to-send-and-receive-coins.):
+```bash
+// VS Code Terminal: cmd
+npm install dotenv
+```
 
-### 3. Open your project directory on VS Code
+### 4. Install `@truffle/hdwallet-provider`
+
+### 5. Open your project directory on VS Code
 
 create "newNFT" folder and move to "newNFT" folder
 
@@ -49,13 +58,4 @@ create "newNFT" folder and move to "newNFT" folder
 mkdir newNFT
 cd newNFT
 ```
-
-### 4. Install `dotenv` package&#x20;
-
-```bash
-// VS Code Terminal: cmd
-npm install dotenv
-```
-
-### 5. Install `@truffle/hdwallet-provider`
 
