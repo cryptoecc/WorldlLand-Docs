@@ -63,12 +63,35 @@ npm install --save-dev @openzeppelin/contracts
 
 ### 5. Open your project directory on VS Code
 
-Create "newNFT" folder and move it to "newNFT" folder.
+Create `"newNFT"` folder and move it to `"newNFT"` folder.
 
 ```bash
 // VS Code Terminal: cmd
 mkdir newNFT
 cd newNFT
+```
+
+{% hint style="success" %}
+Check directory. It may be similar to below:
+{% endhint %}
+
+```
+// Directory structure
+│
+├─ addition-game-starter
+│
+├─ build
+│
+├─ contracts
+│
+├─ migrations
+│
+├─ node_modules
+│
+└─ test
+package-lock.json
+package.json
+truffle-config.js
 ```
 
 ### 6. Create the `.env` file
