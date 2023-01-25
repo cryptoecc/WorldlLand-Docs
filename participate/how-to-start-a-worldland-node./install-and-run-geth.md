@@ -1,4 +1,4 @@
-# Install and run geth
+# Install and run node
 
 ### 1. Environment
 
