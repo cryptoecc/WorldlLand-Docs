@@ -22,7 +22,7 @@
 ## Participate
 
 * [How to start a WorldLand node.](participate/how-to-start-a-worldland-node./README.md)
-  * [Install and run geth](participate/how-to-start-a-worldland-node./install-and-run-geth.md)
+  * [Install and run node](participate/how-to-start-a-worldland-node./install-and-run-node.md)
   * [Testnet](participate/how-to-start-a-worldland-node./testnet.md)
   * [Testing Worldland](participate/how-to-start-a-worldland-node./testing-eth-ecc.md)
 * [How to Deploy Smart Contract](participate/how-to-deploy-smart-contract/README.md)
