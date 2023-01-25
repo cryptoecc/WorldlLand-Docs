@@ -1,4 +1,4 @@
-# Deploy a token contract.
+# Use Remix IDE
 
 ### 1 Download Meta-mask and connect to our ETH-ECC.
 
