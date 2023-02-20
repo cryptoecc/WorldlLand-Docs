@@ -54,13 +54,13 @@ $ make all
 First, you'll need to make a directory to store block information. For example `ETHECC_TEST` directory. Then move to `/ETH-ECC/build/bin`, and follow this.
 
 ```
-$ ./geth --lve --datadir [Your_own_storage] -nat extip:[Your_own_ip] console
+$ ./geth --lve --datadir [Your_own_storage] console
 ```
 
 For example,
 
 ```
-(EXAMPLE) $ ./geth --lve --datadir /home/Documents/ETHECC_TEST -nat extip:35.78.71.121 console
+(EXAMPLE) $ ./geth --lve --datadir /home/Documents/ETHECC_TEST console
 ```
 
 it returns data that looks like:
