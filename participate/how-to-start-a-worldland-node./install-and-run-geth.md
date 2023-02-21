@@ -23,10 +23,10 @@ For building ETH-ECC, it requires Go (version 1.18 or later). You can install th
 
 ```
 $ sudo apt update
+$ sudo apt install gcc
+$ sudo apt install make
 $ sudo apt install snapd
 $ sudo snap install go --classic
-$ sudo apt install make
-$ sudo apt install gcc
 ```
 
 Then Go will be installed
