@@ -1,5 +1,9 @@
 # Install and run node
 
+#### _Please contact us if you have any questions._ __[_https://open.kakao.com/o/gXdk2J5e_](https://open.kakao.com/o/gXdk2J5e)__
+
+
+
 ### 1. Environment
 
 For Windows, please visit [Windows instruciton](https://github.com/cryptoecc/ETH-ECC/blob/master/docs/eccpow%20windows%20instuction/Windows%20install%20instruction.md) before start. ETH-ECC package uses the follow two environment
