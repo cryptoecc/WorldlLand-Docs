@@ -122,7 +122,7 @@ In this section, we create another account to generate a transaction and send et
 Generating new account:
 
 ```
-> personal.newAccout("Bob")
+> personal.newAccount("Bob")
 INFO [08-06|22:00:23.416] Your new key was generated               address=0xf39Cf42Cd233261cd2b45ADf8fb1E5A1e61A6f90
 WARN [08-06|22:00:23.416] Please backup your key file!             path=/home/hskim/Documents/geth-test/keystore/UTC--2019-08-06T13-00-21.621172635Z--f39cf42cd233261cd2b45adf8fb1e5a1e61a6f90
 WARN [08-06|22:00:23.416] Please remember your password! 
