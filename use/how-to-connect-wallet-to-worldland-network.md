@@ -2,15 +2,15 @@
 
 > _Metamask is a universal cryptocurrency wallet compatible with Ethereum-based chains. Metamask is an extension that works as a plugin for Chrome-based web browsers._
 
-_We use the Chrome browser as an example. Please refer_ [_here_](https://www.google.com/chrome) _to download the Chrome browser._
+#### _Please contact us if you have any questions._ __[_https://open.kakao.com/o/gXdk2J5e_](https://open.kakao.com/o/gXdk2J5e)__
 
 __
+
+_We use the Chrome browser as an example. Please refer_ [_here_](https://www.google.com/chrome) _to download the Chrome browser._
 
 * Install MetaMask
 * Run MetaMask
 * Connect to WorldLand Network
-
-__
 
 __
 
@@ -59,4 +59,8 @@ Chain ID : 12345
 Currency Symbol : eETh
 
 Block-explorer URL : https://lvscan.io/
+
+
+
+{% file src="../.gitbook/assets/Connect WorldLand(한글).pdf" %}
 
