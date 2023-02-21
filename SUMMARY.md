@@ -15,7 +15,7 @@
 
 ## Use
 
-* [How to connect wallet](use/how-to-connect-wallet.md)
+* [How to connect wallet to WorldLand network](use/how-to-connect-wallet-to-worldland-network.md)
 * [How to obtain your WLCs the WorldLand coins](use/how-to-obtain-your-wlcs-the-worldland-coins.md)
 * [How to send and receive coins.](use/how-to-send-and-receive-coins..md)
 

@@ -1,8 +1,18 @@
-# How to connect wallet
+# How to connect wallet to WorldLand network
 
 > _Metamask is a universal cryptocurrency wallet compatible with Ethereum-based chains. Metamask is an extension that works as a plugin for Chrome-based web browsers._
 
 _We use the Chrome browser as an example. Please refer_ [_here_](https://www.google.com/chrome) _to download the Chrome browser._
+
+__
+
+* Install MetaMask
+* Run MetaMask
+* Connect to WorldLand Network
+
+__
+
+__
 
 ## 1. Install MetaMask
 
