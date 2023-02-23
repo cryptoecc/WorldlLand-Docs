@@ -1,10 +1,14 @@
 # Install and run node
 
+#### _Please contact us if you have any questions._ __[_https://open.kakao.com/o/gXdk2J5e_](https://open.kakao.com/o/gXdk2J5e)__
+
+
+
 ### 1. Environment
 
 For Windows, please visit [Windows instruciton](https://github.com/cryptoecc/ETH-ECC/blob/master/docs/eccpow%20windows%20instuction/Windows%20install%20instruction.md) before start. ETH-ECC package uses the follow two environment
 
-* Amazon Linux 2 Kernel 5.10 or Linux Ubuntu 18.04
+* Amazon Linux 2 Kernel 5.10 or Linux Ubuntu 18.04 ( minimum spec : t2 large 100GB )
 * Go (version 1.17 or later) develope language
 
 You can follow two step below to download ETH-ECC and install(build)
@@ -14,6 +18,8 @@ You can follow two step below to download ETH-ECC and install(build)
 You can download ETH-ECC by cloning ETH-ECC repository.
 
 ```
+$ sudo apt update
+$ sudo apt upgrade
 $ git clone https://github.com/cryptoecc/ETH-ECC
 ```
 
@@ -22,7 +28,6 @@ $ git clone https://github.com/cryptoecc/ETH-ECC
 For building ETH-ECC, it requires Go (version 1.18 or later). You can install them using following commands.
 
 ```
-$ sudo apt update
 $ sudo apt install gcc
 $ sudo apt install make
 $ sudo apt install snapd
@@ -52,19 +57,25 @@ $ make all
 
 
 
+If you're running a geth node for the first time, or if you've run a different version of Ethereum or a chain with a different network number, run the following to initialize your locally stored block data
+
+```
+$ rm -rf ~/.ethereum
+```
+
+###
+
 ### 2. Running ETH-ECC and connecting to LVE mainnet
 
 First, you'll need to make a directory to store block information. For example `ETHECC_TEST` directory. Then move to `/ETH-ECC/build/bin`, and follow this.
 
-```
-$ ./geth --lve --datadir [Your_own_storage] -nat extip:[Your_own_ip] console
-```
 
-For example,
 
 ```
-(EXAMPLE) $ ./geth --lve --datadir /home/Documents/ETHECC_TEST -nat extip:35.78.71.121 console
+$ ./geth --nousb --http --http.port "8545" --http.vhosts "*" --http.corsdomain "*" --http.api "admin,db,eth,net,web3,miner,personal" --gcmode "full" --syncmode "full" --lve console
 ```
+
+
 
 it returns data that looks like:
 
