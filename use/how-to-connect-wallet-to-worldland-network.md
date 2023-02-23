@@ -44,9 +44,9 @@ and Click the Add Network button.
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-And then, Fill the Box like picture.
-
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+And then, Fill the Box like picture.
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -61,6 +61,4 @@ Currency Symbol : eETh
 Block-explorer URL : https://lvscan.io/
 
 
-
-{% file src="../.gitbook/assets/Connect WorldLand(한글).pdf" %}
 

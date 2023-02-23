@@ -1,14 +1,10 @@
 # Install and run node
 
-#### _Please contact us if you have any questions._ __[_https://open.kakao.com/o/gXdk2J5e_](https://open.kakao.com/o/gXdk2J5e)__
-
-
-
 ### 1. Environment
 
 For Windows, please visit [Windows instruciton](https://github.com/cryptoecc/ETH-ECC/blob/master/docs/eccpow%20windows%20instuction/Windows%20install%20instruction.md) before start. ETH-ECC package uses the follow two environment
 
-* Amazon Linux 2 Kernel 5.10 or Linux Ubuntu 18.04 ( minimum spec : t2 large 100GB )
+* Amazon Linux 2 Kernel 5.10 or Linux Ubuntu 18.04
 * Go (version 1.17 or later) develope language
 
 You can follow two step below to download ETH-ECC and install(build)
@@ -18,8 +14,6 @@ You can follow two step below to download ETH-ECC and install(build)
 You can download ETH-ECC by cloning ETH-ECC repository.
 
 ```
-$ sudo apt update
-$ sudo apt upgrade
 $ git clone https://github.com/cryptoecc/ETH-ECC
 ```
 
@@ -28,6 +22,7 @@ $ git clone https://github.com/cryptoecc/ETH-ECC
 For building ETH-ECC, it requires Go (version 1.18 or later). You can install them using following commands.
 
 ```
+$ sudo apt update
 $ sudo apt install gcc
 $ sudo apt install make
 $ sudo apt install snapd
