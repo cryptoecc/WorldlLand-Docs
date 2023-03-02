@@ -50,7 +50,7 @@ And then, Fill the Box like picture.
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Network name : ETT-ECC
+Network name : ETH-ECC
 
 New RPC URL : https://rpc.lvscan.io
 
@@ -61,4 +61,8 @@ Currency Symbol : eETh
 Block-explorer URL : https://lvscan.io/
 
 
+
+
+
+{% file src="../.gitbook/assets/Connect WorldLand.pdf" %}
 
