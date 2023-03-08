@@ -5,6 +5,7 @@
 ## Learn
 
 * [What is WorldLand?](learn/what-is-worldland.md)
+* [ECCPoW](learn/eccpow.md)
 * [The Charter of WorldLand](learn/the-charter-of-worldland.md)
 * [White Paper](learn/white-paper.md)
 * [Technical Background](learn/technical-background.md)
