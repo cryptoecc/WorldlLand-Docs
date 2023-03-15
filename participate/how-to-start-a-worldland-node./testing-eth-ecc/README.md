@@ -152,6 +152,16 @@ Unlocking:
 Unlock account 0xb8c941069cc2b71b1a00db15e6e00a200d387039
 ```
 
+if an error occurs. When running ./geth, add the **--allow-insecure-unlock** option
+
+**\[WARNING]** Using this option for nodes expose to **public networks** have a **security risk.**
+
+```
+ ./geth ... --allow-insecure-unlock ... conosle
+```
+
+
+
 Alice's address is `0xb8c941069cc2b71b1a00db15e6e00a200d387039`. However we have to type a `Passphrase` that is `Alice`.
 
 ```

@@ -8,7 +8,7 @@
 
 For Windows, please visit [Windows instruciton](https://github.com/cryptoecc/ETH-ECC/blob/master/docs/eccpow%20windows%20instuction/Windows%20install%20instruction.md) before start. ETH-ECC package uses the follow two environment
 
-* Amazon Linux 2 Kernel 5.10 or Linux Ubuntu 18.04 ( minimum spec : t2 large 100GB )
+* Linux Ubuntu 18.04 or Amazon Linux 2 Kernel 5.10( minimum spec : t2 large 100GB )
 * Go (version 1.17 or later) develope language
 
 You can follow two step below to download ETH-ECC and install(build)
@@ -72,7 +72,7 @@ First, you'll need to make a directory to store block information. For example `
 
 
 ```
-$ ./geth --nousb --http --http.port "8545" --http.vhosts "*" --http.corsdomain "*" --http.api "admin,db,eth,net,web3,miner,personal" --gcmode "full" --syncmode "full" --lve console
+$ ./geth --syncmode "full" --lve --datdir "USER_DATA_DIR" console
 ```
 
 
