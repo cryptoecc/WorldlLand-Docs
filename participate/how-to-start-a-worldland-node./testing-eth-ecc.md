@@ -22,7 +22,7 @@ In this test, we will follow 3 steps
 Generating new account:
 
 ```
-> personal.newAccount("Alice")
+> personal.newAccount("YOUR_PASSWORD")
 ```
 
 returns data that looks like:
