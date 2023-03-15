@@ -24,8 +24,8 @@
 
 * [How to start a WorldLand node.](participate/how-to-start-a-worldland-node./README.md)
   * [Install and run node](participate/how-to-start-a-worldland-node./install-and-run-geth.md)
-  * [Testing Worldland](participate/how-to-start-a-worldland-node./testing-eth-ecc/README.md)
-    * [Page 1](participate/how-to-start-a-worldland-node./testing-eth-ecc/page-1.md)
+  * [Testing Worldland](participate/how-to-start-a-worldland-node./testing-eth-ecc.md)
+  * [Connect to Metamask](participate/how-to-start-a-worldland-node./connect-to-metamask.md)
 * [How to Deploy Smart Contract](participate/how-to-deploy-smart-contract/README.md)
   * [Use Remix IDE](participate/how-to-deploy-smart-contract/deploy-a-token-contract./README.md)
   * [Use HardHat](participate/how-to-deploy-smart-contract/deploy-a-token-contract./use-hardhat.md)
