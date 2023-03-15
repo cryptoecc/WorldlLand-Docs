@@ -6,9 +6,9 @@ Today, mining modules investing heavily on state-of-the art ASIC miners appear. 
 
 So, We needs new time-variant PoW. Basically, ASICs are useful when crypto puzzles ar not changeable. To make ASICs useless, our solution way is to make crypto puzzles time-variant. We call our solution ECCPoW.
 
-### What is ECCPoW?
+### What is ECCPoW
 
-[![picture1](https://user-images.githubusercontent.com/25213941/57541109-3f3a2600-7389-11e9-9bf4-5170ded0eeaa.jpg)](https://user-images.githubusercontent.com/25213941/57541109-3f3a2600-7389-11e9-9bf4-5170ded0eeaa.jpg)
+<figure><img src="https://user-images.githubusercontent.com/25213941/57541109-3f3a2600-7389-11e9-9bf4-5170ded0eeaa.jpg" alt=""><figcaption></figcaption></figure>
 
 * Development of Synthetic Function of SHA and LDPC Decoder
 * Parity Check Matrix (PCM) size and amount of required resources (mem, comp) can be changed.
