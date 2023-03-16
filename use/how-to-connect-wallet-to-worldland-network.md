@@ -50,19 +50,18 @@ And then, Fill the Box like picture.
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Network name : ETH-ECC
+<figure><img src="../.gitbook/assets/Network-setup.png" alt=""><figcaption></figcaption></figure>
+
+Network name : Worldland
 
 New RPC URL : https://rpc.lvscan.io
 
 Chain ID : 12345
 
-Currency Symbol : eETh
+Currency Symbol : WLC
 
 Block-explorer URL : https://lvscan.io/
 
 
 
-
-
 {% file src="../.gitbook/assets/Connect WorldLand.pdf" %}
-
