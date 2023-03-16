@@ -35,12 +35,12 @@ npm install -g truffle
 ```
 
 {% hint style="info" %}
-#### Better save your own time!
+**Better save your own time!**
 
 When installing all packages, Run the _command prompt_(_CMD_) with administrator privileges.
 {% endhint %}
 
-### 3. Install `dotenv` package&#x20;
+### 3. Install `dotenv` package
 
 ```bash
 // VS Code Terminal: cmd
@@ -148,9 +148,9 @@ module.exports = {
 
 ### 8. Create a smart content
 
-You can edit this code to your style. This code is just an example. I'll give you two types.&#x20;
+You can edit this code to your style. This code is just an example. I'll give you two types.
 
-The below codes are the `first type`. The `first type` is the general type. You can choose it generally.&#x20;
+The below codes are the `first type`. The `first type` is the general type. You can choose it generally.
 
 ```solidity
 // First type
@@ -185,7 +185,7 @@ contract newNFT is ERC721URIStorage, Ownable {
 
 ```
 
-&#x20;The below codes are the `Second type`.
+The below codes are the `Second type`.
 
 ```solidity
 // Second type
@@ -240,7 +240,7 @@ contract MyToken is Initializable, ERC721Upgradeable, ERC721URIStorageUpgradeabl
 
 ### 9. Write `1_initial_newNFT.js`
 
-* Make `1_initial_newNFT.js` under migrations folder&#x20;
+* Make `1_initial_newNFT.js` under migrations folder
 * Write specific codes on `1_initial_newNFT.js`
 
 ```javascript
@@ -327,7 +327,7 @@ Summary
 
 Copy block number(10615) and check it on [explore(LV Scanner)](http://3.39.29.150:3000/block/0x4aab14e298e8b3c01dd6d56ea056b8e8cb24f501c730ec661efd546e79b9acce?network=ETH-ECC)!
 
-<img width="863" alt="image" src="https://github.com/cryptoecc/WorldlLand-Docs/blob/master/.gitbook/assets/deployed.PNG">
+<figure><img src="../../../.gitbook/assets/deployed.PNG" alt=""><figcaption><p>!Finally Deployed!</p></figcaption></figure>
 
 {% hint style="success" %}
 You can confirm Timestamp, Hash, and others about your contract.
