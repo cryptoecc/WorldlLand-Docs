@@ -12,8 +12,6 @@ _We use the Chrome browser as an example. Please refer_ [_here_](https://www.goo
 * Run MetaMask
 * Connect to WorldLand Network
 
-__
-
 ## 1. Install MetaMask
 
 Go to the Chrome Web Store, search for the [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) extension and add it.
@@ -30,7 +28,21 @@ Click the Create Wallet button and enter your password.
 
 A 12-word phrase appears. Only this phrase can recover your wallet, so be careful not to expose it.
 
+
+
+Write down your Secret Recovery Phrase
+
+Write down this 12-word Secret Recovery Phrase and save it in a place that you trust and only you can access.
+
+Tips:
+
+1. Save in a password manager
+2. Store in a safe deposit box
+3. Write down and store in multple secert Places
+
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+
 
 When the wallet creation is complete, you can see the wallet screen as shown below.
 
