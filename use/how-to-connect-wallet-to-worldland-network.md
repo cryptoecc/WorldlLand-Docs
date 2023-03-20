@@ -4,8 +4,6 @@
 
 #### _Please contact us if you have any questions._ __[_https://open.kakao.com/o/gXdk2J5e_](https://open.kakao.com/o/gXdk2J5e)__
 
-__
-
 _We use the Chrome browser as an example. Please refer_ [_here_](https://www.google.com/chrome) _to download the Chrome browser._
 
 * Install MetaMask
@@ -28,8 +26,6 @@ Click the Create Wallet button and enter your password.
 
 A 12-word phrase appears. Only this phrase can recover your wallet, so be careful not to expose it.
 
-
-
 Write down your Secret Recovery Phrase
 
 Write down this 12-word Secret Recovery Phrase and save it in a place that you trust and only you can access.
@@ -41,8 +37,6 @@ Tips:
 3. Write down and store in multple secert Places
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
-
 
 When the wallet creation is complete, you can see the wallet screen as shown below.
 
