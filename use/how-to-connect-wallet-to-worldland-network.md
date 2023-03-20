@@ -48,8 +48,6 @@ and Click the Add Network button.
 
 And then, Fill the Box like picture.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/Network-setup.png" alt=""><figcaption></figcaption></figure>
 
 Network name : Worldland
