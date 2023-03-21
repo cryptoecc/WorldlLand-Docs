@@ -23,7 +23,7 @@ Check your environment and install using that link.
 
 ### 1. Fund your WorldLand
 
-When deploying contracts, you need some coins. This a way how to get world land testnet coins! Plz follow these [statements](https://ethworldland.gitbook.io/ethereum-worldland/use/how-to-send-and-receive-coins.):
+When deploying contracts, you need some coins. This a way how to get world land testnet coins! Plz follow these [statements](https://ethworldland.gitbook.io/ethereum-worldland/use/how-to-obtain-your-wlcs-the-worldland-coins):
 
 ### 2. Install Truffle
 
