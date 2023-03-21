@@ -18,6 +18,14 @@ and other information. RPC URL and Chain ID must be exact. You can use any Netwo
 
 \[image]
 
+
+
+### ❗️ Fund your WorldLand
+
+When deploying contracts, you need some coins. This a way how to get world land testnet coins! Plz follow these [statements](https://ethworldland.gitbook.io/ethereum-worldland/use/how-to-obtain-your-wlcs-the-worldland-coins):
+
+
+
 ### 2. Run the remix and compile the code
 
 Remix-IDE: https://remix-project.org/
