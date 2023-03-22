@@ -36,7 +36,7 @@ Tips:
 2. Store in a safe deposit box
 3. Write down and store in multple secert Places
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 When the wallet creation is complete, you can see the wallet screen as shown below.
 
@@ -48,9 +48,9 @@ Click the Network selection box.
 
 and Click the Add Network button.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 And then, Fill the Box like picture.
 
