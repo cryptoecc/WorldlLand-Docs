@@ -72,7 +72,7 @@ First, you'll need to make a directory to store block information. For example `
 
 
 ```
-$ ./geth --syncmode "full" --lve --datdir "USER_DATA_DIR" console
+$ ./geth --syncmode "full" --lve --datadir "USER_DATA_DIR" console
 ```
 
 
