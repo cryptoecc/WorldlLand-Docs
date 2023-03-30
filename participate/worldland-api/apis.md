@@ -85,3 +85,117 @@ Will change the provider for its module.
 
 ❗️When called on the umbrella package `web3` it will also set the provider for all sub modules `web3.eth`, `web3.shh`, etc. EXCEPT `web3.bzz` which needs a separate provider at all times.
 
+
+
+#### Example: Local Geth Node
+
+```
+var Web3 = require('web3');
+var web3 = new Web3('https://rpc.lvscan.io');
+// or
+var web3 = new Web3(new Web3.providers.HttpProvider('https://rpc.lvscan.io'));
+
+// change provider
+web3.setProvider('https://rpc.lvscan.io');
+// or
+web3.setProvider(new Web3.providers.WebsocketProvider('https://rpc.lvscan.io'));
+
+// Using the IPC provider in node.js
+var net = require('net');
+var web3 = new Web3('/Users/myuser/Library/Ethereum/geth.ipc', net); // mac os path
+// or
+var web3 = new Web3(new Web3.providers.IpcProvider('/Users/myuser/Library/Ethereum/geth.ipc', net)); // mac os path
+// on windows the path is: "\\\\.\\pipe\\geth.ipc"
+// on linux the path is: "/users/myuser/.ethereum/geth.ipc"
+```
+
+
+
+#### Example: Remote Node Provider
+
+```
+// Using a remote node provider, like Alchemy (https://www.alchemyapi.io/supernode), is simple.
+var Web3 = require('web3');
+var web3 = new Web3("https://eth-mainnet.alchemyapi.io/v2/your-api-key");
+```
+
+
+
+### providers
+
+```
+web3.providers
+web3.eth.providers
+web3.shh.providers
+web3.bzz.providers
+...
+```
+
+Contains the current available providers.\
+
+
+#### Value
+
+`Object` with the following providers:
+
+> * `Object` - `HttpProvider`: HTTP provider, does not support subscriptions.
+> * `Object` - `WebsocketProvider`: The Websocket provider is the standard for usage in legacy browsers.
+> * `Object` - `IpcProvider`: The IPC provider is used node.js dapps when running a local node. Gives the most secure connection.
+
+
+
+#### Example
+
+```
+var Web3 = require('web3');
+// use the given Provider, e.g in Mist, or instantiate a new websocket provider
+var web3 = new Web3(Web3.givenProvider || 'ws://remotenode.com:8546');
+// or
+var web3 = new Web3(Web3.givenProvider || new Web3.providers.WebsocketProvider('ws://remotenode.com:8546'));
+
+// Using the IPC provider in node.js
+var net = require('net');
+
+var web3 = new Web3('/Users/myuser/Library/Ethereum/geth.ipc', net); // mac os path
+// or
+var web3 = new Web3(new Web3.providers.IpcProvider('/Users/myuser/Library/Ethereum/geth.ipc', net)); // mac os path
+// on windows the path is: "\\\\.\\pipe\\geth.ipc"
+// on linux the path is: "/users/myuser/.ethereum/geth.ipc"
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
