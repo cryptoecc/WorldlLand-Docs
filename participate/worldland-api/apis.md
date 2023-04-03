@@ -1055,7 +1055,7 @@ Returns a block matching the block number or block hash.
 > * `hash` 32 Bytes - `String`: Hash of the block. `null` if a pending block.
 > * `parentHash` 32 Bytes - `String`: Hash of the parent block.
 > * `baseFeePerGas` - `Number`: Minimum to be charged to send a transaction on the network
-> * `cordword` - `String`: Hash of the generated proof-of-work. `null` if a pending block.
+> * `codeword` - `String`: Hash of the generated proof-of-work. `null` if a pending block.
 > * `nonce` 8 Bytes - `String`: Hash of the generated proof-of-work. `null` if a pending block.
 > * `sha3Uncles` 32 Bytes - `String`: SHA3 of the uncles data in the block.
 > * `logsBloom` 256 Bytes - `String`: The bloom filter for the logs of the block. `null` if a pending block.
@@ -2033,72 +2033,4 @@ web3.eth.createAccessList({
 })
 .then(console.log);
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
