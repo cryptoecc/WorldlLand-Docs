@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Ethereum Worldland Documentation](README.md)
+* [Worldland Documentation](README.md)
 
 ## Learn
 
