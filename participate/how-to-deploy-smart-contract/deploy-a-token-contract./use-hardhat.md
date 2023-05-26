@@ -1,5 +1,5 @@
 ---
-description: Follow this page, you can deploy smart contract
+description: Unfinished now
 ---
 
 # Use HardHat
