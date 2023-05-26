@@ -31,6 +31,7 @@ NOW, We start to install "Truffle" using the Node.js package manager on VS Code 
 
 ```bash
 // VS Code Terminal: cmd
+npm install -g npm
 npm install -g truffle
 ```
 
