@@ -1,8 +1,8 @@
 ---
-description: Unfinished now
+description: Follow this page, you can deploy smart contract
 ---
 
-# Use HardHat
+# Use HardHat(Writing in progress)
 
 ## Setting up the  development environment
 

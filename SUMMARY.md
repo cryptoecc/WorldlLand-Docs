@@ -28,7 +28,7 @@
   * [Connect to Metamask](participate/how-to-start-a-worldland-node./connect-to-metamask.md)
 * [How to Deploy Smart Contract](participate/how-to-deploy-smart-contract/README.md)
   * [Use Remix IDE](participate/how-to-deploy-smart-contract/deploy-a-token-contract./README.md)
-  * [Use HardHat](participate/how-to-deploy-smart-contract/deploy-a-token-contract./use-hardhat.md)
+  * [Use HardHat(Writing in progress)](participate/how-to-deploy-smart-contract/deploy-a-token-contract./use-hardhat.md)
   * [Use Truffle](participate/how-to-deploy-smart-contract/deploy-a-token-contract./use-truffle.md)
 * [WorldLand API](participate/worldland-api/README.md)
   * [APIs](participate/worldland-api/apis.md)
