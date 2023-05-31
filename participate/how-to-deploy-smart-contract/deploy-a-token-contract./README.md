@@ -1,26 +1,8 @@
 # Use Remix IDE
 
-### 1 Download Meta-mask and connect to our ETH-ECC.
+### 1. [Connect wallet to Worldland network](../../../use/how-to-connect-wallet-to-worldland-network.md)
 
-1.1 Install Metamask extension&#x20;
-
-{% embed url="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" %}
-
-1.2 Connect to ETH-ECC network via Metamask&#x20;
-
-1.2.1 Metamask > Networks > Add Network
-
-\[image]
-
-1.2.2 Fill the RPC URL: https://rpc.lvscan.io
-
-and other information. RPC URL and Chain ID must be exact. You can use any Network name and Symbol you want.
-
-\[image]
-
-
-
-### ❗️ Fund your WorldLand
+### 1.1 ❗️ Fund your WorldLand
 
 When deploying contracts, you need some coins. This a way how to get world land testnet coins! Plz follow these [statements](https://ethworldland.gitbook.io/ethereum-worldland/use/how-to-obtain-your-wlcs-the-worldland-coins):
 
@@ -125,8 +107,6 @@ Finally, you can deploy contract to ETH-ECC
 ### 4. Execute function of contract
 
 You can excute function of contract in Deployed Contracts
-
-\[image]
 
 ### 5. Import token in metamask
 
