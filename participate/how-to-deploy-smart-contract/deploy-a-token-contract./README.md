@@ -16,7 +16,11 @@ Remix-IDE: https://remix-project.org/
 
 any name is okay
 
-\[image]
+<div align="center" data-full-width="false">
+
+<figure><img src="../../../.gitbook/assets/remix_1.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 2.2 write or Paste contract code&#x20;
 
@@ -68,59 +72,111 @@ contract TESTItem is ERC721URIStorage {
 
 When you're done writing the code, go to the Compile tab.
 
-\[image]
+**Warning!** Set the **EVM** version to **Paris** and compile.
+
+Once you've changed the version, press the **Compile button** to run the **compile**.
+
+<div align="center">
+
+<figure><img src="../../../.gitbook/assets/remix_compile_1.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../../.gitbook/assets/remix_compile_3.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ### 3. Connect to Metamask and deploy to contract
 
 After compiling, go to the Deployment tab.
 
-\[image]
-
 Select "injected web3" in the environment.
-
-\[image]
 
 The connected network number and account will then appear.
 
-\[image]
+<div>
+
+<figure><img src="../../../.gitbook/assets/remix_Injected_Web3.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../../.gitbook/assets/remix_Injected_Web3_3.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 If there are parameters of the contract constructor, write them by clicking the button in the picture below.
 
-\[image]
+<div>
+
+<figure><img src="../../../.gitbook/assets/remix_parameter_1.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../../.gitbook/assets/remix_parameter_2.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Click the TRANSACT button to deploy the contract.&#x20;
 
-If deploy fails because there is no ether in ETH-ECC, you can obtain ether from the free-eth page of explorer.&#x20;
-
-Ethereum Block Explorer (desecure.org)&#x20;
-
-If the free full balance is 0, you can tell me (Seung-min Kim).
-
-\[image]
-
 Finally, you can deploy contract to ETH-ECC
 
-\[image]
-
-
+<figure><img src="../../../.gitbook/assets/remix_result.png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Execute function of contract
 
 You can excute function of contract in Deployed Contracts
 
+<div>
+
+<figure><img src="../../../.gitbook/assets/remix_excute_1.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../../.gitbook/assets/remix_excute_2.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
 ### 5. Import token in metamask
 
 You can check your tokens in metamsk using "Import tokens"
 
-\[image]
+<div>
 
-Extra. Save nft using ipfs(pinata)
+<figure><img src="../../../.gitbook/assets/remix_import_1.png" alt="" width="269"><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../../.gitbook/assets/remix_import_2.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<figure><img src="../../../.gitbook/assets/remix_import_3.png" alt="" width="263"><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../../.gitbook/assets/remix_import_4 (1).png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+
+
+### Extra. Save nft using ipfs(pinata)
 
 &#x20;Below is how to register NFT using pinata and ipfs in erc721.&#x20;
 
 If the above TEST721.sol contract is deployed, the following functions appear.
 
-\[image]
+<div>
+
+<figure><img src="../../../.gitbook/assets/remix_ipfs_1.png" alt="" width="214"><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../../.gitbook/assets/remix_ipfs_2.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 awarditem is a function that awards the NFT json file in tokenUrl to the player.
 
@@ -131,6 +187,8 @@ Upload the NFS JSON file to IPFS using pinata.
 1. First sign up for Pinata
 
 {% embed url="https://www.pinata.cloud/" %}
+
+<figure><img src="../../../.gitbook/assets/remix_pinata_1 (1).png" alt="" width="349"><figcaption></figcaption></figure>
 
 2\. upload image of nft and make json The format of the json file is as follows.
 
@@ -147,23 +205,49 @@ k",
 
 If you want to include an image, the image must also be stored in ipfs. So, I upload the image first.
 
-\[image]
+<figure><img src="../../../.gitbook/assets/remix_pinata_2 (1).png" alt=""><figcaption></figcaption></figure>
 
-You can see the file is saved. Click the eye icon and copy the url of the image. ex: https://gateway.pinata.cloud/ipfs/QmWUR3PYmorqqQ2mGwQAr3ujUNnpANS2xyKJYBxegwFeS8
 
-\[image]
+
+You can see the file is saved.&#x20;
+
+Click the eye icon and copy the url of the image.&#x20;
+
+<figure><img src="../../../.gitbook/assets/remix_pinata_3.png" alt=""><figcaption></figcaption></figure>
+
+ex: [https://gateway.pinata.cloud/ipfs/QmWUR3PYmorqqQ2mGwQAr3ujUNnpANS2xyKJYBxegwFeS8](https://gateway.pinata.cloud/ipfs/QmWUR3PYmorqqQ2mGwQAr3ujUNnpANS2xyKJYBxegwFeS8)
+
+
 
 Paste the url into the image item in json. "image": "https://gateway.pinata.cloud/ipfs/QmWnNt8jdSxVX981abPHKTAsg5E31u2Zh8AfsVqzhyGzSk",
 
 3\. Upload the json to pinata and copy the url. The method is the same as the image.
 
-\[image]
+<figure><img src="../../../.gitbook/assets/remix_pinata_4.png" alt=""><figcaption></figcaption></figure>
 
 Finally, copy the address of your wallet, put your wallet address in the player, and the json url in tokenURL and send the transaction.
 
-\[image]
+<div>
 
-You saved the NFT! If you want to check nft, see " HOW TO CHECK NFT SMART CONTRACT IN ETH-ECC "
+<figure><img src="../../../.gitbook/assets/remix_pinata_result_1.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../../.gitbook/assets/remix_pinata_result_2.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<figure><img src="../../../.gitbook/assets/remix_pinata_result_3.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../../.gitbook/assets/remix_pinata_result_4.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+You saved the NFT!&#x20;
 
 
 
