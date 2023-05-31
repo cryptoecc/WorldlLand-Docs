@@ -72,7 +72,7 @@ contract TESTItem is ERC721URIStorage {
 
 When you're done writing the code, go to the Compile tab.
 
-**Warning!** Set the **EVM** version to **Paris** and compile.
+<mark style="color:red;">**Warning!**</mark> Set the **EVM** version to <mark style="color:red;">**Paris**</mark> and compile.
 
 Once you've changed the version, press the **Compile button** to run the **compile**.
 
@@ -82,7 +82,7 @@ Once you've changed the version, press the **Compile button** to run the **compi
 
  
 
-<figure><img src="../../../.gitbook/assets/remix_compile_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_compile_3.png" alt="" width="226"><figcaption></figcaption></figure>
 
 </div>
 
@@ -120,7 +120,7 @@ Click the TRANSACT button to deploy the contract.&#x20;
 
 Finally, you can deploy contract to ETH-ECC
 
-<figure><img src="../../../.gitbook/assets/remix_result.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_result.png" alt="" width="266"><figcaption></figcaption></figure>
 
 ### 4. Execute function of contract
 
@@ -132,7 +132,7 @@ You can excute function of contract in Deployed Contracts
 
  
 
-<figure><img src="../../../.gitbook/assets/remix_excute_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_excute_2.png" alt="" width="209"><figcaption></figcaption></figure>
 
 </div>
 
@@ -197,8 +197,7 @@ Upload the NFS JSON file to IPFS using pinata.
 "name": "timetable",
 "description": "smin's timetable",
 "image":
-"https://gateway.pinata.cloud/ipfs/QmWnNt8jdSxVX981abPHKTAsg5E31u2Zh8AfsVqzhyGzS
-k",
+"https://gateway.pinata.cloud/ipfs/QmWnNt8jdSxVX981abPHKTAsg5E31u2Zh8AfsVqzhyGzSk",
 "strength": 20
 }
 ```
@@ -215,13 +214,19 @@ Click the eye icon and copy the url of the image.&#x20;
 
 <figure><img src="../../../.gitbook/assets/remix_pinata_3.png" alt=""><figcaption></figcaption></figure>
 
-ex: [https://gateway.pinata.cloud/ipfs/QmWUR3PYmorqqQ2mGwQAr3ujUNnpANS2xyKJYBxegwFeS8](https://gateway.pinata.cloud/ipfs/QmWUR3PYmorqqQ2mGwQAr3ujUNnpANS2xyKJYBxegwFeS8)
+image ipfs example: [https://gateway.pinata.cloud/ipfs/QmWUR3PYmorqqQ2mGwQAr3ujUNnpANS2xyKJYBxegwFeS8](https://gateway.pinata.cloud/ipfs/QmWUR3PYmorqqQ2mGwQAr3ujUNnpANS2xyKJYBxegwFeS8)
 
 
 
-Paste the url into the image item in json. "image": "https://gateway.pinata.cloud/ipfs/QmWnNt8jdSxVX981abPHKTAsg5E31u2Zh8AfsVqzhyGzSk",
+Paste the url into the image item in json.&#x20;
+
+"image": "[https://gateway.pinata.cloud/ipfs/QmWnNt8jdSxVX981abPHKTAsg5E31u2Zh8AfsVqzhyGzSk](https://gateway.pinata.cloud/ipfs/QmWnNt8jdSxVX981abPHKTAsg5E31u2Zh8AfsVqzhyGzSk)",
 
 3\. Upload the json to pinata and copy the url. The method is the same as the image.
+
+json ipfs example:
+
+[https://gateway.pinata.cloud/ipfs/QmcpjQMRyBQ8qBZcVidyeD67EvxLSnmR81Fz15MtFrQUwW](https://gateway.pinata.cloud/ipfs/QmcpjQMRyBQ8qBZcVidyeD67EvxLSnmR81Fz15MtFrQUwW)
 
 <figure><img src="../../../.gitbook/assets/remix_pinata_4.png" alt=""><figcaption></figcaption></figure>
 
