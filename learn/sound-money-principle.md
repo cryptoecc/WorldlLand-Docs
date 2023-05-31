@@ -1,2 +1,0 @@
-# Sound Money Principle
-

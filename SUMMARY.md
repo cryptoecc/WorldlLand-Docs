@@ -6,13 +6,12 @@
 
 * [Introduction](learn/introduction.md)
 * [What is WorldLand?](learn/what-is-worldland.md)
-* [ECCPoW](learn/eccpow.md)
-* [The Charter of WorldLand](learn/the-charter-of-worldland.md)
-* [Technical Background](learn/technical-background.md)
-* [Sound Money Principle](learn/sound-money-principle.md)
-* [Why Sound Money is Needed?](learn/why-sound-money-is-needed.md)
+* [WorldLand Technology](learn/worldland-technology.md)
+* [Design Principles](learn/design-principles.md)
+* [How WorldLand Works](learn/how-worldland-works.md)
 * [WorldLand Tokenomics](learn/worldland-tokenomics.md)
 * [WorldLand Governance](learn/worldland-governance.md)
+* [Charter of WorldLand](learn/charter-of-worldland.md)
 
 ## Use
 

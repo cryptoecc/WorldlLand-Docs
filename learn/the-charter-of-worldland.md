@@ -1,2 +1,0 @@
-# The Charter of WorldLand
-
