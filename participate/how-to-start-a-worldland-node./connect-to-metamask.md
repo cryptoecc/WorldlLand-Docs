@@ -49,7 +49,7 @@ We generated the address of Alice:`0xb8C941069cC2B71B1a00dB15E6E00A200d387039`. 
 
 
 
-You can find your key file in [`YOUR_GETH_DATADIR/keystore`](#user-content-fn-1)[^1]``
+You can find your key file in [`YOUR_GETH_DATADIR/keystore`](#user-content-fn-1)[^1]
 
 If not configured, the data storage location is `~/.ethereum.`
 
@@ -67,8 +67,8 @@ Select JSON File from Select Type and import the file. And enter the password yo
 
 then, you can import account to **Metamask!**
 
-****
 
-****
+
+
 
 [^1]: 

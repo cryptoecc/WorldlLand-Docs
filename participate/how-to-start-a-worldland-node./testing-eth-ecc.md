@@ -1,6 +1,6 @@
 # Testing Worldland
 
-#### _Please contact us if you have any questions._ __[_https://open.kakao.com/o/gXdk2J5e_](https://open.kakao.com/o/gXdk2J5e)__
+#### _Please contact us if you have any questions._ [_https://open.kakao.com/o/gXdk2J5e_](https://open.kakao.com/o/gXdk2J5e)
 
 
 

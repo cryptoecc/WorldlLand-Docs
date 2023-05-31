@@ -4,10 +4,10 @@
 
 ## Learn
 
+* [Introduction](learn/introduction.md)
 * [What is WorldLand?](learn/what-is-worldland.md)
 * [ECCPoW](learn/eccpow.md)
 * [The Charter of WorldLand](learn/the-charter-of-worldland.md)
-* [White Paper](learn/white-paper.md)
 * [Technical Background](learn/technical-background.md)
 * [Sound Money Principle](learn/sound-money-principle.md)
 * [Why Sound Money is Needed?](learn/why-sound-money-is-needed.md)
