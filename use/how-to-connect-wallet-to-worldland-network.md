@@ -12,7 +12,7 @@ _We use the Chrome browser as an example. Please refer_ [_here_](https://www.goo
 
 ## 1. Install MetaMask
 
-Go to the Chrome Web Store, search for the [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) extension and add it.
+Go to the Chrome Web Store, search for the [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) extension, and add it.
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -34,7 +34,7 @@ Tips:
 
 1. Save in a password manager
 2. Store in a safe deposit box
-3. Write down and store in multple secert Places
+3. Write down and store in multiple secret Places
 
 <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -56,13 +56,13 @@ And then, Fill the Box like picture.
 
 <figure><img src="../.gitbook/assets/Network-setup.png" alt=""><figcaption></figcaption></figure>
 
-Network name : Worldland
+Network name: Worldland
 
-New RPC URL : https://rpc.lvscan.io
+New RPC URL: https://rpc.lvscan.io
 
-Chain ID : 12345
+Chain ID: 103
 
-Currency Symbol : WLC
+Currency Symbol: WLC
 
 Block-explorer URL : https://lvscan.io/
 

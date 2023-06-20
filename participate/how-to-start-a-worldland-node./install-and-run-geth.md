@@ -72,7 +72,7 @@ First, you'll need to make a directory to store block information. For example `
 
 
 ```
-$ ./geth --syncmode "full" --lve --datadir "USER_DATA_DIR" console
+$ ./geth --syncmode "full" --gwangju --datadir "USER_DATA_DIR" console
 ```
 
 
@@ -94,10 +94,10 @@ INFO [01-02|14:59:12.677] Writing custom genesis block
 INFO [01-02|14:59:12.703] Persisted trie from memory database      nodes=354 size=50.23KiB time=2.70146ms gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
 INFO [01-02|14:59:12.706]  
 INFO [01-02|14:59:12.706] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
-INFO [01-02|14:59:12.706] Chain ID:  12345 (lve) 
+INFO [01-02|14:59:12.706] Chain ID:  103 (Gwangju) 
 ...
 ```
 
-You can check ChainID is 12345.
+You can check ChainID is 103.
 
-You are now connected to the LVE network!
+You are now connected to the Gwangju network!
