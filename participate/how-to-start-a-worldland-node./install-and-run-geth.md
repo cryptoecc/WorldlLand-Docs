@@ -46,6 +46,7 @@ Once, dependencies are installed, You can install ETH-ECC using the following co
 Then move to `/ETH-ECC`, and follow this.
 
 ```
+$ cd ETH-ECC
 $ make geth
 ```
 
