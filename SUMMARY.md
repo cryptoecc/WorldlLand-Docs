@@ -13,21 +13,21 @@
 * [WorldLand Governance](learn/worldland-governance.md)
 * [Charter of WorldLand](learn/charter-of-worldland.md)
 
-## Use
+## User
 
-* [How to connect wallet to WorldLand network](use/how-to-connect-wallet-to-worldland-network.md)
-* [How to obtain your WLCs the WorldLand coins](use/how-to-obtain-your-wlcs-the-worldland-coins.md)
-* [How to send and receive coins.](use/how-to-send-and-receive-coins..md)
+* [How to connect wallet to WorldLand network](user/how-to-connect-wallet-to-worldland-network.md)
+* [How to obtain your WLCs the WorldLand coins](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
+* [How to send and receive coins.](user/how-to-send-and-receive-coins..md)
 
-## Participate
+## Developer
 
-* [How to start a WorldLand node.](participate/how-to-start-a-worldland-node./README.md)
-  * [Install and run node](participate/how-to-start-a-worldland-node./install-and-run-geth.md)
-  * [Testing Worldland](participate/how-to-start-a-worldland-node./testing-eth-ecc.md)
-  * [Connect to Metamask](participate/how-to-start-a-worldland-node./connect-to-metamask.md)
-* [How to Deploy Smart Contract](participate/how-to-deploy-smart-contract/README.md)
-  * [Use Remix IDE](participate/how-to-deploy-smart-contract/deploy-a-token-contract./README.md)
-  * [Use HardHat(Writing in progress)](participate/how-to-deploy-smart-contract/deploy-a-token-contract./use-hardhat.md)
-  * [Use Truffle](participate/how-to-deploy-smart-contract/deploy-a-token-contract./use-truffle.md)
-* [WorldLand API](participate/worldland-api/README.md)
-  * [APIs](participate/worldland-api/apis.md)
+* [How to start a WorldLand node.](developer/how-to-start-a-worldland-node./README.md)
+  * [Install and run node](developer/how-to-start-a-worldland-node./install-and-run-geth.md)
+  * [Testing Worldland](developer/how-to-start-a-worldland-node./testing-eth-ecc.md)
+  * [Connect to Metamask](developer/how-to-start-a-worldland-node./connect-to-metamask.md)
+* [How to Deploy Smart Contract](developer/how-to-deploy-smart-contract/README.md)
+  * [Use Remix IDE](developer/how-to-deploy-smart-contract/deploy-a-token-contract..md)
+  * [Use HardHat(Writing in progress)](developer/how-to-deploy-smart-contract/use-hardhat.md)
+  * [Use Truffle](developer/how-to-deploy-smart-contract/use-truffle.md)
+* [WorldLand API](developer/worldland-api/README.md)
+  * [APIs](developer/worldland-api/apis.md)

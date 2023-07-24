@@ -284,7 +284,7 @@ Will return the current provider, otherwise `null`.
 
 #### Example
 
-***
+
 
 ### BatchRequest
 
@@ -319,7 +319,7 @@ batch.add(contract.methods.balance(address).call.request({from: '0x0000000000000
 batch.execute();
 ```
 
-***
+
 
 ### extend
 
@@ -391,9 +391,9 @@ console.log(web3);
 }
 ```
 
-***
 
-***
+
+
 
 ### defaultAccount
 
@@ -422,7 +422,7 @@ web3.eth.defaultAccount;
 web3.eth.defaultAccount = '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe';
 ```
 
-***
+
 
 ### defaultBlock
 
@@ -559,7 +559,7 @@ web3.eth.defaultCommon;
 web3.eth.defaultCommon = {customChain: {name: 'custom-network', chainId: 1, networkId: 1}, baseChain: 'mainnet', hardfork: 'petersburg'};
 ```
 
-***
+
 
 ### transactionBlockTimeout
 
@@ -583,7 +583,7 @@ web3.eth.transactionBlockTimeout;
 web3.eth.transactionBlockTimeout = 100;
 ```
 
-***
+
 
 ### blockHeaderTimeout
 
@@ -608,7 +608,7 @@ web3.eth.blockHeaderTimeout;
 web3.eth.blockHeaderTimeout = 10;
 ```
 
-***
+
 
 ### transactionConfirmationBlocks
 
@@ -632,7 +632,7 @@ web3.eth.transactionConfirmationBlocks;
 web3.eth.transactionConfirmationBlocks = 50;
 ```
 
-***
+
 
 ### transactionPollingTimeout
 
@@ -656,7 +656,7 @@ web3.eth.transactionPollingTimeout;
 web3.eth.transactionPollingTimeout = 1000;
 ```
 
-***
+
 
 ### transactionPollingInterval
 
@@ -670,7 +670,7 @@ The `transactionPollingInterval` is used over HTTP connections. This option defi
 
 `number`: The current value of transactionPollingInterval (default: 1000ms)
 
-***
+
 
 ### handleRevert
 
@@ -703,7 +703,7 @@ web3.eth.handlRevert;
 web3.eth.handleRevert = true;
 ```
 
-***
+
 
 ### maxListenersWarningThreshold
 
@@ -727,7 +727,7 @@ web3.eth.maxListenersWarningThreshold;
 web3.eth.maxListenersWarningThreshold = 200;
 ```
 
-***
+
 
 ### getProtocolVersion
 
@@ -749,7 +749,7 @@ web3.eth.getProtocolVersion()
 > "63"
 ```
 
-***
+
 
 ### isSyncing
 
@@ -784,7 +784,7 @@ web3.eth.isSyncing()
 }
 ```
 
-***
+
 
 ### getCoinbase
 
@@ -806,7 +806,7 @@ web3.eth.getCoinbase()
 > "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe"
 ```
 
-***
+
 
 ### isMining
 
@@ -828,7 +828,7 @@ web3.eth.isMining()
 > true
 ```
 
-***
+
 
 ### getHashrate
 
@@ -850,7 +850,7 @@ web3.eth.getHashrate()
 > 493736
 ```
 
-***
+
 
 ### getGasPrice
 
@@ -874,7 +874,7 @@ web3.eth.getGasPrice()
 > "20000000000"
 ```
 
-***
+
 
 ### getFeeHistory
 
@@ -900,7 +900,7 @@ Transaction fee history Returns base fee per gas and transaction effective prior
 * `Array of numbers` gasUsedRatio - An array of block gas used ratios. These are calculated as the ratio of gasUsed and gasLimit.
 * `Array of string arrays` reward - An array of effective priority fee per gas data points from a single block. All zeroes are returned if the block is empty.
 
-***
+
 
 ### getAccounts
 
@@ -922,7 +922,7 @@ web3.eth.getAccounts()
 > ["0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", "0xDCc6960376d6C6dEa93647383FfB245CfCed97Cf"]
 ```
 
-***
+
 
 ### getBlockNumber
 
@@ -944,7 +944,7 @@ web3.eth.getBlockNumber()
 > 2744
 ```
 
-***
+
 
 ### getBalance
 
@@ -974,7 +974,7 @@ web3.eth.getBalance("0x407d73d8a49eeb85d32cf465507dd71d507100c1")
 > "1000000000000"
 ```
 
-***
+
 
 ### getStorageAt
 
@@ -1003,7 +1003,7 @@ web3.eth.getStorageAt("0x407d73d8a49eeb85d32cf465507dd71d507100c1", 0)
 > "0x033456732123ffff2342342dd12342434324234234fd234fd23fd4f23d4234"
 ```
 
-***
+
 
 ### getCode
 
@@ -1031,7 +1031,7 @@ web3.eth.getCode("0xd5677cf67b5aa051bb40496e68ad359eb97cfbf8")
 > "0x600160008035811a818181146012578301005b601b6001356025565b8060005260206000f25b600060078202905091905056"
 ```
 
-***
+
 
 ### getBlock
 
@@ -1103,7 +1103,7 @@ web3.eth.getBlock(3150)
 }
 ```
 
-***
+
 
 ### getBlockTransactionCount
 
@@ -1130,7 +1130,7 @@ web3.eth.getBlockTransactionCount("0x407d73d8a49eeb85d32cf465507dd71d507100c1")
 > 1
 ```
 
-***
+
 
 ### getBlockUncleCount
 
@@ -1157,7 +1157,7 @@ web3.eth.getBlockUncleCount("0x407d73d8a49eeb85d32cf465507dd71d507100c1")
 > 1
 ```
 
-***
+
 
 ### getUncle
 
@@ -1190,7 +1190,7 @@ web3.eth.getUncle(500, 0)
 > // see web3.eth.getBlock
 ```
 
-***
+
 
 ### getTransaction
 
@@ -1242,7 +1242,7 @@ web3.eth.getTransaction('0x9fc76417374aa880d4449a1f7f31ec597f00b1f6f3dd2d66f4c9c
 }
 ```
 
-***
+
 
 ### getPendingTransactions
 
@@ -1311,7 +1311,7 @@ Returns a list of pending transactions.
 ]
 ```
 
-***
+
 
 ### getTransactionFromBlock
 
@@ -1339,7 +1339,7 @@ var transaction = web3.eth.getTransactionFromBlock('0x4534534534', 2)
 > // see web3.eth.getTransaction
 ```
 
-***
+
 
 ### getTransactionReceipt
 
@@ -1413,7 +1413,7 @@ var receipt = web3.eth.getTransactionReceipt('0x9fc76417374aa880d4449a1f7f31ec59
 }
 ```
 
-***
+
 
 ### getTransactionCount
 
@@ -1441,7 +1441,7 @@ web3.eth.getTransactionCount("0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe")
 > 1
 ```
 
-***
+
 
 ### sendTransaction
 
@@ -1536,7 +1536,7 @@ web3.eth.sendTransaction({
 .on('error', console.error); // If a out of gas error, the second parameter is the receipt.
 ```
 
-***
+
 
 ### sendSignedTransaction
 
@@ -1590,7 +1590,7 @@ Note
 
 When using _ethereumjs-tx@2.0.0_ if you don’t specify the parameter _chain_ it will use _mainnet_ by default.
 
-***
+
 
 ### sign
 
@@ -1623,7 +1623,7 @@ web3.eth.sign(web3.utils.utf8ToHex("Hello world"), "0x11f4d0A3c12e86B4b5F39B213F
 > "0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400"
 ```
 
-***
+
 
 ### signTransaction
 
@@ -1671,7 +1671,7 @@ web3.eth.signTransaction({
 }
 ```
 
-***
+
 
 ### call
 
@@ -1702,7 +1702,7 @@ web3.eth.call({
 > "0x000000000000000000000000000000000000000000000000000000000000000a"
 ```
 
-***
+
 
 ### estimateGas
 
@@ -1732,7 +1732,7 @@ web3.eth.estimateGas({
 > "0x0000000000000000000000000000000000000000000000000000000000000015"
 ```
 
-***
+
 
 ### getPastLogs
 
@@ -1787,7 +1787,7 @@ web3.eth.getPastLogs({
 },{...}]
 ```
 
-***
+
 
 ### getWork
 
@@ -1821,7 +1821,7 @@ web3.eth.getWork()
 ]
 ```
 
-***
+
 
 ### submitWork
 
@@ -1854,7 +1854,7 @@ web3.eth.submitWork([
 > true
 ```
 
-***
+
 
 ### requestAccounts
 
@@ -1881,7 +1881,7 @@ web3.eth.requestAccounts().then(console.log);
 > ['0aae0B295369a9FD31d5F28D9Ec85E40f4cb692BAf', '0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe']
 ```
 
-***
+
 
 ### getChainId
 
@@ -1902,7 +1902,7 @@ web3.eth.getChainId().then(console.log);
 > 61
 ```
 
-***
+
 
 ### getNodeInfo
 
@@ -1921,7 +1921,7 @@ web3.eth.getNodeInfo().then(console.log);
 > "Mist/v0.9.3/darwin/go1.4.1"
 ```
 
-***
+
 
 ### getProof
 
@@ -1987,7 +1987,7 @@ web3.eth.getProof(
 }
 ```
 
-***
+
 
 ### createAccessList
 
