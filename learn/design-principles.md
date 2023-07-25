@@ -20,7 +20,7 @@ The Green VCA Matrix is evaluated based on the following key performance metrics
 
 &#x20;    **M4. Unchangeable Currency Issuance Schedule**
 
-&#x20;    **M5. Block Creation Time (average 12 seconds)**
+&#x20;    **M5. Block Creation Time (average 10 seconds)**
 
 &#x20;    **M6. Block Size (1 Mbyte)**
 
