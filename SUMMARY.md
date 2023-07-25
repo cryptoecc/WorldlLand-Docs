@@ -32,3 +32,4 @@
   * [Use Truffle](developer/how-to-deploy-smart-contract/use-truffle.md)
 * [WorldLand API](developer/worldland-api/README.md)
   * [APIs](developer/worldland-api/apis.md)
+* [FAQ](developer/faq.md)
