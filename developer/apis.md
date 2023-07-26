@@ -2,7 +2,7 @@
 description: web3.eth
 ---
 
-# web3.eth
+# JSON-RPC APIs
 
 The `web3-eth` package allows you to interact with an Ethereum blockchain and Ethereum smart contracts.
 

@@ -2,10 +2,12 @@
 
 [https://github.com/cryptoecc/ETH-ECC](https://github.com/cryptoecc/ETH-ECC)
 
-ETH-ECC는 이더리움 블록체인의 클라이언트 중 하나입니다. 이 클라이언트는 월드랜드 블록체인의 합의 알고리즘인 ECCPoW(Error-Correction Code Proof of Work)를 추가로 구현한 것입니다.
 
-ECCPoW는 오류 정정 부호(쇼어 다리우스 오류 정정 부호, LDPC 코드)를 활용하여 블록 생성 작업 증명을 수행하는 합의 알고리즘입니다. LDPC 코드 디코딩을 통해 문제를 해결하며, 이를 통해 블록 생성과 관련된 노드들의 성능을 향상시키고 블록체인의 보안성을 강화합니다.
 
-ETH-ECC는 이더리움과 월드랜드 블록체인 간의 서울 메인넷과 광주 테스트넷을 연결하여 상호작용할 수 있도록 지원합니다. 이더리움과 호환성을 갖춘 EVM 기반의 클라이언트로 동작하며, 이를 통해 두 블록체인 간의 정보와 자산의 이동이 원활하게 이루어질 수 있습니다.
+ETH-ECC is one of the clients of the Ethereum blockchain. This client is an additional implementation of ECCPoW (Error-Correction Code Proof of Work), the consensus algorithm of the Worldland blockchain.&#x20;
 
-ECCPoW를 활용한 ETH-ECC는 네트워크의 안정성과 신뢰성을 높이는데 기여하고, 기존의 PoW 방식보다 효율적으로 블록을 생성할 수 있습니다. 블록체인 상호연동성 증진과 기존 스마트 계약과 디앱(DApp)의 다양한 활용을 가능하게 하며, 이더리움과 월드랜드 블록체인 커뮤니티들에게 유익한 결과물을 제공할 수 있습니다.
+ECCPoW is a consensus algorithm that utilizes error-correcting code (Shore Darius Error-Correcting Code, LDPC code) to perform block generation proof-of-work. It solves the problem through LDPC code decoding, which improves the performance of nodes involved in block generation and strengthens the security of the blockchain.&#x20;
+
+ETH-ECC connects Seoul Mainnet and Gwangju Testnet between Ethereum and Worldland blockchains to support interaction. It operates as an EVM-based client compatible with Ethereum, and through this, the movement of information and assets between the two blockchains can be performed smoothly.
+
+&#x20;ETH-ECC using ECCPoW contributes to increasing the stability and reliability of the network and can generate blocks more efficiently than the existing PoW method. It enables the enhancement of blockchain interoperability and various uses of existing smart contracts and DApps, and can provide beneficial results to the Ethereum and Worldland blockchain communities.

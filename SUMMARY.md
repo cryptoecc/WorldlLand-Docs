@@ -30,6 +30,7 @@
   * [Use Remix IDE](developer/how-to-deploy-smart-contract/deploy-a-token-contract..md)
   * [Use HardHat(Writing in progress)](developer/how-to-deploy-smart-contract/use-hardhat.md)
   * [Use Truffle](developer/how-to-deploy-smart-contract/use-truffle.md)
+* [JSON-RPC APIs](developer/apis.md)
 * [WorldLand API](developer/worldland-api/README.md)
-  * [APIs](developer/worldland-api/apis.md)
+  * [web3.eth](developer/worldland-api/apis.md)
 * [FAQ](developer/faq.md)
