@@ -1,4 +1,4 @@
-# Wallet
+# Connect Wallet
 
 > _Metamask is a universal cryptocurrency wallet compatible with Ethereum-based chains. Metamask is an extension that works as a plugin for Chrome-based web browsers._
 
@@ -54,17 +54,15 @@ and Click the Add Network button.
 
 And then, Fill the Box like picture.
 
-<figure><img src="../.gitbook/assets/Network-setup.png" alt=""><figcaption></figcaption></figure>
+**Network name: Worldland**
 
-Network name: Worldland
+**New RPC URL:** [**https://seoul.worldland.foundation/**](https://seoul.worldland.foundation/)
 
-New RPC URL: [https://seoul.worldland.foundation/](https://seoul.worldland.foundation/)
+**Chain ID: 103**
 
-Chain ID: 103
+**Currency Symbol: WLC**
 
-Currency Symbol: WLC
-
-Block-explorer URL :&#x20;
+**Block-explorer URL :**&#x20;
 
 
 
