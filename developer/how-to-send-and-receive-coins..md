@@ -31,7 +31,7 @@ Just follow the picture.
 
 4. Just click the Next button and you're done
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
