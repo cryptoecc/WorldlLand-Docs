@@ -12,7 +12,7 @@ If there is a problem with the link, follow the order below to manually add the 
 
 
 
-## **Manual network addition**
+## **Manual network** configuration
 
 1\. Click the Network selection box.
 
@@ -24,9 +24,11 @@ If there is a problem with the link, follow the order below to manually add the 
 
 Fill in the blanks using the network table above.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
+## Other wallets
 
+Other wallets will also need to manually add networks using the network configuration details above.
 
 
 

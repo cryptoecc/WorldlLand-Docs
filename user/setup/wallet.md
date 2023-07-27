@@ -1,6 +1,6 @@
 # Wallet
 
-우리는 메타마스크 지갑을 사용한   지갑가이드를 설명합니다. 만약 메타마스크 지갑이 이미 설치되어 있거나 다른 EVM-호환의 지갑을 사용한다면, 다음 [페이지](../../developer/how-to-start-a-worldland-node./connect-to-metamask.md)로 넘어가주세요.
+We explain the wallet guide using the Metamask wallet. If you already have a [**Metamask wallet**](https://metamask.io/) installed or are using another EVM-compatible wallet, please proceed to the [**next page**](network.md).
 
 > _Metamask is a universal cryptocurrency wallet compatible with Ethereum-based chains. Metamask is an extension that works as a plugin for Chrome-based web browsers._
 

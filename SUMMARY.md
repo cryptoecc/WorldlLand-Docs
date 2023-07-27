@@ -15,7 +15,7 @@
 
 ## User
 
-* [Setup](user/setup/README.md)
+* [Setup](user/network.md)
   * [Wallet](user/setup/wallet.md)
   * [Network](user/setup/network.md)
 * [Get WLCs](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
