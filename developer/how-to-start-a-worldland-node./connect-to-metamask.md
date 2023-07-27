@@ -6,11 +6,11 @@ This part explains how to link your Metamask account to the Eth-ECC console and 
 
 You can find **Account details** in the menu to the right of your **Metamask account**.
 
-<figure><img src="../../../.gitbook/assets/account_details.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/account_details.png" alt=""><figcaption></figcaption></figure>
 
 Press the **export private key** button and enter the **password** to obtain the private key.
 
-<figure><img src="../../../.gitbook/assets/export_private_key.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/export_private_key.png" alt=""><figcaption></figcaption></figure>
 
 Enter the obtained **private key** and **password** into the **ETH-ECC** console.
 
@@ -63,7 +63,7 @@ Open metamask, select the network and then select "Import Account"
 
 Select JSON File from Select Type and import the file. And enter the password you entered when creating your account.
 
-<figure><img src="../../../.gitbook/assets/import_json.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/import_json.png" alt=""><figcaption></figcaption></figure>
 
 then, you can import account to **Metamask!**
 
