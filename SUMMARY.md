@@ -16,9 +16,12 @@
 
 ## User
 
-* [Wallet](user/how-to-connect-wallet-to-worldland-network.md)
-* [Faucets](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
-* [Mining](user/mining.md)
+* [Node Operater](user/node-operater/README.md)
+  * [Install Node](user/node-operater/install-and-run-geth.md)
+  * [Run Node](user/node-operater/run-node.md)
+  * [Miner](user/node-operater/miner.md)
+* [Connect Wallet](user/how-to-connect-wallet-to-worldland-network.md)
+* [Get WLCs](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
 
 ## Developer
 
@@ -29,9 +32,8 @@
   * [Use HardHat(Writing in progress)](developer/how-to-deploy-smart-contract/use-hardhat.md)
   * [Use Truffle](developer/how-to-deploy-smart-contract/use-truffle.md)
 * [How to start a WorldLand node.](developer/how-to-start-a-worldland-node./README.md)
-  * [Install and run node](developer/how-to-start-a-worldland-node./install-and-run-geth.md)
-  * [Testing Worldland](developer/how-to-start-a-worldland-node./testing-eth-ecc.md)
-  * [Connect to Metamask](developer/how-to-start-a-worldland-node./connect-to-metamask.md)
+  * [Connect to Metamask](developer/how-to-start-a-worldland-node./connect-to-metamask/README.md)
+    * [Testing Worldland](developer/how-to-start-a-worldland-node./connect-to-metamask/testing-eth-ecc.md)
 * [JSON-RPC APIs](developer/apis.md)
 * [WorldLand API](developer/worldland-api/README.md)
   * [web3.eth](developer/worldland-api/apis.md)
