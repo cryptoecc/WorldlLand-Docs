@@ -1,12 +1,11 @@
 # Network
 
-**Mainnet**
+## Seoul **Mainnet**
 
-* Seoul
+* **Network ID: 103**
+* **RPC address:** [**https://seoul.worldland.foundation/**](https://seoul.worldland.foundation/)
 
+## **Gwangju Testnet**
 
-
-**Testnet**
-
-* Gwangju&#x20;
-
+* **Network ID: 10359**
+* **RPC address:** [**https://gwangju.worldland.foundation/**](https://gwangju.worldland.foundation/)&#x20;
