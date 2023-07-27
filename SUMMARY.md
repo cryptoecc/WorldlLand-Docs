@@ -23,10 +23,6 @@
 * [Block Explorer](user/block-explorer.md)
 * [Swap](user/swap.md)
 * [Bridge](user/bridge.md)
-* [Node Operater](user/node-operater/README.md)
-  * [Install Node](developer/how-to-start-a-worldland-node./install-and-run-geth.md)
-  * [Run Node](user/node-operater/run-node.md)
-  * [Miner](user/mining.md)
 
 ## Miner
 
