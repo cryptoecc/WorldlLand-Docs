@@ -1,4 +1,4 @@
-# How to connect wallet to WorldLand network
+# Wallet
 
 > _Metamask is a universal cryptocurrency wallet compatible with Ethereum-based chains. Metamask is an extension that works as a plugin for Chrome-based web browsers._
 
@@ -58,13 +58,13 @@ And then, Fill the Box like picture.
 
 Network name: Worldland
 
-New RPC URL: https://rpc.lvscan.io
+New RPC URL: [https://seoul.worldland.foundation/](https://seoul.worldland.foundation/)
 
 Chain ID: 103
 
 Currency Symbol: WLC
 
-Block-explorer URL : https://lvscan.io/
+Block-explorer URL :&#x20;
 
 
 
