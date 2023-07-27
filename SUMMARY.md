@@ -15,9 +15,8 @@
 
 ## User
 
-* [Setup](user/network.md)
-  * [Wallet](user/setup/wallet.md)
-  * [Network](user/setup/network.md)
+* [Wallet](user/wallet.md)
+* [Network](user/network.md)
 * [Get WLCs](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
 * [Transfer Tokens](user/transfer-tokens.md)
 * [Block Explorer](user/block-explorer.md)
