@@ -4,13 +4,11 @@ You can get a WLC for testing from the site below.
 
 * [https://gwangjufaucet.org](https://gwangjufaucet.org)
 
-
+<figure><img src="../.gitbook/assets/faucet.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-You can only receive 0.1 WLC once per day.
+Note: You can only receive **0.1 WLC** once per day.
 {% endhint %}
-
-<figure><img src="../.gitbook/assets/faucet.png" alt=""><figcaption></figcaption></figure>
 
 To connect to your wallet, simply click on the Connect button.
 
