@@ -1,6 +1,6 @@
 # Use Remix IDE
 
-### 1. [Connect wallet to Worldland network](../../user/how-to-connect-wallet-to-worldland-network.md)
+### 1. [Connect wallet to Worldland network](broken-reference)
 
 ### 1.1 ❗️ Fund your WorldLand
 

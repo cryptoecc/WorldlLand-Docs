@@ -19,11 +19,20 @@
   * [Wallet](user/setup/wallet.md)
   * [Network](user/setup/network.md)
 * [Get WLCs](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
+* [Transfer Tokens](user/transfer-tokens.md)
+* [Block Explorer](user/block-explorer.md)
+* [Swap](user/swap.md)
+* [Bridge](user/bridge.md)
 * [Node Operater](user/node-operater/README.md)
   * [Install Node](developer/how-to-start-a-worldland-node./install-and-run-geth.md)
   * [Run Node](user/node-operater/run-node.md)
   * [Miner](user/mining.md)
-* [Connect Wallet](user/how-to-connect-wallet-to-worldland-network.md)
+
+## Miner
+
+* [Install Node](miner/install-and-run-geth.md)
+* [Run Node](miner/run-node.md)
+* [Start Mining](miner/start-mining.md)
 
 ## Developer
 
