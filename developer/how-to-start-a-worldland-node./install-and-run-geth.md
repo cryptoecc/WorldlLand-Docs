@@ -4,8 +4,6 @@
 
 This page explains how to download and build the **ETH-ECC** source code and install the Worldland node.
 
-## Build from source code <a href="#build-from-source" id="build-from-source"></a>
-
 ## Linux and Mac
 
 ### 1. Environment
@@ -43,7 +41,7 @@ $ go version
 
 ### 2. Installation
 
-You can download ETH-ECC by cloning the ETH-ECC repository.
+You can download **ETH-ECC** by cloning the ETH-ECC repository.
 
 ```
 $ git clone https://github.com/cryptoecc/ETH-ECC

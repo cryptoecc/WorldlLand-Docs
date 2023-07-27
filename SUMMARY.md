@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Worldland Documentation](README.md)
+* [Worldland documentation](README.md)
 
 ## Learn
 
@@ -12,16 +12,16 @@
 * [WorldLand Tokenomics](learn/worldland-tokenomics.md)
 * [WorldLand Governance](learn/worldland-governance.md)
 * [Charter of WorldLand](learn/charter-of-worldland.md)
-* [Network](learn/network.md)
 
 ## User
 
+* [Network](user/network.md)
+* [Connect Wallet](user/how-to-connect-wallet-to-worldland-network.md)
+* [Get WLCs](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
 * [Node Operater](user/node-operater/README.md)
   * [Install Node](developer/how-to-start-a-worldland-node./install-and-run-geth.md)
   * [Run Node](user/node-operater/run-node.md)
   * [Miner](user/mining.md)
-* [Connect Wallet](user/how-to-connect-wallet-to-worldland-network.md)
-* [Get WLCs](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
 
 ## Developer
 
