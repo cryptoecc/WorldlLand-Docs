@@ -1,11 +1,6 @@
 # Block Explorer
 
-우리는 월드랜드  네트워크의 블록 탐색기로 BlockScout 프로젝트를 사용합니다.&#x20;
+We use the [**Block Scout project** ](https://github.com/blockscout/blockscout)as a block explorer for Seoul Mainnet and Gwangju Testnet.
 
-다음은 블록 탐색기 사용에 대한 몇 가지 팁입니다.&#x20;
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-블록 탐색기의 홈페이지에는 네트워크의 일반 통계와 최신 블록 및 트랜잭션이 표시됩니다.&#x20;
-
-홈페이지에서 블록 번호와 트랜잭션 해시를 클릭하면 블록 세부 정보 및 트랜잭션 세부 정보 페이지로 리디렉션됩니다.&#x20;
-
-오른쪽 상단의 검색창에서 주소, 트랜잭션 해시 또는 블록 번호로 검색하여 특정 정보를 찾을 수 있습니다.
