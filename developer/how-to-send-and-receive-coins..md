@@ -23,7 +23,7 @@ Just follow the picture.
 
 2. Write the receiving address in the red box
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Write the amount of WLC you want to send
 

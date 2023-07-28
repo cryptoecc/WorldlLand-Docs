@@ -109,7 +109,7 @@ Wait a few seconds for the command to complete. If you don't see any errors, you
 
 ### **2.** Installation
 
-런 다음 빌드 도구를 설치하기 위해 관리자 명령 프롬프트에서 다음 명령을 실행할 수 있습니다.
+Then you can run the following command from an administrator command prompt to install the build tools:
 
 ```
 C:\Windows\system32> choco install git

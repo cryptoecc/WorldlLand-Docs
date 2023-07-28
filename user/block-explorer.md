@@ -2,9 +2,9 @@
 
 We use the [**Block Scout project** ](https://github.com/blockscout/blockscout)as a block explorer for Seoul Mainnet and Gwangju Testnet.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-### **What can I do with Blockscout?**
+### **What can I do with** Block Explorer**?**
 
 * **Deep Search**: Find all the information you need on [Blocks](broken-reference), Transactions, Tags and more through the integrated search box.
 * **Interact with Contracts**: [Read and write to contracts](broken-reference) directly from the Blockscout UI.
@@ -25,6 +25,10 @@ We use the [**Block Scout project** ](https://github.com/blockscout/blockscout)a
 * **Full-featured API:** GraphQL provides the opportunity to test API calls directly from a web interface, and RPC methods are well documented.
 * **User customization**: Users can easily deploy on a network and customize the Bootstrap-based interface.
 * **Modular and extendible**: We're building next generation modularity into Blockscout with Rust-designed microservices
+
+{% hint style="info" %}
+See [**BlockScout's documentation**](https://docs.blockscout.com/for-users/overviews) for details on how to use it.
+{% endhint %}
 
 
 
