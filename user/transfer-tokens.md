@@ -8,7 +8,7 @@
 
 2. **Click the send button in the middle and type the address you want to send to into the text box.**
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 3. **Enter the amount of money to transfer.**
 
