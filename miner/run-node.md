@@ -61,3 +61,7 @@ To exit, press ctrl-d or type exit
 You can check ChainID is 103.
 
 You are now connected to the Seoul main network!
+
+{% hint style="info" %}
+Wait until the node is running and **fully synchronized** with the network. This process takes between **30 minutes** and **1 hour**.
+{% endhint %}
