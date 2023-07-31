@@ -1,6 +1,8 @@
 # Wallet
 
+{% hint style="info" %}
 We explain the wallet guide using the Metamask wallet. If you already have a [**Metamask wallet**](https://metamask.io/) installed or are using another EVM-compatible wallet, please proceed to the [**next page**](network.md#other-wallets)**.**
+{% endhint %}
 
 > _Metamask is a universal cryptocurrency wallet compatible with Ethereum-based chains. Metamask is an extension that works as a plugin for Chrome-based web browsers._
 
