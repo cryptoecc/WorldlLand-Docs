@@ -2,7 +2,7 @@
 
 * [Worldland documentation](README.md)
 
-## Learn
+## 📝 Learn
 
 * [Introduction](learn/introduction.md)
 * [What is WorldLand?](learn/what-is-worldland.md)
@@ -13,7 +13,7 @@
 * [WorldLand Governance](learn/worldland-governance.md)
 * [Charter of WorldLand](learn/charter-of-worldland.md)
 
-## User
+## 💳 User
 
 * [Wallet](user/wallet.md)
 * [Network](user/network.md)
@@ -23,14 +23,14 @@
 * [Swap](user/swap.md)
 * [Bridge](user/bridge.md)
 
-## Miner
+## ⛏ Miner
 
 * [Install Node](miner/install-and-run-geth.md)
 * [Run Node](miner/run-node.md)
 * [Start Mining](miner/start-mining.md)
 * [Check Balance](miner/check-balance.md)
 
-## Developer
+## 💻 Developer
 
 * [ETH-ECC](developer/eth-ecc.md)
 * [Smart Contract](developer/how-to-send-and-receive-coins..md)
