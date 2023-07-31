@@ -1,6 +1,20 @@
 # Run Node
 
-### 2. Running ETH-ECC and connecting to Seoul mainnet
+### Running ETH-ECC and connecting to Worldland
+
+
+
+명령어 옵션
+
+
+
+If you're running a geth node for the first time, or if you've run a different version of Ethereum or a chain with a different network number, run the following to initialize your locally stored block data
+
+```
+$ rm -rf ~/.ethereum
+```
+
+
 
 First, you'll need to make a directory to store block information. For example, `ETHECC_TEST` directory. Then move to `/ETH-ECC/build/bin`, and follow this.
 

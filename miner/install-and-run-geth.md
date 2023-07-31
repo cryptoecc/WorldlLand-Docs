@@ -63,12 +63,6 @@ $ make all
 
 
 
-If you're running a geth node for the first time, or if you've run a different version of Ethereum or a chain with a different network number, run the following to initialize your locally stored block data
-
-```
-$ rm -rf ~/.ethereum
-```
-
 ## Window
 
 ### 1. Install Chocolatey
