@@ -28,6 +28,7 @@
 * [Install Node](miner/install-and-run-geth.md)
 * [Run Node](miner/run-node.md)
 * [Start Mining](miner/start-mining.md)
+* [Check Balance](miner/check-balance.md)
 
 ## Developer
 
