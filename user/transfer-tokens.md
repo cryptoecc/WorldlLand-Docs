@@ -2,7 +2,13 @@
 
 
 
-1. **Open your wallet and switch to Seoul Mainnet or Gwangju Network.**
+### You can transfer WLC on the Worldland network using your wallet.
+
+1. Open your wallet and switch to **Seoul Mainnet** or **Gwangju Testnet**.
+
+{% hint style="info" %}
+See the[ **Network section**](network.md) for information on connecting to Worldland.
+{% endhint %}
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
