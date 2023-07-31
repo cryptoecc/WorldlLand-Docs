@@ -111,12 +111,14 @@ After mining, check the amount of mined ethers:
 45000000000000000000
 ```
 
-Exactly wei, not ether that `10^18 wei` is equal to `1 ether`. wei is small unit of ether like satoshi of bitcoin. In order to show the balance in ether use the below command.
+Exactly wei, not ether that `10^18 wei` is equal to `1 WLC`. wei is small unit of ether like satoshi of bitcoin. In order to show the balance in ether use the below command.
 
 ```
-> web3.fromWei(eth.getBalance("0xb8c941069cc2b71b1a00db15e6e00a200d387039"), "ether")
+> web3.fromWei(eth.getBalance("0xb8c941069cc2b71b1a00db15e6e00a200d387039"), "wlc")
 45
 ```
+
+####
 
 #### 3.2 Making a transaction for test in private network
 
