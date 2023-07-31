@@ -4,10 +4,6 @@
 
 
 
-명령어 옵션
-
-
-
 If you're running a geth node for the first time, or if you've run a different version of Ethereum or a chain with a different network number, run the following to initialize your locally stored block data
 
 ```
@@ -22,6 +18,12 @@ First, you'll need to make a directory to store block information. For example, 
 
 ```
 $ ./worldland --datadir "USER_DATA_DIR" console
+```
+
+Or if you want to connect to **Gwangju testnet**, add `-gwangju` option
+
+```
+$ ./worldland --datadir "USER_DATA_DIR" -gwangju console
 ```
 
 
