@@ -1,6 +1,6 @@
 # Check Balance
 
-### **Check mined block in exlporer**
+### **Check mined block in explorer**
 
 {% hint style="info" %}
 See the [**Block Explorer**](../user/block-explorer.md) tab for more information about explorers.
@@ -30,7 +30,7 @@ Please refer to the [**Wallet**](../user/wallet.md) section for information rega
 
 <figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/importkey_1.png" alt=""><figcaption></figcaption></figure>
 
-3. Choose **JSON file** from **select type** of import account and add JSON file
+3. Choose **JSON file** from the **select type** of import account and add JSON file
 
 Enter the **password** you used to create your account on the ETH-ECC client.
 
