@@ -13,7 +13,7 @@
 * [WorldLand Governance](learn/worldland-governance.md)
 * [Charter of WorldLand](learn/charter-of-worldland.md)
 
-## 🧑💻 🧑💻 User
+## 🧑💻 User
 
 * [Wallet](user/wallet.md)
 * [Network](user/network.md)
