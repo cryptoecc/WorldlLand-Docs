@@ -8,15 +8,13 @@ See the [**Block Explorer**](../user/block-explorer.md) tab for more information
 
 You can check the contents of the **mined block** in the **block explorer**.
 
+Search the **mined block number** in the explorer.
 
+<figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/scan_1.png" alt=""><figcaption></figcaption></figure>
 
-Search the mined block number name in the explorer.
+You can also search by **wallet address**.
 
-
-
-You can also search by wallet address.
-
-
+<figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/scan_2.png" alt=""><figcaption></figcaption></figure>
 
 ### Import ETH-ECC wallet account to Metamask
 
