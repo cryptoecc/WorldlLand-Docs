@@ -32,7 +32,9 @@
 
 ## 💻 Developer
 
-* [ETH-ECC](developer/eth-ecc.md)
+* [ETH-ECC](developer/eth-ecc/README.md)
+  * [Security](developer/eth-ecc/security.md)
+  * [Command-line options](developer/eth-ecc/command-line-options.md)
 * [Smart Contract](developer/how-to-send-and-receive-coins..md)
 * [How to Deploy Smart Contract](developer/how-to-deploy-smart-contract/README.md)
   * [Use Remix IDE](developer/how-to-deploy-smart-contract/deploy-a-token-contract..md)
