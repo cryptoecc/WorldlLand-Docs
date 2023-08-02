@@ -18,7 +18,7 @@ any name is okay
 
 <div align="center" data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/remix_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_1.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -78,11 +78,11 @@ Once you've changed the version, press the **Compile button** to run the **compi
 
 <div align="center">
 
-<figure><img src="../../.gitbook/assets/remix_compile_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_compile_1.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/remix_compile_3.png" alt="" width="226"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_compile_3.png" alt="" width="226"><figcaption></figcaption></figure>
 
 </div>
 
@@ -96,11 +96,11 @@ The connected network number and account will then appear.
 
 <div>
 
-<figure><img src="../../.gitbook/assets/remix_Injected_Web3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_Injected_Web3.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/remix_Injected_Web3_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_Injected_Web3_3.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -108,11 +108,11 @@ If there are parameters of the contract constructor, write them by clicking the 
 
 <div>
 
-<figure><img src="../../.gitbook/assets/remix_parameter_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_parameter_1.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/remix_parameter_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_parameter_2.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -120,7 +120,7 @@ Click the TRANSACT button to deploy the contract.&#x20;
 
 Finally, you can deploy contract to ETH-ECC
 
-<figure><img src="../../.gitbook/assets/remix_result.png" alt="" width="266"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_result.png" alt="" width="266"><figcaption></figcaption></figure>
 
 ### 4. Execute function of contract
 
@@ -128,11 +128,11 @@ You can excute function of contract in Deployed Contracts
 
 <div>
 
-<figure><img src="../../.gitbook/assets/remix_excute_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_excute_1.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/remix_excute_2.png" alt="" width="209"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_excute_2.png" alt="" width="209"><figcaption></figcaption></figure>
 
 </div>
 
@@ -142,21 +142,21 @@ You can check your tokens in metamsk using "Import tokens"
 
 <div>
 
-<figure><img src="../../.gitbook/assets/remix_import_1.png" alt="" width="269"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_import_1.png" alt="" width="269"><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/remix_import_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_import_2.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 <div>
 
-<figure><img src="../../.gitbook/assets/remix_import_3.png" alt="" width="263"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_import_3.png" alt="" width="263"><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/remix_import_4 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_import_4 (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -170,11 +170,11 @@ If the above TEST721.sol contract is deployed, the following functions appear.
 
 <div>
 
-<figure><img src="../../.gitbook/assets/remix_ipfs_1.png" alt="" width="214"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_ipfs_1.png" alt="" width="214"><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/remix_ipfs_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_ipfs_2.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -188,7 +188,7 @@ Upload the NFS JSON file to IPFS using pinata.
 
 {% embed url="https://www.pinata.cloud/" %}
 
-<figure><img src="../../.gitbook/assets/remix_pinata_1 (1).png" alt="" width="349"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_pinata_1 (1).png" alt="" width="349"><figcaption></figcaption></figure>
 
 2\. upload image of nft and make json The format of the json file is as follows.
 
@@ -204,7 +204,7 @@ Upload the NFS JSON file to IPFS using pinata.
 
 If you want to include an image, the image must also be stored in ipfs. So, I upload the image first.
 
-<figure><img src="../../.gitbook/assets/remix_pinata_2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_pinata_2 (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -212,7 +212,7 @@ You can see the file is saved.&#x20;
 
 Click the eye icon and copy the url of the image.&#x20;
 
-<figure><img src="../../.gitbook/assets/remix_pinata_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_pinata_3.png" alt=""><figcaption></figcaption></figure>
 
 image ipfs example: [https://gateway.pinata.cloud/ipfs/QmWUR3PYmorqqQ2mGwQAr3ujUNnpANS2xyKJYBxegwFeS8](https://gateway.pinata.cloud/ipfs/QmWUR3PYmorqqQ2mGwQAr3ujUNnpANS2xyKJYBxegwFeS8)
 
@@ -228,27 +228,27 @@ json ipfs example:
 
 [https://gateway.pinata.cloud/ipfs/QmcpjQMRyBQ8qBZcVidyeD67EvxLSnmR81Fz15MtFrQUwW](https://gateway.pinata.cloud/ipfs/QmcpjQMRyBQ8qBZcVidyeD67EvxLSnmR81Fz15MtFrQUwW)
 
-<figure><img src="../../.gitbook/assets/remix_pinata_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_pinata_4.png" alt=""><figcaption></figcaption></figure>
 
 Finally, copy the address of your wallet, put your wallet address in the player, and the json url in tokenURL and send the transaction.
 
 <div>
 
-<figure><img src="../../.gitbook/assets/remix_pinata_result_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_pinata_result_1.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/remix_pinata_result_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_pinata_result_2.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 <div>
 
-<figure><img src="../../.gitbook/assets/remix_pinata_result_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_pinata_result_3.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/remix_pinata_result_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/remix_pinata_result_4.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
