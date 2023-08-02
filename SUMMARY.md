@@ -29,7 +29,6 @@
 * [Run Node](miner/run-node.md)
 * [Start Mining](miner/start-mining.md)
 * [Check Balance](miner/check-balance.md)
-* [Connect to Metamask](miner/connect-to-metamask.md)
 
 ## 💻 Node Developer
 
