@@ -33,7 +33,6 @@
 ## 💻 Node Developer
 
 * [ETH-ECC](node-developer/eth-ecc.md)
-* [Testing Worldland](node-developer/testing-eth-ecc.md)
 * [Sync-modes](node-developer/sync-modes.md)
 * [Account management](node-developer/account-management.md)
 * [Security](node-developer/security.md)
