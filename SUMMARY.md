@@ -52,6 +52,7 @@
 
 ## 📱 Dapp Developer
 
+* [Development Environment](dapp-developer/development-environment.md)
 * [Ethereum and Worldland](dapp-developer/ethereum-and-worldland.md)
 * [Page 1](dapp-developer/page-1.md)
 * [How to Deploy Smart Contract](dapp-developer/how-to-deploy-smart-contract.md)
