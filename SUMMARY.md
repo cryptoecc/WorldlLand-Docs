@@ -44,13 +44,10 @@
     * [Admin](node-developer/interact-with-eth-ecc/apis/admin.md)
     * [Debug](node-developer/interact-with-eth-ecc/apis/debug.md)
     * [Eth](node-developer/interact-with-eth-ecc/apis/eth.md)
-    * [Ethash](node-developer/interact-with-eth-ecc/apis/ethash.md)
     * [Miner](node-developer/interact-with-eth-ecc/apis/miner.md)
     * [Net](node-developer/interact-with-eth-ecc/apis/net.md)
     * [Personal](node-developer/interact-with-eth-ecc/apis/personal.md)
-    * [Trace](node-developer/interact-with-eth-ecc/apis/trace.md)
     * [Txpool](node-developer/interact-with-eth-ecc/apis/txpool.md)
-    * [Web3](node-developer/interact-with-eth-ecc/apis/web3.md)
 
 ## 📱 dApp Developer
 
@@ -66,6 +63,7 @@
 * [ERC20 Token](dapp-developer/erc20-token.md)
 * [NFT](dapp-developer/nft.md)
 * [Oracles](dapp-developer/oracles.md)
+* [Web3 api](dapp-developer/apis.md)
 
 ## ❓ FAQ
 

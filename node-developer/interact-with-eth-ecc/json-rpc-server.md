@@ -1,117 +1,113 @@
 # Server
 
-Interacting with Geth requires sending requests to specific JSON-RPC API methods. Geth supports all standard [JSON-RPC API](https://github.com/ethereum/execution-apis) endpoints. The RPC requests must be sent to the node and the response returned to the client using some transport protocol. This page outlines the available transport protocols in Geth, providing the information users require to choose a transport protocol for a specific user scenario.
+Geth와 상호 작용하려면 특정 JSON-RPC API 메서드에 요청을 보내야 합니다. Geth는 모든 표준 [JSON-RPC API](https://github.com/ethereum/execution-apis) 끝점을 지원합니다. RPC 요청은 노드로 전송되어야 하며 응답은 일부 전송 프로토콜을 사용하여 클라이언트로 반환되어야 합니다. 이 페이지에서는 Geth에서 사용 가능한 전송 프로토콜에 대해 설명하고 사용자가 특정 사용자 시나리오에 대한 전송 프로토콜을 선택하는 데 필요한 정보를 제공합니다.
 
-### Introduction <a href="#introduction" id="introduction"></a>
+### 소개 <a href="#introduction" id="introduction"></a>
 
-JSON-RPC is provided on multiple transports. Geth supports JSON-RPC over HTTP, WebSocket and Unix Domain Sockets. Transports must be enabled through command-line flags.
+JSON-RPC는 여러 전송에서 제공됩니다. Geth는 HTTP, WebSocket 및 Unix 도메인 소켓을 통해 JSON-RPC를 지원합니다. 명령줄 플래그를 통해 전송을 활성화해야 합니다.
 
-Ethereum JSON-RPC APIs use a name-space system. RPC methods are grouped into several categories depending on their purpose. All method names are composed of the namespace, an underscore, and the actual method name within the namespace. For example, the eth\_call method resides in the eth namespace.
+Ethereum JSON-RPC API는 이름 공간 시스템을 사용합니다. RPC 방법은 목적에 따라 여러 범주로 그룹화됩니다. 모든 메서드 이름은 네임스페이스, 밑줄 및 네임스페이스 내의 실제 메서드 이름으로 구성됩니다. 예를 들어 eth\_call 메서드는 eth 네임스페이스 에 있습니다 .
 
-Access to RPC methods can be enabled on a per-namespace basis. Find documentation for individual namespaces in the sidebar.
+RPC 메서드에 대한 액세스는 네임스페이스별로 활성화할 수 있습니다. 사이드바에서 개별 네임스페이스에 대한 문서를 찾으십시오.
 
-### Transports <a href="#transports" id="transports"></a>
+### 운송 <a href="#transports" id="transports"></a>
 
-There are three transport protocols available in Geth: IPC, HTTP and Websockets.
+Geth에는 IPC, HTTP 및 Websocket의 세 가지 전송 프로토콜이 있습니다.
 
-#### HTTP Server <a href="#http-server" id="http-server"></a>
+#### HTTP 서버 <a href="#http-server" id="http-server"></a>
 
-[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) is a unidirectional transport protocol that connects a client and server. The client sends a request to the server, and the server returns a response back to the client. An HTTP connection is closed after the response for a given request is sent.
+[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) 는 클라이언트와 서버를 연결하는 단방향 전송 프로토콜입니다. 클라이언트는 서버에 요청을 보내고 서버는 클라이언트에 응답을 반환합니다. 주어진 요청에 대한 응답이 전송된 후 HTTP 연결이 닫힙니다.
 
-HTTP is supported in every browser as well as almost all programming toolchains. Due to its ubiquity it has become the most widely used transport for interacting with Geth. To start a HTTP server in Geth, include the --http flag:
+HTTP는 모든 브라우저와 거의 모든 프로그래밍 툴체인에서 지원됩니다. 편재성으로 인해 Geth와 상호 작용하는 데 가장 널리 사용되는 전송 수단이 되었습니다. Geth에서 HTTP 서버를 시작하려면 --http 플래그를 포함합니다.
 
 ```sh
 geth --http
 ```
 
-If no other commands are provided, Geth falls back to its default behaviour of accepting connections from the local loopback interface (127.0.0.1). The default listening port is 8545. The ip address and listening port can be customized using the --http.addr and --http.port flags:
+다른 명령이 제공되지 않으면 Geth는 로컬 루프백 인터페이스(127.0.0.1)에서 연결을 수락하는 기본 동작으로 돌아갑니다. 기본 수신 포트는 8545입니다. IP 주소 및 수신 포트는 --http.addr 및 --http.port 플래그를 사용하여 사용자 정의할 수 있습니다.
 
 ```sh
 geth --http --http.port 3334
 ```
 
-Not all of the JSON-RPC method namespaces are enabled for HTTP requests by default. Instead, they have to be whitelisted explicitly when Geth is started. Calling non-whitelisted RPC namespaces returns an RPC error with code -32602.
+모든 JSON-RPC 메서드 네임스페이스가 기본적으로 HTTP 요청에 대해 활성화되는 것은 아닙니다. 대신 Geth가 시작될 때 명시적으로 화이트리스트에 추가되어야 합니다. 화이트리스트에 없는 RPC 네임스페이스를 호출하면 -32602 코드와 함께 RPC 오류가 반환됩니다 .
 
-The default whitelist allows access to the eth, net and web3 namespaces. To enable access to other APIs like debugging (debug), they must be configured using the --http.api flag. Enabling these APIs over HTTP is **not recommended** because access to these methods increases the attack surface.
+기본 화이트리스트는 eth , net 및 web3 네임스페이스에 대한 액세스를 허용합니다. 디버깅( debug ) 과 같은 다른 API에 대한 액세스를 활성화하려면 --http.api 플래그를 사용하여 구성해야 합니다 . HTTP를 통해 이러한 API를 활성화하는 것은 이러한 방법에 대한 액세스가 공격 표면을 증가시키므로 **권장되지 않습니다 .**
 
 ```sh
 geth --http --http.api eth,net,web3
 ```
 
-Since the HTTP server is reachable from any local application, additional protection is built into the server to prevent misuse of the API from web pages. To enable access to the API from a web page (for example to use the online IDE, [Remix](https://remix.ethereum.org/)), the server needs to be configured to accept Cross-Origin requests. This is achieved using the --http.corsdomain flag.
+HTTP 서버는 모든 로컬 애플리케이션에서 연결할 수 있으므로 웹 페이지에서 API를 오용하지 못하도록 서버에 추가 보호 기능이 내장되어 있습니다. [웹 페이지에서 API에 액세스하려면(예: 온라인 IDE, Remix](https://remix.ethereum.org/) 사용 ) Cross-Origin 요청을 수락하도록 서버를 구성해야 합니다. 이는 --http.corsdomain 플래그를 사용하여 수행됩니다.
 
 ```sh
 geth --http --http.corsdomain https://remix.ethereum.org
 ```
 
-The --http.corsdomain command also accepts wildcards that enable access to the RPC from any origin:
+\--http.corsdomain 명령은 모든 출처에서 RPC에 액세스할 수 있도록 하는 와일드카드도 허용합니다 .
 
 ```sh
 --http.corsdomain '*'
 ```
 
-#### WebSocket Server <a href="#websockets-server" id="websockets-server"></a>
+#### 웹소켓 서버 <a href="#websockets-server" id="websockets-server"></a>
 
-Websocket is a bidirectional transport protocol. A Websocket connection is maintained by client and server until it is explicitly terminated by one. Most modern browsers support Websocket which means it has good tooling.
+Websocket은 양방향 전송 프로토콜입니다. Websocket 연결은 명시적으로 종료될 때까지 클라이언트와 서버에서 유지됩니다. 대부분의 최신 브라우저는 Websocket을 지원하므로 도구가 훌륭합니다.
 
-Because Websocket is bidirectional, servers can push events to clients. That makes Websocket a good choice for use-cases involving [event subscription](https://geth.ethereum.org/docs/interacting-with-geth/rpc/pubsub). Another benefit of Websocket is that after the handshake procedure, the overhead of individual messages is low, making it good for sending high number of requests.
+Websocket은 양방향이기 때문에 서버는 클라이언트에 이벤트를 푸시할 수 있습니다. [따라서 Websocket은 이벤트 구독과](https://geth.ethereum.org/docs/interacting-with-geth/rpc/pubsub) 관련된 사용 사례에 적합한 선택입니다 . Websocket의 또 다른 이점은 핸드셰이크 절차 후 개별 메시지의 오버헤드가 낮아 많은 수의 요청을 보내는 데 적합하다는 것입니다.
 
-Configuration of the WebSocket endpoint in Geth follows the same pattern as the HTTP transport. WebSocket access can be enabled using the --ws flag. If no additional information is provided, Geth falls back to its default behaviour which is to establish the Websocket on port 8546. The --ws.addr, --ws.port and --ws.api flags can be used to customize settings for the WebSocket server. For example, to start Geth with a Websocket connection for RPC using the custom port 3334 and whitelisting the eth, net and web3 namespaces:
+Geth의 WebSocket 끝점 구성은 HTTP 전송과 동일한 패턴을 따릅니다. --ws 플래그를 사용하여 WebSocket 액세스를 활성화할 수 있습니다 . 추가 정보가 제공되지 않으면 Geth는 포트 8546에서 Websocket을 설정하는 기본 동작으로 돌아갑니다. --ws.addr , --ws.port 및 --ws.api 플래그 를 사용하여 WebSocket 서버. 예를 들어 사용자 정의 포트 3334를 사용하고 eth , net 및 web3 네임스페이스를 화이트리스트에 추가하여 RPC용 Websocket 연결로 Geth를 시작하려면 다음을 수행하십시오.
 
 ```sh
 geth --ws --ws.port 3334 --ws.api eth,net,web3
 ```
 
-Cross-Origin request protection also applies to the WebSocket server. The --ws.origins flag can be used to allow access to the server from web pages:
+Cross-Origin 요청 보호는 WebSocket 서버에도 적용됩니다. --ws.origins 플래그를 사용하여 웹 페이지에서 서버에 액세스할 수 있습니다 .
 
 ```sh
 geth --ws --ws.origins http://myapp.example.com
 ```
 
-As with --http.corsdomain, using the wildcard --ws.origins '\*' allows access from any origin.
+\--http.corsdomain 과 마찬가지로 와일드카드 --ws.origins '\*'를 사용하면 모든 출처에서 액세스할 수 있습니다.
 
-**Note**
+**메모**
 
-By default, **account unlocking is forbidden when HTTP or Websocket access is enabled** (i.e. by passing --http or ws flag). This is because an attacker that manages to access the node via the externally-exposed HTTP/WS port can then control the unlocked account. It is possible to force account unlock by including the --allow-insecure-unlock flag but this is unsafe and **not recommended** except for expert users that completely understand how it can be used safely. This is not a hypothetical risk: **there are bots that continually scan for http-enabled Ethereum nodes to attack**
+기본적으로 HTTP 또는 Websocket 액세스가 활성화되면(예: --http 또는 ws 플래그 전달 ) **계정 잠금 해제가 금지됩니다 .** 외부에 노출된 HTTP/WS 포트를 통해 노드에 접근하는 공격자가 잠금 해제된 계정을 제어할 수 있기 때문입니다. --allow-insecure-unlock 플래그를 포함하여 계정 잠금을 강제로 해제할 수 있지만 이는 안전하지 않으며 안전하게 사용하는 방법을 완전히 이해하는 전문가를 제외하고는 **권장되지 않습니다 .** 이것은 가상의 위험이 아닙니다. **공격할 http 지원 Ethereum 노드를 지속적으로 스캔하는 봇이 있습니다.**
 
-#### IPC Server <a href="#ipc-server" id="ipc-server"></a>
+#### IPC 서버 <a href="#ipc-server" id="ipc-server"></a>
 
-IPC is normally available for use in local environments where the node and the console exist on the same machine. Geth creates a pipe in the computers local file system (at ipcpath) that configures a connection between node and console. The geth.ipc file can also be used by other processes on the same machine to interact with Geth.
+IPC는 일반적으로 노드와 콘솔이 동일한 시스템에 존재하는 로컬 환경에서 사용할 수 있습니다. Geth는 노드와 콘솔 간의 연결을 구성하는 컴퓨터 로컬 파일 시스템( ipcpath )에 파이프를 생성합니다. geth.ipc 파일은 동일한 시스템 의 다른 프로세스에서 Geth와 상호 작용하는 데 사용할 수도 있습니다.
 
-On UNIX-based systems (Linux, OSX) the IPC is a UNIX domain socket. On Windows IPC is provided using named pipes. The IPC server is enabled by default and has access to all JSON-RPC namespaces.
+UNIX 기반 시스템(Linux, OSX)에서 IPC는 UNIX 도메인 소켓입니다. Windows에서 IPC는 명명된 파이프를 사용하여 제공됩니다. IPC 서버는 기본적으로 활성화되어 있으며 모든 JSON-RPC 네임스페이스에 액세스할 수 있습니다.
 
-The listening socket is placed into the data directory by default. On Linux and macOS, the default location of the geth socket is
+청취 소켓은 기본적으로 데이터 디렉토리에 배치됩니다. Linux 및 macOS에서 geth 소켓의 기본 위치는 다음과 같습니다.
 
 ```sh
 ~/.ethereum/geth.ipc
 ```
 
-On Windows, IPC is provided via named pipes. The default location of the geth pipe is:
+Windows에서 IPC는 명명된 파이프를 통해 제공됩니다. geth 파이프의 기본 위치는 다음과 같습니다.
 
 ```sh
 \\.\pipe\geth.ipc
 ```
 
-The location of the socket can be customized using the --ipcpath flag. IPC can be disabled using the --ipcdisable flag.
+소켓의 위치는 --ipcpath 플래그를 사용하여 사용자 정의할 수 있습니다. --ipcdisable 플래그를 사용하여 IPC를 비활성화할 수 있습니다 .
 
-### Choosing a transport protocol <a href="#choosing-transport-protocol" id="choosing-transport-protocol"></a>
+### 전송 프로토콜 선택 <a href="#choosing-transport-protocol" id="choosing-transport-protocol"></a>
 
-The following table summarizes the relative strengths and weaknesses of each transport protocol so that users can make informed decisions about which to use.
+다음 표에는 사용자가 사용할 프로토콜에 대해 정보에 입각한 결정을 내릴 수 있도록 각 전송 프로토콜의 상대적인 강점과 약점이 요약되어 있습니다.
 
-|                               | HTTP  | WS    | IPC   |
-| ----------------------------- | ----- | ----- | ----- |
-| Event subscription            | N     | **Y** | **Y** |
-| Remote connection             | **Y** | **Y** | N     |
-| Per-message metadata overhead | high  | low   | low   |
+|                 | HTTP    | WS      | IPC     |
+| --------------- | ------- | ------- | ------- |
+| 이벤트 구독          | N       | **그리고** | **그리고** |
+| 원격 연결           | **그리고** | **그리고** | N       |
+| 메시지당 메타데이터 오버헤드 | 높은      | 낮은      | 낮은      |
 
-As a general rule IPC is most secure because it is limited to interactions on the local machine and cannot be exposed to external traffic. It can also be used to subscribe to events. HTTP is a familiar and idempotent transport that closes connections between requests and can therefore have lower overall overheads if the number of requests is fairly low. Websockets provides a continuous open channel that can enable event subscriptions and streaming and handle large volumes of requests with smaller per-message overheads.
+일반적으로 IPC는 로컬 시스템의 상호 작용으로 제한되고 외부 트래픽에 노출될 수 없기 때문에 가장 안전합니다. 이벤트를 구독하는 데에도 사용할 수 있습니다. HTTP는 요청 간의 연결을 닫는 친숙하고 멱등적인 전송이므로 요청 수가 상당히 적은 경우 전체 오버헤드가 낮아질 수 있습니다. Websockets는 이벤트 구독 및 스트리밍을 활성화하고 메시지당 더 적은 오버헤드로 대량의 요청을 처리할 수 있는 지속적인 개방 채널을 제공합니다.
 
-### Engine-API <a href="#engine-api" id="engine-api"></a>
+### &#x20;<a href="#engine-api" id="engine-api"></a>
 
-The Engine-API is a set of RPC methods that enable communication between Geth and the [consensus client](https://geth.ethereum.org/docs/getting-started/consensus-clients). These are not designed to be exposed to the user - instead they are called automatically by the clients when they need to exchange information. The Engine API is enabled by default - the user is not required to pass any instruction to Geth to enable these methods.
+### 요약 <a href="#summary" id="summary"></a>
 
-Read more in the [Engine API spec](https://github.com/ethereum/execution-apis/blob/main/src/engine/specification.md).
-
-### Summary <a href="#summary" id="summary"></a>
-
-RPC requests to a Geth node can be made using three different transport protocols. The protocols are enabled at startup using their respective flags. The right choice of transport protocol depends on the specific use case.
+Geth 노드에 대한 RPC 요청은 세 가지 다른 전송 프로토콜을 사용하여 만들 수 있습니다. 프로토콜은 해당 플래그를 사용하여 시작할 때 활성화됩니다. 전송 프로토콜의 올바른 선택은 특정 사용 사례에 따라 다릅니다.
