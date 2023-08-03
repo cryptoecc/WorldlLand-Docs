@@ -16,7 +16,7 @@ When **ETH-ECC** runs, the computer acts as a Worldland node and connects to the
 
 The **ETH-ECC** node has the following roles and functions.
 
-* Consensus is reached by running the **ECCPoW** consensus algorithm.&#x20;
+* Consensus is reached by running the [**ECCPoW**](https://doi.org/10.48550/arXiv.2006.12306) consensus algorithm.&#x20;
 * Create and propagate blocks.&#x20;
 * Validates the propagated block and synchronizes the "**state"** of WorldLand.&#x20;
 * Validate and process transactions.&#x20;
