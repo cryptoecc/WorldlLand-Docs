@@ -28,7 +28,7 @@ WARN [08-06|21:33:36.241] Please remember your password!
 {% endhint %}
 
 {% hint style="info" %}
-You can improve account security by utilizing Clef, an external account management tool. See the [Security ](../node-developer/security.md)topic for details.
+You can improve account security by utilizing Clef, an external account management tool. See the [Security ](../../node-developer/i/security.md)topic for details.
 {% endhint %}
 
 You can check the list of currently added wallet addresses via the **`eth.accounts`** command.

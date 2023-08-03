@@ -1,53 +1,59 @@
 # Table of contents
 
+## 🌐 WorldLand
+
 * [WorldLand Documentation](README.md)
 
 ## 📝 Learn
 
-* [Introduction](learn/introduction.md)
-* [What is WorldLand?](learn/what-is-worldland.md)
-* [WorldLand Technology](learn/worldland-technology.md)
-* [Design Principles](learn/design-principles.md)
-* [How WorldLand Works](learn/how-worldland-works.md)
-* [WorldLand Tokenomics](learn/worldland-tokenomics.md)
-* [WorldLand Governance](learn/worldland-governance.md)
-* [Charter of WorldLand](learn/charter-of-worldland.md)
+* [ⓘ](learn/i/README.md)
+  * [Introduction](learn/i/introduction.md)
+  * [What is WorldLand?](learn/i/what-is-worldland.md)
+  * [WorldLand Technology](learn/i/worldland-technology.md)
+  * [Design Principles](learn/i/design-principles.md)
+  * [How WorldLand Works](learn/i/how-worldland-works.md)
+  * [WorldLand Tokenomics](learn/i/worldland-tokenomics.md)
+  * [WorldLand Governance](learn/i/worldland-governance.md)
+  * [Charter of WorldLand](learn/i/charter-of-worldland.md)
 
 ## 🧑💻 User
 
-* [Wallet](user/wallet.md)
-* [Network](user/network.md)
-* [Get WLCs](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
-* [Transfer Tokens](user/transfer-tokens.md)
-* [Block Explorer](user/block-explorer.md)
+* [ⓘ](user/i/README.md)
+  * [Wallet](user/i/wallet.md)
+  * [Network](user/i/network.md)
+  * [Get WLCs](user/i/how-to-obtain-your-wlcs-the-worldland-coins.md)
+  * [Transfer Tokens](user/i/transfer-tokens.md)
+  * [Block Explorer](user/i/block-explorer.md)
 
 ## ⛏ Miner
 
-* [Install Node](miner/install-node.md)
-* [Run Node](miner/run-node.md)
-* [Start Mining](miner/start-mining.md)
-* [Check Balance](miner/check-balance.md)
+* [ⓘ](miner/i/README.md)
+  * [Install Node](miner/i/install-node.md)
+  * [Run Node](miner/i/run-node.md)
+  * [Start Mining](miner/i/start-mining.md)
+  * [Check Balance](miner/i/check-balance.md)
 
 ## 💻 Node Developer
 
-* [ETH-ECC](node-developer/eth-ecc.md)
-* [Building and Testing](node-developer/building-and-testing.md)
-* [Command-line options](node-developer/command-line-options/README.md)
-  * [Node](node-developer/command-line-options/node.md)
-  * [Peer](node-developer/command-line-options/peer.md)
-  * [Mining](node-developer/command-line-options/mining.md)
-* [Security](node-developer/security.md)
-* [JSON-RPC](node-developer/interact-with-eth-ecc/README.md)
-  * [Console](node-developer/json-rpc/console.md)
-  * [Server](node-developer/interact-with-eth-ecc/json-rpc-server.md)
-  * [APIs](node-developer/interact-with-eth-ecc/apis/README.md)
-    * [Admin](node-developer/interact-with-eth-ecc/apis/admin.md)
-    * [Debug](node-developer/interact-with-eth-ecc/apis/debug.md)
-    * [Eth](node-developer/interact-with-eth-ecc/apis/eth.md)
-    * [Miner](node-developer/interact-with-eth-ecc/apis/miner.md)
-    * [Net](node-developer/interact-with-eth-ecc/apis/net.md)
-    * [Personal](node-developer/interact-with-eth-ecc/apis/personal.md)
-    * [Txpool](node-developer/interact-with-eth-ecc/apis/txpool.md)
+* [ⓘ](node-developer/i/README.md)
+  * [ETH-ECC](node-developer/i/eth-ecc.md)
+  * [Building and Testing](node-developer/i/building-and-testing.md)
+  * [Command-line options](node-developer/i/command-line-options/README.md)
+    * [Node](node-developer/i/command-line-options/node.md)
+    * [Peer](node-developer/i/command-line-options/peer.md)
+    * [Mining](node-developer/i/command-line-options/mining.md)
+  * [Security](node-developer/i/security.md)
+  * [JSON-RPC](node-developer/i/json-rpc/README.md)
+    * [Console](node-developer/i/json-rpc/console.md)
+    * [Server](node-developer/i/json-rpc/server.md)
+    * [APIs](node-developer/i/json-rpc/apis/README.md)
+      * [Admin](node-developer/i/json-rpc/apis/admin.md)
+      * [Debug](node-developer/i/json-rpc/apis/debug.md)
+      * [Eth](node-developer/i/json-rpc/apis/eth.md)
+      * [Miner](node-developer/i/json-rpc/apis/miner.md)
+      * [Net](node-developer/i/json-rpc/apis/net.md)
+      * [Personal](node-developer/i/json-rpc/apis/personal.md)
+      * [Txpool](node-developer/i/json-rpc/apis/txpool.md)
 
 ## 📱 dApp Developer
 
