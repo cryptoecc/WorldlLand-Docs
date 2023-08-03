@@ -35,7 +35,7 @@
 * [ETH-ECC](node-developer/eth-ecc.md)
 * [Interact with ETH-ECC](node-developer/interact-with-eth-ecc.md)
 * [Sync-modes](node-developer/sync-modes.md)
-* [Account management](node-developer/account-management.md)
+* [Account Management](node-developer/account-management.md)
 * [Security](node-developer/security.md)
 * [JSON-RPC APIs](node-developer/apis/README.md)
   * [Admin](node-developer/apis/admin.md)
@@ -50,14 +50,24 @@
   * [Web3](node-developer/apis/web3.md)
 * [Command-line options](node-developer/command-line-options.md)
 
-## 📱 Dapp Developer
+## 📱 dApp Developer
 
-* [Development Environment](dapp-developer/development-environment.md)
-* [Ethereum and Worldland](dapp-developer/ethereum-and-worldland.md)
-* [Page 1](dapp-developer/page-1.md)
-* [How to Deploy Smart Contract](dapp-developer/how-to-deploy-smart-contract.md)
-* [WorldLand API](dapp-developer/worldland-api/README.md)
-  * [web3.eth](dapp-developer/worldland-api/apis.md)
+* [Start Developing](dapp-developer/start-developing.md)
+* [Useful Addresses](dapp-developer/useful-addresses.md)
+* [Web3 Libraries](dapp-developer/web3-libraries.md)
+* [Gas / Fees](dapp-developer/gas-fees.md)
+* [ERC20 Token](dapp-developer/erc20-token.md)
+* [NFT](dapp-developer/nft.md)
+* [Oracles](dapp-developer/oracles.md)
+
+## 📱 (prev) Dapp Developer
+
+* [Development Environment](prev-dapp-developer/development-environment.md)
+* [Ethereum and Worldland](prev-dapp-developer/ethereum-and-worldland.md)
+* [Page 1](prev-dapp-developer/page-1.md)
+* [How to Deploy Smart Contract](prev-dapp-developer/how-to-deploy-smart-contract.md)
+* [WorldLand API](prev-dapp-developer/worldland-api/README.md)
+  * [web3.eth](prev-dapp-developer/worldland-api/apis.md)
 
 ***
 
