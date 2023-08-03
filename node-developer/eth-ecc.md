@@ -12,10 +12,6 @@ When **ETH-ECC** runs, the computer acts as a Worldland node and connects to the
 
 
 
-1.
-
-
-
 ### ETH-ECC Node Overview&#x20;
 
 The **ETH-ECC** node has the following roles and functions.
