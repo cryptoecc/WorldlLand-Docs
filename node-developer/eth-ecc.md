@@ -14,11 +14,11 @@ When **ETH-ECC** is running, the computer acts as a Worldland node and connects 
 
 ### ETH-ECC Node Overview&#x20;
 
-The ETH-ECC node has the following roles and functions.
+The **ETH-ECC** node has the following roles and functions.
 
-* Consensus is reached by running the ECCPoW consensus algorithm.&#x20;
+* Consensus is reached by running the **ECCPoW** consensus algorithm.&#x20;
 * Create and propagate blocks.&#x20;
-* Validates the propagated block and synchronizes the state of Worldland.&#x20;
+* Validates the propagated block and synchronizes "**state"** of Worldland.&#x20;
 * Validate and process transactions.&#x20;
 * Deploy and execute smart contracts.&#x20;
 * Execute bytecode using EVM.

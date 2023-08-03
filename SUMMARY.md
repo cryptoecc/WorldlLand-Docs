@@ -33,6 +33,7 @@
 ## 💻 Node Developer
 
 * [ETH-ECC](node-developer/eth-ecc.md)
+* [Interact with ETH-ECC](node-developer/interact-with-eth-ecc.md)
 * [Sync-modes](node-developer/sync-modes.md)
 * [Account management](node-developer/account-management.md)
 * [Security](node-developer/security.md)
