@@ -8,6 +8,29 @@
 * TCP 30303 또는 P2P 통신을 위해 정의된 사용자 지정 포트 에서 트래픽을 허용합니다 . 이렇게 하면 노드가 피어에 연결할 수 있습니다.
 * UDP 30303 또는 P2P 통신을 위해 정의된 사용자 지정 포트 에서 트래픽을 허용합니다 . 이를 통해 노드 검색이 가능합니다.
 
+## **노드 구성** <a href="#f904" id="f904"></a>
+
+### **절대 이렇게 하지 마세요!!!** <a href="#fb4b" id="fb4b"></a>
+
+GETH 노드에서 RPC 액세스를 활성화할 때 잠금 해제된 계정으로 RPC에 대한 외부 액세스를 허용해서는 안 됩니다. 예를 들어
+
+```
+$ geth — rpc — rpcaddr 0.0.0.0 — rpcport 8545 — rpcapi "db, eth, net, web3, personal" — ipcapi "admin,eth,debug,personal,web3" — <addrs> 잠금 해제
+```
+
+기본적으로 이더리움 계정에 대한 외부 액세스를 허용하고 있으며 계정 잠금을 해제하면 공격자가 지갑에 저장된 이더를 쉽게 전송할 수 있습니다.
+
+이 오류로 인해 사람들이 해킹당하는 예
+
+* [https://ethereum.stackexchange.com/questions/3887/how-to-reduce-the-chances-of-your-ethereum-wallet-getting-hacked?utm\_medium=organic\&utm\_source=google\_rich\_qa\&utm\_campaign=google\_rich\_qa](https://ethereum.stackexchange.com/questions/3887/how-to-reduce-the-chances-of-your-ethereum-wallet-getting-hacked?utm\_medium=organic\&utm\_source=google\_rich\_qa\&utm\_campaign=google\_rich\_qa)
+* 그리고 내 친구 :)
+
+[https://medium.com/coinmonks/securing-your-ethereum-nodes-from-hackers-8b7d5bac8986](https://medium.com/coinmonks/securing-your-ethereum-nodes-from-hackers-8b7d5bac8986)
+
+[https://medium.com/coinmonks/securing-your-ethereum-nodes-from-hackers-8b7d5bac8986](https://medium.com/coinmonks/securing-your-ethereum-nodes-from-hackers-8b7d5bac8986)
+
+[https://ethereum.stackexchange.com/questions/32619/is-it-secure-to-run-public-ethereum-node](https://ethereum.stackexchange.com/questions/32619/is-it-secure-to-run-public-ethereum-node)
+
 ### 계정 보안 <a href="#account-security" id="account-security"></a>
 
 계정 보안은 개인 키와 계정 암호를 백업하고 적이 액세스할 수 없도록 유지하는 것입니다. 이것은 사용자가 책임지는 것입니다. Geth는 계정 암호를 사용하여 잠금 해제된 키에 대해 암호화된 저장소를 제공합니다. 키 파일이나 암호를 분실하면 계정에 액세스할 수 없으며 자금은 사실상 영원히 손실됩니다. 암호화되지 않은 키에 대한 액세스 권한을 적이 획득한 경우 계정과 관련된 모든 자금을 제어할 수 있습니다.
