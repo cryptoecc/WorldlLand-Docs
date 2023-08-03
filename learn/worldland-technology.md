@@ -17,3 +17,7 @@ WorldLand is the first technology to integrate error correction code as a means 
 &#x20;
 
 Within the WorldLand platform, based on the Green VCA consensus protocol, a large-scale peer-to-peer network of nodes participates in block generation to ensure decentralization. The use of a time-varying cryptographic puzzle method enhances security against double-spend attacks (DS attacks), while also increasing decentralization and reducing energy consumption through ASIC resistance.
+
+
+
+***

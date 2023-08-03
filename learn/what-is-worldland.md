@@ -14,6 +14,8 @@ However, traditional PoW systems have come under scrutiny due to their significa
 
 
 
+***
+
 ### Energy Efficient Green VCA (Verifiable Computation Algorithm) Matrix
 
 WorldLand recognizes that Proof-of-Work (PoW) is the most secure consensus algorithm for implementing a robust network. However, the significant issue with PoW is its immense energy consumption. As of early 2022, annual energy consumption for PoW had reached 138 terawatt-hours, surpassing the electricity consumption of countries like Norway. This energy usage leads to annual CO2 emissions equivalent to that of Belgium, amounting to 114 million tonnes. To address this problem, WorldLand has developed a consensus algorithm that achieves energy efficiency through the implementation of a Verifiable Coin Toss Function and Error Correction Code.
@@ -25,6 +27,10 @@ While maintaining the strong security and decentralization of PoW, WorldLand inc
 
 
 Green VCAs offer protection against double-spending attacks. The primary advantage of Green VCA consensus technology is that it does not require communication between nodes to reach consensus. Each node independently performs PoW operations to achieve consensus. Simply put, when a node discovers the solution to a puzzle problem, it publishes the answer. This lack of communication requirements allows a large number of nodes to participate in consensus. The system's simplicity enables reliable operation even with a multitude of participating nodes.
+
+
+
+***
 
 ### Securing ASIC and Quantum Computer Resistance with Error Correction Code-based PoW
 
@@ -38,3 +44,6 @@ By employing Error Correction Code-based PoW, WorldLand mitigates the influence 
 
 Furthermore, WorldLand incorporates code theory to enhance resistance against quantum computer attacks. Quantum computers have the potential to break traditional cryptographic algorithms, which could compromise the security of blockchain networks. By leveraging code theory, WorldLand strengthens the cryptographic mechanisms used within its system, making it more resilient against potential quantum threats. This helps safeguard the decentralization of the network and ensures the long-term security of WorldLand in the presence of advanced quantum computing technology.
 
+
+
+***
