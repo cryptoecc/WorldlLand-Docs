@@ -33,7 +33,6 @@
 ## 💻 Node Developer
 
 * [ETH-ECC](node-developer/eth-ecc.md)
-* [Ethereum and Worldland](node-developer/ethereum-and-worldland.md)
 * [Interact with ETH-ECC](node-developer/interact-with-eth-ecc.md)
 * [Sync-modes](node-developer/sync-modes.md)
 * [Account management](node-developer/account-management.md)
@@ -53,15 +52,15 @@
 
 ## 📱 Dapp Developer
 
+* [Ethereum and Worldland](dapp-developer/ethereum-and-worldland.md)
+* [Page 1](dapp-developer/page-1.md)
 * [How to Deploy Smart Contract](dapp-developer/how-to-deploy-smart-contract.md)
-* [FAQ](dapp-developer/faq.md)
 * [WorldLand API](dapp-developer/worldland-api/README.md)
   * [web3.eth](dapp-developer/worldland-api/apis.md)
-* [Page](dapp-developer/page.md)
-* [How to start a WorldLand node.](dapp-developer/how-to-start-a-worldland-node..md)
 
 ***
 
+* [FAQ](faq.md)
 * [WorldLand](https://worldland.foundation/)
 * [Seoul Block Explorer](http://scan.worldland.foundation/)
 * [Gwangju Block Explorer](http://scan.worldland.foundation/)
