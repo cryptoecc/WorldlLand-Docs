@@ -114,7 +114,7 @@ PS C:\WINDOWS\system32> Set-ExecutionPolicy Bypass -Scope Process
 Now run the following command:
 
 ```
-C:\WINDOWS\system32> Get-ExecutionPolicyRestrictedSet-ExecutionPolicy AllSignedSet-ExecutionPolicy Bypass -Scope Process
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
 Wait a few seconds for the command to complete. If you don't see any errors, you are ready to use Chocolatey!&#x20;
