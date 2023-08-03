@@ -13,9 +13,9 @@
 
 **Smart Contract Development**
 
-* [Remix](https://remix.ethereum.org/) - a browser-based smart contracts compiler and IDE.
-* [Truffle](https://github.com/trufflesuite/truffle) - An open-source tool for developing smart contracts in Solidity.
-* [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started) - A development environment for smart contracts and dApps.
+* [Remix](https://remix.ethereum.org/) - A IDE for Web3 Development..
+* [Truffle](https://github.com/trufflesuite/truffle) - A development environment, testing framework, and asset pipeline for EVM blockchain
+* [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started) - A development environment for EVM software.
 
 **Worldland Blockchain Platform**
 
