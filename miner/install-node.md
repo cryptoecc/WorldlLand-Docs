@@ -161,14 +161,16 @@ C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland
 
 
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td></td><td></td><td><a href="https://chocolatey.org/install#individual">https://chocolatey.org/install#individual</a></td></tr><tr><td></td><td></td><td></td><td><a href="https://geth.ethereum.org/docs/getting-started/installing-geth">https://geth.ethereum.org/docs/getting-started/installing-geth</a></td></tr></tbody></table>
+
+
+***
+
+#### References:
+
+{% embed url="https://geth.ethereum.org/docs/getting-started/installing-geth" %}
+
+{% embed url="https://chocolatey.org/install#individual" %}
 
 
 
-Reference:
-
-[https://geth.ethereum.org/docs/getting-started/installing-geth](https://geth.ethereum.org/docs/getting-started/installing-geth)
-
-[https://chocolatey.org/install#individual](https://chocolatey.org/install#individual)\
-
-
+***
