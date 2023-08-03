@@ -34,7 +34,7 @@
 
 * [ETH-ECC](node-developer/eth-ecc.md)
 * [Command-line options](node-developer/command-line-options.md)
-* [Sync-modes](node-developer/sync-modes.md)
+* [Node](node-developer/node.md)
 * [Mining](node-developer/mining.md)
 * [Peer](node-developer/peer.md)
 * [Security](node-developer/security.md)
