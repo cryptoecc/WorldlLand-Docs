@@ -1,6 +1,6 @@
 # Table of contents
 
-* [WorldLand documentation](README.md)
+* [WorldLand Documentation](README.md)
 
 ## 📝 Learn
 
