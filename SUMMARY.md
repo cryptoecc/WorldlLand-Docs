@@ -33,6 +33,7 @@
 ## 💻 Node Developer
 
 * [ETH-ECC](node-developer/eth-ecc.md)
+* [Command-line options](node-developer/command-line-options.md)
 * [Interact with ETH-ECC](node-developer/interact-with-eth-ecc.md)
 * [Sync-modes](node-developer/sync-modes.md)
 * [Account Management](node-developer/account-management.md)
@@ -48,7 +49,6 @@
   * [Trace](node-developer/apis/trace.md)
   * [Txpool](node-developer/apis/txpool.md)
   * [Web3](node-developer/apis/web3.md)
-* [Command-line options](node-developer/command-line-options.md)
 
 ## 📱 dApp Developer
 
