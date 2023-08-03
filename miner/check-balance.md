@@ -3,7 +3,7 @@
 ## **Check mined block in explorer**
 
 {% hint style="info" %}
-See the [**Block Explorer**](../../user/i/block-explorer.md) tab for more information about explorers.
+See the [**Block Explorer**](../user/undefined/block-explorer.md) tab for more information about explorers.
 {% endhint %}
 
 You can check the contents of the **mined block** in the **block explorer**.
@@ -21,18 +21,18 @@ You can also search by **wallet address**.
 This part explains how to link your Metamask account to the ETH-ECC console and link your Eth-ECC account to Metamask.
 
 {% hint style="info" %}
-Please refer to the [**Wallet**](../../user/i/wallet.md) section for information regarding **installing Metamask.**
+Please refer to the [**Wallet**](../user/undefined/wallet.md) section for information regarding **installing Metamask.**
 {% endhint %}
 
 ### Metamask account  to Eth-ECC
 
 You can find **Account details** in the menu to the right of your **Metamask account**.
 
-<figure><img src="../../.gitbook/assets/account_details.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/account_details.png" alt=""><figcaption></figcaption></figure>
 
 Press the **export private key** button and enter the **password** to obtain the private key.
 
-<figure><img src="../../.gitbook/assets/export_private_key.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/export_private_key.png" alt=""><figcaption></figcaption></figure>
 
 Enter the obtained **private key** and **password** into the **ETH-ECC** console.
 
@@ -85,7 +85,7 @@ Open metamask, select the network and then select "**Import Account**"
 
 Select JSON File from **Select Type** and import the file. And enter the **password** you entered when creating your account.
 
-<figure><img src="../../.gitbook/assets/import_json.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/import_json.png" alt=""><figcaption></figcaption></figure>
 
 then, you can import account to **Metamask!**
 

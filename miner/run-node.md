@@ -12,8 +12,6 @@ $ rm -rf ~/.ethereum
 
 First, you'll need to make a directory to store block information. For example, `ETHECC_TEST` directory. Then move to `/ETH-ECC/build/bin`, and follow this.
 
-
-
 ```
 $ ./worldland --datadir "USER_DATA_DIR" console
 ```
@@ -23,8 +21,6 @@ Or if you want to connect to **Gwangju testnet**, add `-gwangju` option
 ```
 $ ./worldland --datadir "USER_DATA_DIR" -gwangju console
 ```
-
-
 
 it returns data that looks like:
 
