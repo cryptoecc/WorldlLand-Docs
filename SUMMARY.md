@@ -31,6 +31,7 @@
 ## 💻 Node Developer
 
 * [ETH-ECC](node-developer/eth-ecc.md)
+* [Page](node-developer/page.md)
 * [Command-line options](node-developer/command-line-options/README.md)
   * [Node](node-developer/command-line-options/node.md)
   * [Peer](node-developer/command-line-options/peer.md)
