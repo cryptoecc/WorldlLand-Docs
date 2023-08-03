@@ -2,10 +2,10 @@
 
 ### What is ETH-ECC ?
 
-**ETH-ECC** 는 월드랜드의 공식 노드 클라이언트 입니다. 이것은 이더리움의 공식 노드 클라이언트인 **ethereum/go-ethereum** 의 포크 입니다.&#x20;
+**ETH-ECC** is Worldland's official node client. This is a fork of **ethereum/go-ethereum**, the official node client for Ethereum.
 
 {% hint style="info" %}
-Geth(go-ethereum)는 탈중앙화 웹으로 가는 관문인 [이더리움](https://ethereum.org/)의 [Go](https://go.dev/) 구현입니다. Geth는 최초의 이더리움 구현 중 하나였으며 가장 전투적으로 단련되고 테스트된 클라이언트였습니다.
+Geth (go-ethereum) is a [Go](https://go.dev/) implementation of [Ethereum](https://ethereum.org/). Geth was one of the original Ethereum implementations making it the most battle-hardened and tested client.
 {% endhint %}
 
 When **ETH-ECC** is running, the computer acts as a Worldland node and connects to the Worldland network. The Worldland network operates according to the Worldland blockchain protocol, which handles the transactions, deployment and execution of smart contracts and includes an embedded computer known as the **EVM**. The nodes perform a proof-of-work algorithm known as **ECCPoW**, The first node that solved the problem creates a new block containing a list of transactions that need to be executed. Blocks are broadcast to the Worldland network, and each node verifies that block and adds it to the database.
