@@ -30,7 +30,7 @@ $ ./worldland -gwangju dumpconfig -datadir /home/worldland/gwangju >> config.tom
 
 **Return:**
 
-**`config. toml`**
+config. toml
 
 ````
 # Note: this config doesn't contain the genesis block.
@@ -101,7 +101,7 @@ MaxPrice = 500000000000
 IgnorePrice = 2
 
 [Node]
-DataDir = "/home/infonet/ethereum/gwangju2"
+DataDir = "/home/worldland/gwangju"
 IPCPath = "worldland.ipc"
 HTTPHost = ""
 HTTPPort = 8545
