@@ -31,3 +31,9 @@ Running your node allows you to use Worldland in a truly private, self-sufficien
 
 
 
+The following sections was prepared by referring to go-ethereum's official document. See [**go-ethereum's documentation**](https://geth.ethereum.org/docs) for details.
+
+
+
+
+
