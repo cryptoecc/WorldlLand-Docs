@@ -2,7 +2,7 @@
 
 ### What is ETH-ECC?
 
-**ETH-ECC** is  WorldLand's official node client. This is a fork of **ethereum/go-ethereum**, the official node client for Ethereum.
+**Ethereum Error-Correction Code(ETH-ECC)** is  WorldLand's official node client. This is a fork of **ethereum/go-ethereum**, the official node client for Ethereum.
 
 {% hint style="info" %}
 Geth (go-Ethereum) is a [Go](https://go.dev/) implementation of [Ethereum](https://ethereum.org/). It is one of the original and most popular Ethereum clients.
