@@ -19,6 +19,6 @@
 
 **Worldland Blockchain Platform**
 
-* [Worldland Block Explorer](../user/block-explorer.md) - A block and transaction explorer.
-* [Metamask Wallet ](../user/wallet.md)- A browser-based account management tool.
+* [Worldland Block Explorer](../../user/block-explorer.md) - A block and transaction explorer.
+* [Metamask Wallet ](../../user/wallet.md)- A browser-based account management tool.
 

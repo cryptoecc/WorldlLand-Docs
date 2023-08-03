@@ -52,7 +52,12 @@
 
 ## 📱 dApp Developer
 
-* [Start Developing](dapp-developer/start-developing.md)
+* [Ethereum and Worldland](dapp-developer/ethereum-and-worldland.md)
+* [Development Environment](dapp-developer/development-environment/README.md)
+  * [Truffle](dapp-developer/development-environment/truffle.md)
+  * [Hardhat](dapp-developer/development-environment/hardhat.md)
+  * [Remix](dapp-developer/development-environment/remix.md)
+  * [...](dapp-developer/development-environment/....md)
 * [Useful Addresses](dapp-developer/useful-addresses.md)
 * [Web3 Libraries](dapp-developer/web3-libraries.md)
 * [Gas / Fees](dapp-developer/gas-fees.md)
@@ -60,18 +65,13 @@
 * [NFT](dapp-developer/nft.md)
 * [Oracles](dapp-developer/oracles.md)
 
-## 📱 (prev) Dapp Developer
+## ❓ FAQ
 
-* [Development Environment](prev-dapp-developer/development-environment.md)
-* [Ethereum and Worldland](prev-dapp-developer/ethereum-and-worldland.md)
-* [Page 1](prev-dapp-developer/page-1.md)
-* [How to Deploy Smart Contract](prev-dapp-developer/how-to-deploy-smart-contract.md)
-* [WorldLand API](prev-dapp-developer/worldland-api/README.md)
-  * [web3.eth](prev-dapp-developer/worldland-api/apis.md)
+* [How \~\~\~ ?](faq/how.md)
+* [What \~\~ ?](faq/faq.md)
 
-***
+## ↗ Links
 
-* [FAQ](faq.md)
 * [WorldLand](https://worldland.foundation/)
 * [Seoul Block Explorer](http://scan.worldland.foundation/)
 * [Gwangju Block Explorer](http://scan.worldland.foundation/)
