@@ -151,13 +151,17 @@ If the build fails, run the command below and retry.
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go mod tidy
 ```
 
-
-
 To run the WorldLand, write the following command.
 
 ```
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland
 ```
+
+
+
+
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td></td><td></td><td><a href="https://chocolatey.org/install#individual">https://chocolatey.org/install#individual</a></td></tr><tr><td></td><td></td><td></td><td><a href="https://geth.ethereum.org/docs/getting-started/installing-geth">https://geth.ethereum.org/docs/getting-started/installing-geth</a></td></tr></tbody></table>
 
 
 
