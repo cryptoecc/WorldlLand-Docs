@@ -20,8 +20,6 @@
 * [Get WLCs](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
 * [Transfer Tokens](user/transfer-tokens.md)
 * [Block Explorer](user/block-explorer.md)
-* [Swap](user/swap.md)
-* [Bridge](user/bridge.md)
 
 ## ⛏ Miner
 
@@ -34,7 +32,7 @@
 
 * [ETH-ECC](node-developer/eth-ecc.md)
 * [Command-line options](node-developer/command-line-options.md)
-* [Node](node-developer/node.md)
+* [Node](node-developer/sync-modes.md)
 * [Mining](node-developer/mining.md)
 * [Peer](node-developer/peer.md)
 * [Security](node-developer/security.md)

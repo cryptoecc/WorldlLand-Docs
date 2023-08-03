@@ -1,3 +1,0 @@
-# Bridge
-
-Currently in preparation.
