@@ -27,8 +27,12 @@ WARN [08-06|21:33:36.241] Please remember your password!
 
 **`personal.newAccount("YOUR_PASSWORD")`** returns your **wallet address.**  The example above returned the wallet address **`"0xb8c941069cc2b71b1a00db15e6e00a200d387039"`**.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Be careful not to forget your password!**
+{% endhint %}
+
+{% hint style="info" %}
+You can improve account security by utilizing Clef, an external account management tool. See the [Security ](../node-developer/security.md)topic for details.
 {% endhint %}
 
 You can check the list of currently added wallet addresses via the **`eth.accounts`** command.
