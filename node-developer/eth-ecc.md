@@ -8,7 +8,9 @@
 Geth (go-Ethereum) is a [Go](https://go.dev/) implementation of [Ethereum](https://ethereum.org/). It is one of the original and most popular Ethereum clients.
 {% endhint %}
 
-When **ETH-ECC** runs, the computer acts as a **Worldland** node and connects to the Worldland network. The Worldland network operates according to the WorldLand blockchain protocol, which handles the transactions, deployment, and execution of smart contracts and includes an embedded computer known as the **EVM**. The nodes perform a proof-of-work algorithm known as **ECCPoW**, The first node that solves the problem creates a new block containing a list of transactions that must be executed. Blocks are broadcast to the WorldLand network, and each node verifies that block and adds it to the database.
+When **ETH-ECC** runs, the computer acts as a **Worldland** node and connects to the Worldland network. The Worldland network operates according to the WorldLand blockchain protocol, which handles the transactions, deployment, and execution of smart contracts and includes an embedded computer known as the **EVM**.&#x20;
+
+The nodes perform a proof-of-work algorithm known as **ECCPoW**, The first node that solves the problem creates a new block containing a list of transactions that must be executed. Blocks are broadcast to the WorldLand network, and each node verifies that block and adds it to the database.
 
 
 
