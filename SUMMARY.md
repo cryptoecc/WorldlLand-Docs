@@ -33,6 +33,7 @@
 ## 💻 Node Developer
 
 * [ETH-ECC](node-developer/eth-ecc.md)
+* [Ethereum and Worldland](node-developer/ethereum-and-worldland.md)
 * [Interact with ETH-ECC](node-developer/interact-with-eth-ecc.md)
 * [Sync-modes](node-developer/sync-modes.md)
 * [Account management](node-developer/account-management.md)
@@ -52,25 +53,15 @@
 
 ## 📱 Dapp Developer
 
-* [How to start a WorldLand node.](dapp-developer/how-to-start-a-worldland-node..md)
 * [How to Deploy Smart Contract](dapp-developer/how-to-deploy-smart-contract.md)
 * [FAQ](dapp-developer/faq.md)
 * [WorldLand API](dapp-developer/worldland-api/README.md)
   * [web3.eth](dapp-developer/worldland-api/apis.md)
-* [Page 2](dapp-developer/page-2/README.md)
-  * [Dapp developers](dapp-developer/page-2/how-to-send-and-receive-coins./README.md)
-    * [Use HardHat(Writing in progress)](dapp-developer/page-2/how-to-send-and-receive-coins./use-hardhat.md)
-    * [Use Remix IDE](dapp-developer/page-2/how-to-send-and-receive-coins./deploy-a-token-contract..md)
-    * [Use Truffle](dapp-developer/page-2/how-to-send-and-receive-coins./use-truffle.md)
-* [Page 3](dapp-developer/page-3.md)
-* [Copy of JSON-RPC APIs](dapp-developer/apis/README.md)
-  * [Admin](dapp-developer/apis/admin.md)
-  * [Debug](dapp-developer/apis/debug.md)
-  * [Eth](dapp-developer/apis/eth.md)
-  * [Ethash](dapp-developer/apis/ethash.md)
-  * [Miner](dapp-developer/apis/miner.md)
-  * [Net](dapp-developer/apis/net.md)
-  * [Personal](dapp-developer/apis/personal.md)
-  * [Trace](dapp-developer/apis/trace.md)
-  * [Txpool](dapp-developer/apis/txpool.md)
-  * [Web3](dapp-developer/apis/web3.md)
+* [Page](dapp-developer/page.md)
+* [How to start a WorldLand node.](dapp-developer/how-to-start-a-worldland-node..md)
+
+***
+
+* [WorldLand](https://worldland.foundation/)
+* [Seoul Block Explorer](http://scan.worldland.foundation/)
+* [Gwangju Block Explorer](http://scan.worldland.foundation/)
