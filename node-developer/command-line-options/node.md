@@ -64,25 +64,7 @@ $ ./worldland -syncmode full
 
 <table><thead><tr><th></th><th>Snap Sync</th><th>Full Sync</th><th data-hidden>Snap Sync</th><th data-hidden></th><th data-hidden></th><th data-hidden>Full sync</th></tr></thead><tbody><tr><td>Data Download Method</td><td>Download snapshot file and sync</td><td>Sequentially download all blocks for synchronization</td><td></td><td></td><td>Data Download Method</td><td>Sequentially download all blocks for synchronization</td></tr><tr><td>Download Time</td><td>Faster</td><td>Takes longer</td><td></td><td>Download Time</td><td>Download Time</td><td>Takes longer</td></tr><tr><td>Purpose</td><td>Useful for quickly syncing new nodes</td><td>Required to verify full network history.</td><td></td><td></td><td>Purpose</td><td>Required for accessing the entire network history</td></tr><tr><td>Network Load</td><td>Low</td><td>High</td><td></td><td></td><td>Network Load</td><td>High</td></tr></tbody></table>
 
-{% hint style="info" %}
-We outline both types of full nodes and guides for getting them up and running. For a detailed description of the node, please refer to the following[ **link**](https://geth.ethereum.org/docs/fundamentals/sync-modes).
-{% endhint %}
 
-
-
-
-
-
-
-
-
-### &#x20;<a href="#archive-nodes" id="archive-nodes"></a>
-
-
-
-
-
-### Sync Mode
 
 
 

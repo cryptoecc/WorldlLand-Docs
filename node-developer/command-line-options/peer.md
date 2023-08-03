@@ -30,8 +30,6 @@ Geth가 단순히 피어에 연결하지 못하는 경우가 있습니다. 이�
 
 * 현지 시간이 정확하지 않을 수 있습니다. Ethereum 네트워크에 참여하려면 정확한 시계가 필요합니다. 로컬 시계는 sudo ntpdate -s time.nist.gov (운영 체제에 따라 다름) 와 같은 명령을 사용하여 다시 동기화할 수 있습니다 .
 * 일부 방화벽 구성은 UDP 트래픽을 금지할 수 있습니다. 정적 노드 기능 또는 콘솔의 admin.addPeer()를 사용하여 연결을 수동으로 구성할 수 있습니다.
-* [라이트 모드](https://geth.ethereum.org/docs/fundamentals/les) 에서 Geth를 실행하면 라이트 서버를 실행하는 노드가 거의 없기 때문에 종종 연결 문제가 발생합니다. Geth를 조명 모드에서 전환하는 것 외에는 이 문제를 쉽게 해결할 수 없습니다. **라이트 모드는 현재 지분 증명 네트워크에서 작동하지 않습니다** .
-* Geth가 연결하는 공개 테스트 네트워크는 더 이상 사용되지 않거나 찾기 어려운 활성 노드 수가 적을 수 있습니다. 이 경우 최선의 조치는 대체 테스트 네트워크로 전환하는 것입니다.
 
 ### 연결 확인 <a href="#checking-connectivity" id="checking-connectivity"></a>
 
@@ -93,10 +91,6 @@ true
 }
 ```
 
-### 맞춤형 네트워크 <a href="#custom-networks" id="custom-networks"></a>
-
-개발자가 공개 테스트넷이나 이더리움 메인넷이 아닌 비공개 테스트 네트워크에 연결하는 것이 종종 유용합니다. 이러한 샌드박스 환경에서는 다른 채굴자와 경쟁하지 않고 블록을 생성하고 테스트 에테르를 쉽게 채굴할 수 있으며 실제 결과 없이 문제를 해결할 수 있는 자유를 제공합니다. 사설 네트워크는 다른 기존 공용 네트워크( [Chainlist )에서 사용하지 않는 ](https://chainlist.org/)--networkid 값을 제공 하고 사용자 지정 genesis.json 파일을 생성하여 시작됩니다 . 이에 대한 자세한 지침은 [사설 네트워크 페이지](https://geth.ethereum.org/docs/fundamentals/private-network) 에서 확인할 수 있습니다 .
-
 ### 정적 노드 <a href="#static-nodes" id="static-nodes"></a>
 
 Geth는 정적 노드도 지원합니다. 정적 노드는 항상 연결된 특정 피어입니다. Geth는 다시 시작되면 이러한 피어에 자동으로 다시 연결됩니다. 특정 노드는 구성 파일에 enode 주소를 추가하여 정적 노드로 정의됩니다. 이 구성 파일을 만드는 가장 쉬운 방법은 다음을 실행하는 것입니다.
@@ -129,17 +123,7 @@ admin.addPeer(
 geth <otherflags> --maxpeers 15
 ```
 
-### 신뢰할 수 있는 노드 <a href="#trusted-nodes" id="trusted-nodes"></a>
 
-신뢰할 수 있는 노드는 정적 노드와 동일한 방식으로 config.toml 에 추가할 수 있습니다 . --config config.toml 으로 Geth를 시작하기 전에 신뢰할 수 있는 노드의 enode 주소를 config.toml 의 TrustedNodes 필드 에 추가하십시오 .
-
-Javascript 콘솔에서 admin.addTrustedPeer() 호출을 사용하여 노드를 추가 하고 admin.removeTrustedPeer() 호출을 사용하여 제거할 수 있습니다.
-
-```javascript
-admin.addTrustedPeer(
-  'enode://f4642fa65af50cfdea8fa7414a5def7bb7991478b768e296f5e4a54e8b995de102e0ceae2e826f293c481b5325f89be6d207b003382e18a8ecba66fbaf6416c0@33.4.2.1:30303'
-);
-```
 
 ### 요약 <a href="#summary" id="summary"></a>
 
