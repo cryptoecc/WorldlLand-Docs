@@ -31,10 +31,10 @@
 ## 💻 Node Developer
 
 * [ETH-ECC](node-developer/eth-ecc.md)
-* [Command-line options](node-developer/command-line-options.md)
-* [Node](node-developer/sync-modes.md)
-* [Mining](node-developer/mining.md)
-* [Peer](node-developer/peer.md)
+* [Command-line options](node-developer/command-line-options/README.md)
+  * [Node](node-developer/command-line-options/node.md)
+  * [Peer](node-developer/command-line-options/peer.md)
+  * [Mining](node-developer/command-line-options/mining.md)
 * [Security](node-developer/security.md)
 * [Interact with ETH-ECC](node-developer/interact-with-eth-ecc/README.md)
   * [JSON-RPC Server](node-developer/interact-with-eth-ecc/json-rpc-server.md)
