@@ -1,8 +1,6 @@
 # Node
 
-ETH-ECC 노드는 월드랜드 네트워크에 연결되어 월드랜드 네트워크의 최신 상태를 따라잡기 위해 동기화합니다. 서로 다른 메커니즘을 사용하여 체인의 헤드까지 동기화하는 두 가지 유형의 노드 방식과 두 가지 유형의 동기화 방식이 존재합니다.
-
-
+ETH-ECC nodes connect to the WorldLand network and synchronize to keep up with the latest state of the WorldLand network. There are two types of node methods and two types of synchronization methods that use different mechanisms to synchronize up to the head of the chain.
 
 ## **Node**
 
@@ -22,11 +20,11 @@ The archive node does not remove all historical data, it retains it by itself. A
 $ ./worldland -gcmode archive
 ```
 
-| Full Node | Archive Node |
-| :-------: | :----------: |
-|           |              |
-|           |              |
-|           |              |
+
+
+**The key differences between an Archive Node and a Full Node:**
+
+<table><thead><tr><th width="219"></th><th align="center">Full Node</th><th align="center">Archive Node</th></tr></thead><tbody><tr><td>Data Retention</td><td align="center">Retains only the latest block data</td><td align="center">Retains all block data</td></tr><tr><td>Data Storage Size</td><td align="center">Relatively smaller</td><td align="center">Very large</td></tr><tr><td>Synchronization Time</td><td align="center">Comparatively shorter</td><td align="center">Lengthy</td></tr><tr><td>Purpose</td><td align="center">Transaction broadcasting and network security maintenance</td><td align="center">Block exploration and historical data verification</td></tr><tr><td>Higher Storage Costs</td><td align="center">No</td><td align="center">Yes</td></tr></tbody></table>
 
 ### Hardware Requirements(2023-08-08)
 
@@ -64,11 +62,7 @@ Full block-by-block synchronization starts with the **genesis block** and execut
 $ ./worldland -syncmode full
 ```
 
-| Full Sync | Snap Sync |
-| --------- | --------- |
-|           |           |
-|           |           |
-|           |           |
+<table><thead><tr><th>Snap sync</th><th data-hidden>Snap Sync</th><th data-hidden></th><th data-hidden></th><th data-hidden>Full sync</th></tr></thead><tbody><tr><td>Download snapshot file and sync</td><td></td><td></td><td>Data Download Method</td><td>Sequentially download all blocks for synchronization</td></tr><tr><td>Faster</td><td></td><td>Download Time</td><td>Download Time</td><td>Takes longer</td></tr><tr><td>Useful for quickly syncing new nodes</td><td></td><td></td><td>Purpose</td><td>Required for accessing the entire network history</td></tr><tr><td>Low</td><td></td><td></td><td>Network Load</td><td>High</td></tr></tbody></table>
 
 {% hint style="info" %}
 We outline both types of full nodes and guides for getting them up and running. For a detailed description of the node, please refer to the following[ **link**](https://geth.ethereum.org/docs/fundamentals/sync-modes).
