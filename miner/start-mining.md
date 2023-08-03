@@ -4,10 +4,6 @@ description: This document describes a quick running guide for Miner
 
 # Start Mining
 
-#### _Please contact us if you have any questions._ [_https://open.kakao.com/o/gXdk2J5e_](https://open.kakao.com/o/gXdk2J5e)
-
-
-
 ### **Generating account**
 
 Generating new account:
