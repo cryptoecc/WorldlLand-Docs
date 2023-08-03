@@ -129,7 +129,13 @@ C:\Windows\system32> choco install golang
 C:\Windows\system32> choco install mingw
 ```
 
-Installing these packages sets the path environment variable. You will need to open a new command prompt to get the new path. To install **ETH-ECC**, you can first create a Go workspace directory, then create and build the **ETH-ECC** source code.
+Installing these packages sets the path environment variable.&#x20;
+
+{% hint style="danger" %}
+You will need to open a **new command prompt** to get the new path.
+{% endhint %}
+
+To install **ETH-ECC**, you can first create a Go workspace directory, then create and build the **ETH-ECC** source code.
 
 ```
 C:\Users\xxx> mkdir src\github.com\cryptoecc
