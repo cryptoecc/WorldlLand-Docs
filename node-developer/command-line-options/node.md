@@ -42,7 +42,7 @@ $ ./worldland -gcmode archive
 * High-performance SSD with at least 1TB of free space
 * 25+ MBit/sec download Internet service
 
-##
+
 
 ## **Sync Mode**
 
@@ -56,7 +56,7 @@ $ ./worldland -syncmode snap
 
 ### Full
 
-Full block-by-block synchronization starts with the **genesis block** and executes all blocks to create the current state. Full sync re-executes transactions across the entire historical sequence of blocks to independently verify block origins and all state transitions. Only the most recent 128 block states are stored across all nodes. Stale block states are periodically pruned and marked as a series of checkpoints from which old states can be recreated on demand. 128 blocks is a record of about 25.6 minutes with a block time of 12 seconds.
+Full block-by-block synchronization starts with the **genesis block** and executes all blocks to create the current state. Full sync re-executes transactions across the entire historical sequence of blocks to independently verify block origins and all state transitions. Only the most recent 128 block states are stored across all nodes. Stale block states are periodically pruned and marked as a series of checkpoints from which old states can be recreated on demand. **128 blocks** is a record of about 21.3 minutes with a block time of 10 seconds.
 
 ```
 $ ./worldland -syncmode full
