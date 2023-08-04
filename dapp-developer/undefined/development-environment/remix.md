@@ -4,8 +4,8 @@
 
 Add WorldLand to your Metamask wallet.
 
-{% content-ref url="../../../user/network.md" %}
-[network.md](../../../user/network.md)
+{% content-ref url="../../../user/user/network.md" %}
+[network.md](../../../user/user/network.md)
 {% endcontent-ref %}
 
 Browse to Remix.

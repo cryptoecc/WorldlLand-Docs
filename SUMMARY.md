@@ -3,30 +3,30 @@
 ## 🌐 WorldLand
 
 * [WorldLand Documentation](README.md)
-* [Learn](worldland/learn/README.md)
-  * [Introduction](worldland/learn/introduction.md)
-  * [What is WorldLand?](worldland/learn/what-is-worldland.md)
-  * [WorldLand Technology](worldland/learn/worldland-technology.md)
-  * [Design Principles](worldland/learn/design-principles.md)
-  * [How WorldLand Works](worldland/learn/how-worldland-works.md)
-  * [WorldLand Tokenomics](worldland/learn/worldland-tokenomics.md)
-  * [WorldLand Governance](worldland/learn/worldland-governance.md)
-  * [Charter of WorldLand](worldland/learn/charter-of-worldland.md)
+* [Learn](learn/learn/README.md)
+  * [Introduction](learn/learn/introduction.md)
+  * [What is WorldLand?](learn/learn/what-is-worldland.md)
+  * [WorldLand Technology](learn/learn/worldland-technology.md)
+  * [Design Principles](learn/learn/design-principles.md)
+  * [How WorldLand Works](learn/learn/how-worldland-works.md)
+  * [WorldLand Tokenomics](learn/learn/worldland-tokenomics.md)
+  * [WorldLand Governance](learn/learn/worldland-governance.md)
+  * [Charter of WorldLand](learn/learn/charter-of-worldland.md)
 
 ## 🧑💻 User
 
-* [Wallet](user/wallet.md)
-* [Network](user/network.md)
-* [Get WLCs](user/how-to-obtain-your-wlcs-the-worldland-coins.md)
-* [Transfer Tokens](user/transfer-tokens.md)
-* [Block Explorer](user/block-explorer.md)
+* [Wallet](user/user/wallet.md)
+* [Network](user/user/network.md)
+* [Get WLCs](user/user/how-to-obtain-your-wlcs-the-worldland-coins.md)
+* [Transfer Tokens](user/user/transfer-tokens.md)
+* [Block Explorer](user/user/block-explorer.md)
 
 ## ⛏ Miner
 
-* [Install Node](miner/install-node.md)
-* [Run Node](miner/run-node.md)
-* [Start Mining](miner/start-mining.md)
-* [Check Balance](miner/check-balance.md)
+* [Install Node](miner/undefined/install-node.md)
+* [Run Node](miner/undefined/run-node.md)
+* [Start Mining](miner/undefined/start-mining.md)
+* [Check Balance](miner/undefined/check-balance.md)
 
 ## 💻 Node Developer
 
