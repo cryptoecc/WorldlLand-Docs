@@ -64,17 +64,16 @@
     * [...](dapp-developer/undefined/development-environment/....md)
   * [Useful Addresses](dapp-developer/undefined/useful-addresses.md)
   * [Web3 Libraries](dapp-developer/undefined/web3-libraries.md)
-  * [Gas / Fees](dapp-developer/undefined/gas-fees.md)
+  * [Web3 api](dapp-developer/undefined/apis.md)
   * [ERC20 Token](dapp-developer/undefined/erc20-token.md)
   * [NFT](dapp-developer/undefined/nft.md)
   * [Oracles](dapp-developer/undefined/oracles.md)
-  * [Web3 api](dapp-developer/undefined/apis.md)
 
 ## ❓ FAQ
 
 * [-](faq/undefined/README.md)
-  * [How \~\~\~ ?](faq/undefined/how.md)
   * [What \~\~ ?](faq/undefined/faq.md)
+  * [How \~\~\~ ?](faq/undefined/how.md)
 
 ## ↗ Links
 
