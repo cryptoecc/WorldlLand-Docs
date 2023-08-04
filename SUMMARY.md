@@ -42,6 +42,7 @@
   * [Peer](node-developer/undefined/peer.md)
   * [Mining](node-developer/undefined/mining.md)
   * [Security](node-developer/undefined/security.md)
+  * [Account Mangement](node-developer/undefined/account-mangement.md)
   * [JSON-RPC Console](node-developer/undefined/json-rpc-console.md)
   * [JSON-RPC Server](node-developer/undefined/json-rpc-server.md)
   * [JSON-RPC APIs](node-developer/undefined/json-rpc-apis/README.md)
