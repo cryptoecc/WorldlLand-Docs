@@ -16,7 +16,7 @@
   * [WorldLand Governance](learn/learn/worldland-governance.md)
   * [Charter of WorldLand](learn/learn/charter-of-worldland.md)
 
-## 🧑💻 🧑💻 User
+## 🧑💻 🧑💻 🧑💻 User
 
 * [User](user/user/README.md)
   * [Wallet](user/user/wallet.md)
