@@ -51,21 +51,17 @@
 
 ## 📱 dApp Developer
 
-* [-](dapp-developer/undefined/README.md)
-  * [Ethereum and Worldland](dapp-developer/undefined/ethereum-and-worldland.md)
-  * [Development Environment](dapp-developer/undefined/development-environment/README.md)
-    * [Truffle](dapp-developer/undefined/development-environment/truffle.md)
-    * [Remix](dapp-developer/undefined/development-environment/remix.md)
-  * [Useful Addresses](dapp-developer/undefined/useful-addresses.md)
-  * [Web3 Libraries](dapp-developer/undefined/web3-libraries.md)
-  * [Web3 api](dapp-developer/undefined/apis.md)
-  * [ERC20 Token](dapp-developer/undefined/erc20-token.md)
-  * [NFT](dapp-developer/undefined/nft.md)
-  * [Oracles](dapp-developer/undefined/oracles.md)
+* [Ethereum / Worldland](dapp-developer/ethereum-and-worldland.md)
+* [Development Environment](dapp-developer/development-environment/README.md)
+  * [Truffle](dapp-developer/development-environment/truffle.md)
+  * [Remix](dapp-developer/development-environment/remix.md)
+* [Useful Addresses](dapp-developer/useful-addresses.md)
+* [Web3 Libraries](dapp-developer/web3-libraries.md)
+* [Web3 API](dapp-developer/apis.md)
 
 ## ❓ FAQ
 
-* [-](faq/undefined/README.md)
+* [01. \~\~](faq/undefined/README.md)
   * [What \~\~ ?](faq/undefined/faq.md)
   * [How \~\~\~ ?](faq/undefined/how.md)
 
