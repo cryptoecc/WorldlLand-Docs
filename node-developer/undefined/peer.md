@@ -2,7 +2,7 @@
 
 The WorldLand blockchain network is a peer-to-peer network. When an ETH-ECC node is running, the node runs a peer discovery protocol. ETH-ECC nodes will continue to try to connect to other EVM-compatible nodes on the internet. Upon discovering an EVM-compatible node, the nodes exchange protocol details. If both nodes use the Worldland blockchain protocol, the nodes exchange blockchain data.
 
-EVM-compatible
+
 
 ### Bootnodes
 
@@ -33,7 +33,7 @@ var GwangjuBootnodes = []string{
 Bootnodes can also be specified at startup by supplying the `--bootnode` flag with comma-separated bootnode addresses in enodes format. for example:
 
 ```sh
-$ ./worldland --bootnodes enode://pubkey1@ip1:port1,enode://pubkey2@ip2:port2,enode://pubkey3@ip3:port3
+$ ./worldland -bootnodes enode://pubkey1@ip1:port1,enode://pubkey2@ip2:port2,enode://pubkey3@ip3:port3
 ```
 
 
@@ -46,74 +46,165 @@ $ ./worldland -nodiscover
 
 
 
+### Check connection
 
+In the net module of the JSON-RPC API, there are two commands to check node connectivity. The `net.listening` command returns whether a node is currently listening for peer connection requests from other peers.
 
-### 연결 문제 <a href="#connectivity-problems" id="connectivity-problems"></a>
-
-Geth가 단순히 피어에 연결하지 못하는 경우가 있습니다. 이에 대한 일반적인 이유는 다음과 같습니다.
-
-* 현지 시간이 정확하지 않을 수 있습니다. Ethereum 네트워크에 참여하려면 정확한 시계가 필요합니다. 로컬 시계는 sudo ntpdate -s time.nist.gov (운영 체제에 따라 다름) 와 같은 명령을 사용하여 다시 동기화할 수 있습니다 .
-* 일부 방화벽 구성은 UDP 트래픽을 금지할 수 있습니다. 정적 노드 기능 또는 콘솔의 admin.addPeer()를 사용하여 연결을 수동으로 구성할 수 있습니다.
-
-### 연결 확인 <a href="#checking-connectivity" id="checking-connectivity"></a>
-
-net 모듈 에는 [대화형 Javascript 콘솔](https://geth.ethereum.org/docs/interacting-with-geth/javascript-console) 에서 노드 연결을 확인할 수 있는 두 가지 속성이 있습니다 . 이들은 Geth 노드가 인바운드 요청을 수신하는지 여부를 보고하는 net.listening 과 노드가 연결된 활성 피어 수를 반환하는 peerCount입니다 .
-
-```javascript
+```
 > net.listening
 true
-
-> net.peerCount
-4
 ```
 
-관리 모듈 의 기능은 IP 주소, 포트 번호, 지원되는 프로토콜 등 연결된 피어에 대한 자세한 정보를 제공합니다. admin.peers를 호출하면 연결된 모든 피어에 대해 이 정보가 반환됩니다.
+
+
+The `net.peercount` command returns the number of active peers among the peers of the current node.
+
+```
+> net.peerCount
+3
+```
+
+
+
+You can get detailed information about peers through the admin module of the JSON-RPC API.&#x20;
+
+The `admin.peers` command can get detailed information about all currently connected peers. You can get most of the information such as ip address, current protocol status, enode information, etc.
 
 ```sh
 > admin.peers
 [{
-  ID: 'a4de274d3a159e10c2c9a68c326511236381b84c9ec52e72ad732eb0b2b1a2277938f78593cdbe734e6002bf23114d434a085d260514ab336d4acdc312db671b',
-  Name: 'Geth/v0.9.14/linux/go1.4.2',
-  Caps: 'eth/60',
-  RemoteAddress: '5.9.150.40:30301',
-  LocalAddress: '192.168.0.28:39219'
-}, {
-  ID: 'a979fb575495b8d6db44f750317d0f4622bf4c2aa3365d6af7c284339968eef29b69ad0dce72a4d8db5ebb4968de0e3bec910127f134779fbcb0cb6d3331163c',
-  Name: 'Geth/v0.9.15/linux/go1.4.2',
-  Caps: 'eth/60',
-  RemoteAddress: '52.16.188.185:30303',
-  LocalAddress: '192.168.0.28:50995'
-}, {
-  ID: 'f6ba1f1d9241d48138136ccf5baa6c2c8b008435a1c2bd009ca52fb8edbbc991eba36376beaee9d45f16d5dcbf2ed0bc23006c505d57ffcf70921bd94aa7a172',
-  Name: 'pyethapp_dd52/v0.9.13/linux2/py2.7.9',
-  Caps: 'eth/60, p2p/3',
-  RemoteAddress: '144.76.62.101:30303',
-  LocalAddress: '192.168.0.28:40454'
-}, {
-  ID: 'f4642fa65af50cfdea8fa7414a5def7bb7991478b768e296f5e4a54e8b995de102e0ceae2e826f293c481b5325f89be6d207b003382e18a8ecba66fbaf6416c0',
-  Name: '++eth/Zeppelin/Rascal/v0.9.14/Release/Darwin/clang/int',
-  Caps: 'eth/60, shh/2',
-  RemoteAddress: '129.16.191.64:30303',
-  LocalAddress: '192.168.0.28:39705'
-} ]
-
+  caps: ["eth/66", "eth/67", "snap/1"],
+  enode: "enode://4f4be8c67ac7b1fcfceb21a374a62c68f7f0528988f3b3d322bd6d94aeb745667f0c8e847881bbaeeba52eb1d346166301243222d5e22dd16ce70c57214178ca@43.200.52.189:30303",
+  enr: "enr:-KO4QOF-XTPpf4Hl4jY--o7eJHFAuIKEb38ePS9O6IB8w7OhLWrE3N7xBEjYNLqIeNfva3knzI0EeYdMd2lmsB9bIGKGAYmqPaspg2V0aMfGhGInNlqAgmlkgnY0gmlwhCvINL2Jc2VjcDI1NmsxoQJPS-jGesex_PzrIaN0pixo9_BSiYjzs9MivW2UrrdFZoRzbmFwwIN0Y3CCdl-DdWRwgnZf",
+  id: "2eb88a8ad5e462651f93397b257defd3c5dfd62e46dbffdd2f34bc1fe0501b7a",
+  name: "Worldland/v1.0.0-unstable-af278478-20230731/linux-amd64/go1.20.6",
+  network: {
+    inbound: false,
+    localAddress: "192.168.77.3:36708",
+    remoteAddress: "43.200.52.189:30303",
+    static: false,
+    trusted: false
+  },
+  protocols: {
+    eth: {
+      difficulty: 5844127984,
+      head: "0x3b74ea90a7fbf835c452da8d618e3c1d615ef7e7eec7a9c2b24d4cd34472321a",
+      version: 67
+    },
+    snap: {
+      version: 1
+    }
+  }
+},
+{
+  caps: ["eth/66", "eth/67", "snap/1"],
+  enode: "enode://bbbf2734ce12b7aa258dd1e92e9cec7ea6b2ca6766f5741272c934904f3d182e08688aef3a368684c4c06b6adc2711c51e517bb9033824b2816c9d038c256cf9@3.36.252.183:30303",
+  enr: "enr:-KO4QNVFsMeW7bR0-6XzVokCwXK6cHD9rPqbXJ0AVi4XWrnQX0-XwnzUKijecYJmxbrc32Z2mB-jQwqsngAdbnKoP6SGAYmqQOqTg2V0aMfGhGInNlqAgmlkgnY0gmlwhAMk_LeJc2VjcDI1NmsxoQO7vyc0zhK3qiWN0ekunOx-prLKZ2b1dBJyyTSQTz0YLoRzbmFwwIN0Y3CCdl-DdWRwgnZf",
+  id: "6fc0c411f0c7436b225cf4451535a87c502a09b01535c4d816a504d014c5b99e",
+  name: "Worldland/v1.0.0-unstable-af278478-20230731/linux-amd64/go1.20.6",
+  network: {
+    inbound: false,
+    localAddress: "192.168.77.3:56906",
+    remoteAddress: "3.36.252.183:30303",
+    static: false,
+    trusted: false
+  },
+  protocols: {
+    eth: {
+      difficulty: 5846302836,
+      head: "0xc7dfff5a4fa511fe835716604de15959e198c7ebb9dbcd3e1c347bf9d47ff34a",
+      version: 67
+    },
+    snap: {
+      version: 1
+    }
+  }
+},
+{
+    caps: ["eth/66", "eth/67", "snap/1"],
+    enode: "enode://911771c7894782bced03377a13f1d8a4e8450d05e03eabab1d6daae70e1b91b6074c346d42ac4fae53d98d273efedd6cdd37d2f6715302de9736b29cc4aa7da2@13.250.246.202:30303",
+    enr: "enr:-KO4QG4exbZWnaR2Lznmd3g0rLLz815ZKWnLck9gtEp3kJ2FTP77AY4cJAPXIHuEB3IwOOvl1JQpudD1zCAG9KMw_KKGAYmqRHwLg2V0aMfGhGInNlqAgmlkgnY0gmlwhA369sqJc2VjcDI1NmsxoQKRF3HHiUeCvO0DN3oT8dik6EUNBeA-q6sdbarnDhuRtoRzbmFwwIN0Y3CCdl-DdWRwgnZf",
+    id: "9918c39af25a0dab9228a4dac9e0f8bf2eee1d4b004a63d6e070603c3d0c1d66",
+    name: "Worldland/v1.0.0-unstable-af278478-20230731/linux-amd64/go1.20.6",
+    network: {
+      inbound: false,
+      localAddress: "192.168.77.3:36394",
+      remoteAddress: "13.250.246.202:30303",
+      static: false,
+      trusted: false
+    },
+    protocols: {
+      eth: {
+        difficulty: 5843979192,
+        head: "0xd92932e41d3f861314fe8414a01ac02c309f7a6979295699a5a08e141071a932",
+        version: 67
+      },
+      snap: {
+        version: 1
+      }
+    }
+}]
 ```
 
-관리 모듈 에는 피어가 아닌 로컬 노드에 대한 정보를 수집하는 기능도 포함되어 있습니다. 예를 들어 admin.nodeInfo는 로컬 노드의 이름 및 연결 세부 정보를 반환합니다.
+
+
+Also, node information of the local node can be obtained through the management module.&#x20;
+
+The `admin.nodeInfo` command returns detailed node information of the local node.
 
 ```sh
 > admin.nodeInfo
-{
-  Name: 'Geth/v0.9.14/darwin/go1.4.2',
-  NodeUrl: 'enode://3414c01c19aa75a34f2dbd2f8d0898dc79d6b219ad77f8155abf1a287ce2ba60f14998a3a98c0cf14915eabfdacf914a92b27a01769de18fa2d049dbf4c17694@[::]:30303',
-  NodeID: '3414c01c19aa75a34f2dbd2f8d0898dc79d6b219ad77f8155abf1a287ce2ba60f14998a3a98c0cf14915eabfdacf914a92b27a01769de18fa2d049dbf4c17694',
-  IP: '::',
-  DiscPort: 30303,
-  TCPPort: 30303,
-  Td: '2044952618444',
-  ListenAddr: '[::]:30303'
+{ 
+  enode: "enode://004d32a9d7833edda6b2d47e89705187ef791930410c6c88c3b169ad80b4031a4c7e26b3bbe8fae535088b1efae43fd968f53e2658105bd691472336c9713c15@211.171.40.162:30303",
+  enr: "enr:-KO4QO0C-Z3ZeIwaRuYwpLP9EKW1nOl3NHRdWvGMPXn3Pp9RFjH_9-rW9WWbIA6Y0ccKH2zG3cB3YrG5bUJtUzbY9BSGAYmqT6yHg2V0aMfGhGInNlqAgmlkgnY0gmlwhNOrKKKJc2VjcDI1NmsxoQMATTKp14M-3aay1H6JcFGH73kZMEEMbIjDsWmtgLQDGoRzbmFwwIN0Y3CCdl-DdWRwgnZf",
+  id: "d98855afc2b03c6183a9ce7bd252eaef19e0e5dd81c44f9398ea674e09dc35f0",
+  ip: "211.171.40.162",
+  listenAddr: "[::]:30303",
+  name: "Worldland/v1.0.0-unstable-af278478-20230731/linux-amd64/go1.18.1",
+  ports: {
+    discovery: 30303,
+    listener: 30303
+  },
+  protocols: {
+    eth: {
+      config: {
+        HalvingEndTime: 25228800,
+        berlinBlock: 0,
+        byzantiumBlock: 0,
+        chainId: 10395,
+        constantinopleBlock: 0,
+        daoForkSupport: true,
+        eccpow: {},
+        eip150Block: 0,
+        eip150Hash: "0x0000000000000000000000000000000000000000000000000000000000000000",
+        eip155Block: 0,
+        eip158Block: 0,
+        homesteadBlock: 0,
+        istanbulBlock: 0,
+        londonBlock: 0,
+        petersburgBlock: 0,
+        seoulBlock: 0,
+        worldlandBlock: 0
+      },
+      difficulty: 5848298199,
+      genesis: "0x64130a2624d46bda6aacf0c1ec34ab3d926e31b8438141a10e7412070064f0bf",
+      head: "0x3cab1cccd90c7dab9d05f0b11168ab4a6d5c1faf1ba1de7e77e9f591af994173",
+      network: 10395
+    },
+    snap: {}
+  }
 }
 ```
+
+
+
+### Static Node <a href="#static-nodes" id="static-nodes"></a>
+
+ETH-ECC 노드 사용자가 수동 추가를 통해 정적 노드를 추가할 수 있습니다. 정적 노드는 항상 연결이 유지되는 특정 피어를 말합니다. ETH-ECC 노드가 중지 후 다시 실행되더라도, 노드는 다시 정적 노드에 연결합니다. 정적 노드는 콘솔을 통해 직접 추가하거나, 커맨드 라인 명령을 통해서 추가할 수 있습니다.&#x20;
+
+
+
+
 
 ### 정적 노드 <a href="#static-nodes" id="static-nodes"></a>
 
