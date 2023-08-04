@@ -16,6 +16,10 @@ As an alternative to passing the numerous flags to the `worldland`binary, you ca
 $ ./worldland --config /path/to/your_config.toml
 ```
 
+
+
+### **Config File**
+
 To get an idea how the file should look like you can use the `dumpconfig` subcommand to export your existing configuration:
 
 ```
@@ -30,7 +34,7 @@ $ ./worldland -gwangju dumpconfig -datadir /home/worldland/gwangju >> config.tom
 
 **Return:**
 
-config. toml
+**config. toml**
 
 ````
 # Note: this config doesn't contain the genesis block.
