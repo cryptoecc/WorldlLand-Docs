@@ -82,12 +82,12 @@ false
 
 ### Etherbase
 
-You need to set up an etherbase account to be recorded as a miner. The etherbase account defaults to being the first account in eth.accounts , which is a node's account.set. However, you can set it to an alternate address using the -miner.etherbase command.
+You need to set up an etherbase account to be recorded as a miner. The etherbase account defaults to being the first account in `eth.accounts` , which is a node's account.set. However, you can set it to an alternate address using the `-miner.etherbase` command.
 
 <pre class="language-sh"><code class="lang-sh"><strong>$ ./worldland -miner.etherbase 'YOUR_ACCOUNT' -mine
 </strong></code></pre>
 
-If no account is available, an account will be created automatically and set to Etherbase. You can manually change the etherbase using the console's minor module. etherbase does not have to be included on the local node, existing accounts are fine.
+If no account is available, an account will be created automatically and set to etherbase. You can manually change the Etherbase using the console's minor module. Etherbase does not have to be included on the local node, existing accounts are fine.
 
 ```sh
 miner.setEtherbase(eth.accounts[2])
