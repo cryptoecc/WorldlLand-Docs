@@ -4,22 +4,6 @@ The WorldLand blockchain network is a peer-to-peer network. When an ETH-ECC node
 
 
 
-## 요약 <a href="#summary" id="summary"></a>
-
-Geth는 기본적으로 Ethereum Mainnet에 연결됩니다. 그러나 이 동작은 명령줄 플래그와 파일의 조합을 사용하여 변경할 수 있습니다. 이 페이지에서는 Geth 노드를 Ethereum, 공용 테스트넷 및 사설 네트워크에 연결하는 데 사용할 수 있는 다양한 옵션을 설명했습니다. 지분 증명 네트워크(예: Ethereum Mainnet, Goerli, Sepolia)에 연결하려면 합의 클라이언트도 필요합니다.
-
-
-
-## 피어 제한 <a href="#peer-limit" id="peer-limit"></a>
-
-노드 실행과 관련된 계산 및 대역폭 비용을 제한하기 위해 worldland가 연결할 피어 수를 제한하는 것이 때때로 바람직합니다. 기본적으로 제한은 피어 50개이지만 -maxpeers 에 값을 전달하여 업데이트할 수 있습니다 .
-
-```sh
-$ ./worldland -maxpeers 15
-```
-
-
-
 ## Check connection
 
 In the net module of the JSON-RPC API, there are two commands to check node connectivity. The `net.listening` command returns whether a node is currently listening for peer connection requests from other peers.
