@@ -1,28 +1,46 @@
 # Peer
 
+월드랜드 블록체인 네트워크는 P2P네트워크 입니다. ETH-ECC 노드가 실행되면, 노드는 피어 탐색 프로토콜을 실행합니다.  ETH-ECC 노드는 인터넷의 다른 EVM 호환노드에 계속 연결을 시도합니다. EVM 호한 노드를 발견하면, 노드는 프로토콜의 세부 정보를 교환합니다. 두 노드가 모두 월드랜드 블록체인 프로토콜을 사용하는 경우, 노드는 블록체인 데이터를 교환합니다.
+
+
+
 ### Bootnodes
 
+새로운 노드가 월드랜드 네트워크에 참여하기 위해서는 피어 탐색 프로토콜을 통해 월드랜드 노드를 발견해야 합니다. 하지만, 방대한 인터넷 속에서 아무런 단서 없이 노드를 빠른 시간에 찾는 것은 쉽지 않습니다. 월드랜드는 부트스트랩 노드(부트노드) 를 통해 새 노드들을 지원합니다. 부트노드는 ETH-ECC 코드 안에 하드코딩 되어 있습니다. ETH-ECC 노드가 시작하면, 노드는 부트노드 집합에 자동으로 연결을 시도합니다. 아래는 현재 하드코딩된.  서울 네트워크와 광주 네트워크의 부트노드 목록입니다.
 
+[ETH-ECC/params/bootnodes.go](https://github.com/cryptoecc/ETH-ECC/blob/dbbde3d95e52d827fe294035270ecc1ca684f3d2/params/bootnodes.go#L85)
 
-### Static nodes <a href="#static-nodes" id="static-nodes"></a>
+```
+// SeoulBootnodes are the enode URLs of the P2P bootstrap nodes running on the
+// Seoul network.
+var SeoulBootnodes = []string{
+	"enode://00de00356ccba2b6960fb0fe29d596388494efd4f889772e5b86f45cf52055c343e35daa2a8fe5f02e7c239056ddfb4e143d7488dc0831b00f018f7ce0ddab4b@3.39.197.118:30303",
+	"enode://7b32ddd47f9db43dd660ae3e2cb05ebd36d1092aa1a3ee31a9090c7d459ac26dbc2352693d6217d466ad8dfdf09fe69a48265d2a53a7dc18a931347ad6a481dd@3.36.252.183:30303",
+	"enode://6477bc373216b8a59f59532ae01461f69f6ec88ec5ba81d293026089d973386d02f43004db1db5939532617c3dc20dd1f05c3dbd81c4fb23efedefb6129a1fb9@13.250.246.202:30303",
+}
 
-
-
-### Trusted nodes <a href="#trusted-nodes" id="trusted-nodes"></a>
-
-
-
-### 동료를 찾는 <a href="#finding-peers" id="finding-peers"></a>
-
-Geth는 피어가 충분할 때까지 네트워크의 다른 노드에 계속 연결을 시도합니다. UPnP(Universal Plug and Play)가 라우터에서 활성화되거나 Ethereum이 인터넷 연결 서버에서 실행되는 경우 다른 노드의 연결도 허용합니다. [Geth는 검색 프로토콜을](https://ethereum.org/en/developers/docs/networking-layer/#discovery) 사용하여 피어를 찾습니다 . 검색 프로토콜에서 노드는 연결 세부 정보를 교환한 다음 세션( [​​RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) )을 설정합니다. [노드가 호환되는 하위 프로토콜을 지원하는 경우 네트워크에서](https://ethereum.org/en/developers/docs/networking-layer/#wire-protocol) Ethereum 데이터 교환을 시작할 수 있습니다 .
-
-처음으로 네트워크에 진입하는 새 노드는 새 노드를 피어에 연결하는 것이 유일한 목적인 부트스트랩 노드("부트노드")에 의해 피어 집합에 도입됩니다. 이러한 부트노드의 끝점은 Geth로 하드코딩되지만 시작 시 [enodes](https://ethereum.org/en/developers/docs/networking-layer/network-addresses/#enode) 형식으로 쉼표로 구분된 부트노드 주소와 함께 --bootnode 플래그 를 제공하여 지정할 수도 있습니다 . 예를 들어:
-
-```sh
-geth --bootnodes enode://pubkey1@ip1:port1,enode://pubkey2@ip2:port2,enode://pubkey3@ip3:port3
+// Gwangju Bootnodes are the enode URLs of the P2P bootstrap nodes running on the
+// Gwangju network.
+var GwangjuBootnodes = []string{
+	"enode://4f4be8c67ac7b1fcfceb21a374a62c68f7f0528988f3b3d322bd6d94aeb745667f0c8e847881bbaeeba52eb1d346166301243222d5e22dd16ce70c57214178ca@43.200.52.189:30303",
+	"enode://bbbf2734ce12b7aa258dd1e92e9cec7ea6b2ca6766f5741272c934904f3d182e08688aef3a368684c4c06b6adc2711c51e517bb9033824b2816c9d038c256cf9@3.36.252.183:30303",
+	"enode://911771c7894782bced03377a13f1d8a4e8450d05e03eabab1d6daae70e1b91b6074c346d42ac4fae53d98d273efedd6cdd37d2f6715302de9736b29cc4aa7da2@13.250.246.202:30303",
+}
 ```
 
-예를 들어 알려진 고정 노드가 있는 로컬 테스트 노드 또는 실험 테스트 네트워크를 실행하는 경우와 같이 검색 프로세스를 비활성화하는 것이 유용한 시나리오가 있습니다. 시작할 때 Geth에 --nodiscover 플래그를 전달하면 됩니다 .
+
+
+부트노드는시작 시 [enodes](https://ethereum.org/en/developers/docs/networking-layer/network-addresses/#enode) 형식으로 쉼표로 구분된 부트노드 주소와 함께 --bootnode 플래그 를 제공하여 지정할 수도 있습니다 . 예를 들어:
+
+```sh
+$ ./worldland --bootnodes enode://pubkey1@ip1:port1,enode://pubkey2@ip2:port2,enode://pubkey3@ip3:port3
+```
+
+광주 또는  서울   네트워크에서 프로토콜이 불필요하거나
+
+
+
+예를 들어 알려진 고정 노드가 있는 로컬 테스트 노드 또는 실험 테스트 네트워크를 실행하는 경우와 같이 검색 프로세스를 비활성화하는 것이 유용한 시나리오가 있습니다. 시작할 때 worldland에 --nodiscover 플래그를 전달하면 됩니다 .
 
 ### 연결 문제 <a href="#connectivity-problems" id="connectivity-problems"></a>
 
