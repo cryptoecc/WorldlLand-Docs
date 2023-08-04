@@ -3,7 +3,7 @@
 ## **Check mined block in explorer**
 
 {% hint style="info" %}
-See the [**Block Explorer**](../../user/block-explorer.md) tab for more information about explorers.
+See the [**Block Explorer**](../../user/user/block-explorer.md) tab for more information about explorers.
 {% endhint %}
 
 You can check the contents of the **mined block** in the **block explorer**.
@@ -21,7 +21,7 @@ You can also search by **wallet address**.
 This part explains how to link your Metamask account to the ETH-ECC console and link your Eth-ECC account to Metamask.
 
 {% hint style="info" %}
-Please refer to the [**Wallet**](../../user/wallet.md) section for information regarding **installing Metamask.**
+Please refer to the [**Wallet**](../../user/user/wallet.md) section for information regarding **installing Metamask.**
 {% endhint %}
 
 ### Metamask account  to Eth-ECC
