@@ -1,12 +1,12 @@
 # Peer
 
-월드랜드 블록체인 네트워크는 P2P네트워크 입니다. ETH-ECC 노드가 실행되면, 노드는 피어 탐색 프로토콜을 실행합니다.  ETH-ECC 노드는 인터넷의 다른 EVM 호환노드에 계속 연결을 시도합니다. EVM 호한 노드를 발견하면, 노드는 프로토콜의 세부 정보를 교환합니다. 두 노드가 모두 월드랜드 블록체인 프로토콜을 사용하는 경우, 노드는 블록체인 데이터를 교환합니다.
+The WorldLand blockchain network is a peer-to-peer network. When an ETH-ECC node is running, the node runs a peer discovery protocol. ETH-ECC nodes will continue to try to connect to other EVM-compatible nodes on the internet. Upon discovering an EVM-compatible node, the nodes exchange protocol details. If both nodes use the Worldland blockchain protocol, the nodes exchange blockchain data.
 
-
+EVM-compatible
 
 ### Bootnodes
 
-새로운 노드가 월드랜드 네트워크에 참여하기 위해서는 피어 탐색 프로토콜을 통해 월드랜드 노드를 발견해야 합니다. 하지만, 방대한 인터넷 속에서 아무런 단서 없이 노드를 빠른 시간에 찾는 것은 쉽지 않습니다. 월드랜드는 부트스트랩 노드(부트노드) 를 통해 새 노드들을 지원합니다. 부트노드는 ETH-ECC 코드 안에 하드코딩 되어 있습니다. ETH-ECC 노드가 시작하면, 노드는 부트노드 집합에 자동으로 연결을 시도합니다. 아래는 현재 하드코딩된.  서울 네트워크와 광주 네트워크의 부트노드 목록입니다.
+In order for a new node to join the WorldLand network, it must discover the WorldLand node through the peer discovery protocol. However, it is not easy to quickly find a node without any clues on the vast internet. WorldLand supports new nodes through bootstrap nodes (bootnodes). The bootnode is hardcoded inside the ETH-ECC code. When an ETH-ECC node starts up, it automatically tries to connect to a set of bootnodes. Below is currently hardcoded. This is a list of boot nodes in the Seoul network and the Gwangju network.
 
 [ETH-ECC/params/bootnodes.go](https://github.com/cryptoecc/ETH-ECC/blob/dbbde3d95e52d827fe294035270ecc1ca684f3d2/params/bootnodes.go#L85)
 
@@ -30,17 +30,23 @@ var GwangjuBootnodes = []string{
 
 
 
-부트노드는시작 시 [enodes](https://ethereum.org/en/developers/docs/networking-layer/network-addresses/#enode) 형식으로 쉼표로 구분된 부트노드 주소와 함께 --bootnode 플래그 를 제공하여 지정할 수도 있습니다 . 예를 들어:
+Bootnodes can also be specified at startup by supplying the `--bootnode` flag with comma-separated bootnode addresses in enodes format. for example:
 
 ```sh
 $ ./worldland --bootnodes enode://pubkey1@ip1:port1,enode://pubkey2@ip2:port2,enode://pubkey3@ip3:port3
 ```
 
-광주 또는  서울   네트워크에서 프로토콜이 불필요하거나
+
+
+There are cases where the discovery process is unnecessary, such as when running local tests on the Gwangju or Seoul networks where bootnodes exist. In this case, you can disable the discovery protocol on startup via the `-nodiscover` option.
+
+```
+$ ./worldland -nodiscover
+```
 
 
 
-예를 들어 알려진 고정 노드가 있는 로컬 테스트 노드 또는 실험 테스트 네트워크를 실행하는 경우와 같이 검색 프로세스를 비활성화하는 것이 유용한 시나리오가 있습니다. 시작할 때 worldland에 --nodiscover 플래그를 전달하면 됩니다 .
+
 
 ### 연결 문제 <a href="#connectivity-problems" id="connectivity-problems"></a>
 
