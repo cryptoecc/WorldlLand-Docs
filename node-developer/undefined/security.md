@@ -1,72 +1,64 @@
 # Security
 
+## Network security
 
+Since the Worldland blockchain network is a peer-to-peer network, it must be able to communicate with all nodes. The default port settings of ETH-ECC are as follows.
 
-### 네트워킹 보안 <a href="#networking-security" id="networking-security"></a>
-
-월드랜드 블록체인 네트워크는 P2P 네트워크이기 때문에 모든 노드와 통신할 수 있어야 합니다. 기본적으로 설정된 ETH-ECC 의 포트 설정은 다음과 같습니다.&#x20;
-
-| communication | Port  |
+| Communication | Port  |
 | ------------- | ----- |
 | P2P           | 30303 |
 | HTTP-RPC      | 8545  |
 | WS-RPC        | 8546  |
 
-P2P 네트워크는 기본적으로 설정되어 있으며, HTTP 와 웹소켓(WS)는 명령어를활성화 하지 않으면, 기본적으로 비활성화입니다.
+**P2P 네트워크**는 기본적으로 설정되어 있으며, **HTTP** 와 **웹소켓(WS)**는 명령어를 활성화 하지 않으면, 기본적으로 비활성화입니다.
 
 
 
-월드랜드 네트워크 참여 목적만이 있는 노드라면 필요한 네트워크 설정은 다음과 같습니다.&#x20;
-
-P2P
+**월드랜드 네트워크 노드**의 네트워크 방화벽 설정은 다음과 같습니다.&#x20;
 
 * TCP 30303 또는 P2P 통신을 위해 정의된 사용자 지정 포트 에서 트래픽을 허용합니다 . 이렇게 하면 노드가 피어에 연결할 수 있습니다.
 * UDP 30303 또는 P2P 통신을 위해 정의된 사용자 지정 포트 에서 트래픽을 허용합니다 . 이를 통해 노드 검색이 가능합니다.
 
+**JSON-RPC 서버를 활성화 한다면, 아래 설정을 포함하십시오.**
+
+{% hint style="info" %}
+When enabling **RPC servers** on Worldland nodes, security must be taken into account. When a node allows external access, an attacker with an unlocked account can easily transfer the ether stored in the wallet.
 
 
-HTTP-RPC
+
+Please refer to the link below:
+
+[https://ethereum.stackexchange.com/questions/3887/how-to-reduce-the-chances-of-your-ethereum-wallet-getting-hacked](https://ethereum.stackexchange.com/questions/3887/how-to-reduce-the-chances-of-your-ethereum-wallet-getting-hacked)
+{% endhint %}
 
 * 8545 에 대한 모든 트래픽 또는 노드에 대한 JSON-RPC 요청에 대해 정의된 모든 사용자 정의 포트(명시적으로 정의된 신뢰할 수 있는 시스템의 트래픽 제외)를 차단합니다.
-
-WS-RPC
-
 * 8546 에 대한 모든 트래픽 또는 노드에 대한 JSON-RPC 요청에 대해 정의된 모든 사용자 정의 포트(명시적으로 정의된 신뢰할 수 있는 시스템의 트래픽 제외)를 차단합니다.
 
-### &#x20;<a href="#networking-security" id="networking-security"></a>
 
-### &#x20;<a href="#networking-security" id="networking-security"></a>
 
-로컬 시스템의 방화벽 설정은 다음과 같아야 합니다.
-
-* 8545 에 대한 모든 트래픽 또는 노드에 대한 JSON-RPC 요청에 대해 정의된 모든 사용자 정의 포트(명시적으로 정의된 신뢰할 수 있는 시스템의 트래픽 제외)를 차단합니다.
-* TCP 30303 또는 P2P 통신을 위해 정의된 사용자 지정 포트 에서 트래픽을 허용합니다 . 이렇게 하면 노드가 피어에 연결할 수 있습니다.
-* UDP 30303 또는 P2P 통신을 위해 정의된 사용자 지정 포트 에서 트래픽을 허용합니다 . 이를 통해 노드 검색이 가능합니다.
-
-## **노드 구성** <a href="#f904" id="f904"></a>
-
-### **절대 이렇게 하지 마세요!!!** <a href="#fb4b" id="fb4b"></a>
-
-GETH 노드에서 RPC 액세스를 활성화할 때 잠금 해제된 계정으로 RPC에 대한 외부 액세스를 허용해서는 안 됩니다. 예를 들어
+**P2P 포트**를 변경하고 싶다면, 명령줄 옵션의 `-port 옵션들을 참고하십시오.`
 
 ```
-$ ./worldland — rpc — rpcaddr 0.0.0.0 — rpcport 8545 — rpcapi "db, eth, net, web3, personal" — ipcapi "admin,eth,debug,personal,web3" —unlock "YOUR_ADDRS" 
+    --discovery.port value         (default: 30303)
+          Use a custom UDP port for P2P discovery
+    --port value                   (default: 30303)
+          Network listening port
+    --http.port value              (default: 8545)
+          HTTP-RPC server listening port
+    --ws.port value                (default: 8546)
+          WS-RPC server listening port
+          
 ```
 
-기본적으로 이더리정에 대한 외부 액세스를 허용하고 있으며 계정 잠금을 해제하면 공격자가 지갑에 저장된 이더를 쉽게 전송할 수 있습니다.
+### &#x20;<a href="#account-security" id="account-security"></a>
 
-이 오류로 인해 사람들이 해킹당하는 예
+## Account security
 
-* [https://ethereum.stackexchange.com/questions/3887/how-to-reduce-the-chances-of-your-ethereum-wallet-getting-hacked?utm\_medium=organic\&utm\_source=google\_rich\_qa\&utm\_campaign=google\_rich\_qa](https://ethereum.stackexchange.com/questions/3887/how-to-reduce-the-chances-of-your-ethereum-wallet-getting-hacked?utm\_medium=organic\&utm\_source=google\_rich\_qa\&utm\_campaign=google\_rich\_qa)
-* 그리고 내 친구 :)
 
-[https://medium.com/coinmonks/securing-your-ethereum-nodes-from-hackers-8b7d5bac8986](https://medium.com/coinmonks/securing-your-ethereum-nodes-from-hackers-8b7d5bac8986)
 
-[https://medium.com/coinmonks/securing-your-ethereum-nodes-from-hackers-8b7d5bac8986](https://medium.com/coinmonks/securing-your-ethereum-nodes-from-hackers-8b7d5bac8986)
 
-[https://ethereum.stackexchange.com/questions/32619/is-it-secure-to-run-public-ethereum-node](https://ethereum.stackexchange.com/questions/32619/is-it-secure-to-run-public-ethereum-node)
 
-### 계정 보안 <a href="#account-security" id="account-security"></a>
+
 
 계정 보안은 개인 키와 계정 암호를 백업하고 적이 액세스할 수 없도록 유지하는 것입니다. 이것은 사용자가 책임지는 것입니다. Geth는 계정 암호를 사용하여 잠금 해제된 키에 대해 암호화된 저장소를 제공합니다. 키 파일이나 암호를 분실하면 계정에 액세스할 수 없으며 자금은 사실상 영원히 손실됩니다. 암호화되지 않은 키에 대한 액세스 권한을 적이 획득한 경우 계정과 관련된 모든 자금을 제어할 수 있습니다.
 
