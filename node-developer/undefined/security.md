@@ -1,6 +1,41 @@
 # Security
 
+
+
 ### 네트워킹 보안 <a href="#networking-security" id="networking-security"></a>
+
+월드랜드 블록체인 네트워크는 P2P 네트워크이기 때문에 모든 노드와 통신할 수 있어야 합니다. 기본적으로 설정된 ETH-ECC 의 포트 설정은 다음과 같습니다.&#x20;
+
+| communication | Port  |
+| ------------- | ----- |
+| P2P           | 30303 |
+| HTTP-RPC      | 8545  |
+| WS-RPC        | 8546  |
+
+P2P 네트워크는 기본적으로 설정되어 있으며, HTTP 와 웹소켓(WS)는 명령어를활성화 하지 않으면, 기본적으로 비활성화입니다.
+
+
+
+월드랜드 네트워크 참여 목적만이 있는 노드라면 필요한 네트워크 설정은 다음과 같습니다.&#x20;
+
+P2P
+
+* TCP 30303 또는 P2P 통신을 위해 정의된 사용자 지정 포트 에서 트래픽을 허용합니다 . 이렇게 하면 노드가 피어에 연결할 수 있습니다.
+* UDP 30303 또는 P2P 통신을 위해 정의된 사용자 지정 포트 에서 트래픽을 허용합니다 . 이를 통해 노드 검색이 가능합니다.
+
+
+
+HTTP-RPC
+
+* 8545 에 대한 모든 트래픽 또는 노드에 대한 JSON-RPC 요청에 대해 정의된 모든 사용자 정의 포트(명시적으로 정의된 신뢰할 수 있는 시스템의 트래픽 제외)를 차단합니다.
+
+WS-RPC
+
+* 8546 에 대한 모든 트래픽 또는 노드에 대한 JSON-RPC 요청에 대해 정의된 모든 사용자 정의 포트(명시적으로 정의된 신뢰할 수 있는 시스템의 트래픽 제외)를 차단합니다.
+
+### &#x20;<a href="#networking-security" id="networking-security"></a>
+
+### &#x20;<a href="#networking-security" id="networking-security"></a>
 
 로컬 시스템의 방화벽 설정은 다음과 같아야 합니다.
 
@@ -15,10 +50,10 @@
 GETH 노드에서 RPC 액세스를 활성화할 때 잠금 해제된 계정으로 RPC에 대한 외부 액세스를 허용해서는 안 됩니다. 예를 들어
 
 ```
-$ geth — rpc — rpcaddr 0.0.0.0 — rpcport 8545 — rpcapi "db, eth, net, web3, personal" — ipcapi "admin,eth,debug,personal,web3" — <addrs> 잠금 해제
+$ ./worldland — rpc — rpcaddr 0.0.0.0 — rpcport 8545 — rpcapi "db, eth, net, web3, personal" — ipcapi "admin,eth,debug,personal,web3" —unlock "YOUR_ADDRS" 
 ```
 
-기본적으로 이더리움 계정에 대한 외부 액세스를 허용하고 있으며 계정 잠금을 해제하면 공격자가 지갑에 저장된 이더를 쉽게 전송할 수 있습니다.
+기본적으로 이더리정에 대한 외부 액세스를 허용하고 있으며 계정 잠금을 해제하면 공격자가 지갑에 저장된 이더를 쉽게 전송할 수 있습니다.
 
 이 오류로 인해 사람들이 해킹당하는 예
 
