@@ -1,17 +1,28 @@
 # Remix
 
-Connecting to WorldLand
+### Connecting to WorldLand
 
 Add WorldLand to your Metamask wallet.
 
+{% content-ref url="../../../user/user/network.md" %}
+[network.md](../../../user/user/network.md)
+{% endcontent-ref %}
+
+
+
 Browse to Remix.
+
+{% embed url="https://remix.ethereum.org/" %}
 
 In the website, click the run icon.
 
-&#x20;![image](https://github.com/cryptoecc/WorldlLand-Docs/assets/57755092/091f340c-01eb-4a0b-9798-d1d5b9444431)
+<figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/development-environment_remix_01.png" alt=""><figcaption></figcaption></figure>
 
-Change your environment to Injected Provider and make sure the network ID is 103(Main) / 10395(Test)
+Change your environment to Injected Provider and make sure the ID is 103(Main) or 10395(Test)
+
+{% embed url="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/development-environment_remix_02.png" %}
 
 
 
-![image](https://github.com/cryptoecc/WorldlLand-Docs/assets/57755092/1480a8a0-9463-4793-b80f-281725860309)
+
+
