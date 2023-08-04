@@ -97,7 +97,7 @@ miner.setEtherbase(eth.accounts[2])
 
 ### Additional tips
 
-Data can be stored by adding additional data (32 bytes) to the mined block. It is usually decoded to Unicode, so you can add any data you want to the block via the miner.setExtra() command in the console.
+Data can be stored by adding additional data (32 bytes) to the mined block. It is usually decoded to Unicode, so you can add any data you want to the block via the `miner.setExtra()` command in the console.
 
 ```sh
 miner.setExtra("worldland")
@@ -110,7 +110,7 @@ eth.hashrate
  712000
 ```
 
-You can check the increased account balance through mining through the eth,getBalance() command.
+You can check the increased account balance through mining through the `eth,getBalance()` command.
 
 ```sh
 eth.getBalance(eth.coinbase).toNumber();
@@ -119,7 +119,9 @@ eth.getBalance(eth.coinbase).toNumber();
 
 
 
-It may fluctuate after the balance increases. Even if it is the first block in the local blockchain, it can be reconstructed because there are earlier blocks that have not yet been propagated. When the chain is reconstructed, the blocks you create will not be included and block rewards will not be applied. The deeper the blocks generated, the safer they become. Logs only show mined blocks that are 7 block deep or higher to reduce balance indiscriminate fluctuations.
+It may fluctuate after the balance increases. Even if it is the first block in the local blockchain, it can be reconstructed because there are earlier blocks that have not yet been propagated.&#x20;
+
+When the chain is reconstructed, the blocks you create will not be included and block rewards will not be applied. The deeper the blocks generated, the safer they become. Logs only show mined blocks that are **7 block deep** or higher to reduce balance indiscriminate fluctuations.
 
 ```
 INFO [08-04|15:38:40.370] 🔗 block reached canonical chain          number=31720 hash=aaf485..dd2528
