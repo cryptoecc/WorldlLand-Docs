@@ -1,6 +1,6 @@
 # ETH-ECC
 
-{% embed url="https://github.com/cryptoecc/ETH-ECC" %}
+### [https://github.com/cryptoecc/ETH-ECC](https://github.com/cryptoecc/ETH-ECC)
 
 ### What is ETH-ECC?
 
