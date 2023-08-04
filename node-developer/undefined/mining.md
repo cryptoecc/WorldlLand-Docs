@@ -1,24 +1,10 @@
 # Mining
 
-### &#x20;<a href="#summary" id="summary"></a>
-
-블록체인은 개별 노드가 유효한 블록을 생성하고 블록을 확인하고 자신의 로컬 데이터베이스에 추가하는 동료에게 배포할 때 성장합니다.
-
-블록을 추가하는 노드는 이더 지급으로 보상을 받습니다. 이더리움 메인넷에서 지분 증명 합의 엔진은 각 블록을 생성할 노드를 무작위로 선택합니다.
-
-이더리움이 항상 이런 식으로 보호되는 것은 아닙니다. 원래는 작업 증명 기반 합의 메커니즘이 대신 사용되었습니다. 작업 증명 하에서 블록 생산자는 각 슬롯에서 무작위로 선택되지 않습니다. 대신 그들은 블록을 추가할 권리를 놓고 경쟁합니다. 무차별 대입 계산을 통해서만 찾을 수 있는 특정 값을 가장 빨리 계산하는 노드는 블록을 추가하는 노드입니다. 노드가 이 값을 계산하여 에너지를 소비했음을 입증할 수 있는 경우에만 다른 노드에서 해당 블록을 수락합니다. 작업 증명을 사용하여 블록을 생성하고 보호하는 이 프로세스를 "채굴"이라고 합니다.
-
-Ethereum 노드에서 사용하는 특정 알고리즘("Ethash")에 대한 세부 정보를 포함하여 채굴에 대한 더 많은 정보는 [ethereum.org](https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining-algorithms/ethash) 에서 확인할 수 있습니다 .
 
 
-
-### 요약 <a href="#summary" id="summary"></a>
-
-이 페이지는 Geth를 마이닝 노드로 시작하는 방법을 설명합니다. 마이닝은 CPU(이 경우 Geth의 내장 마이너를 사용할 수 있음) 또는 타사 소프트웨어가 필요한 GPU에서 수행할 수 있습니다. 마이닝은 **더 이상 Ethereum Mainnet을 보호하는 데 사용되지 않습니다** .
+The **WorldLand** blockchain is a proof-of-work blockchain. Nodes in **WorldLand** compete by running a specific algorithm called **ECCPoW**. The node that solved the algorithm the fastest creates and propagates the block. Other nodes verify that the received block actually solved the algorithm and accept the block only if it is verified. The series of processes that solve proof-of-work algorithms and generate blocks is called mining. ETH-ECC supports **CPU mining** of **ECCPoW** via the built-in miner.
 
 
-
-### Geth로 CPU 마이닝 <a href="#cpu-mining-with-geth" id="cpu-mining-with-geth"></a>
 
 Geth가 시작되면 기본적으로 채굴되지 않습니다. 채굴을 특별히 지시하지 않는 한 채굴자가 아닌 노드로만 작동합니다. Geth는 --mine 플래그가 제공 되면 (CPU) 광부로 시작합니다 .
 
