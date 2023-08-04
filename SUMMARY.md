@@ -2,7 +2,7 @@
 
 ## 🌐 WorldLand
 
-* [WorldLand Documentation](README.md)
+* [About WorldLand](README.md)
 * [Learn](learn/learn/README.md)
   * [Introduction](learn/learn/introduction.md)
   * [What is WorldLand?](learn/learn/what-is-worldland.md)
