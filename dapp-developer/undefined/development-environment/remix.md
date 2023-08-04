@@ -8,8 +8,6 @@ Add WorldLand to your Metamask wallet.
 [network.md](../../../user/user/network.md)
 {% endcontent-ref %}
 
-
-
 Browse to Remix.
 
 {% embed url="https://remix.ethereum.org/" %}
@@ -22,7 +20,6 @@ Change your environment to Injected Provider and make sure the ID is 103(Main) o
 
 {% embed url="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/development-environment_remix_02.png" %}
 
+Now you can deploy your smart contract(.sol) file using remix.
 
-
-
-
+***
