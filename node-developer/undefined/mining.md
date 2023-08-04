@@ -6,22 +6,59 @@ The **WorldLand** blockchain is a proof-of-work blockchain. Nodes in **WorldLand
 
 
 
-Geth가 시작되면 기본적으로 채굴되지 않습니다. 채굴을 특별히 지시하지 않는 한 채굴자가 아닌 노드로만 작동합니다. Geth는 --mine 플래그가 제공 되면 (CPU) 광부로 시작합니다 .
+
+
+ETH-ECC 노드가 시작되어도 기본적으로는 채굴을 하지 않습니다. 채굴을 위해서는 직접 설정이 필요합니다. -mine 옵션을 통해서 노드가광부로 시작하도록 할 수 있습니다.
 
 ```sh
-geth --mine
+$ ./worldland -mine
 ```
 
-[콘솔을](https://geth.ethereum.org/docs/interacting-with-geth/javascript-console) 사용하여 런타임에 CPU 마이닝을 시작하고 중지할 수도 있습니다 .
 
-```javascript
-miner.start();
-true;
-miner.stop();
-true;
+
+또한 JSON-RPC 콘솔의 miner 모듈을 사용하여 노드   실행중에 채굴을시작하고 중지할 수도 있습니다 .
+
+
+
+miner.start() 명령을 통해서 채굴을 시작할 수 있습니다. 입력값으로 정수를 주면, 해당 수의 쓰레드로 마이닝이 실행됩니다.&#x20;
+
+```
+> miner.start(4)
+INFO [08-04|15:05:45.206] Updated mining threads                   threads=4
 ```
 
-채굴은 네트워크와 동기화된 경우에만 의미가 있습니다(합의 블록 위에서 채굴하기 때문에). 따라서 블록체인 다운로더/동기화 장치는 동기화가 완료될 때까지 채굴을 지연하고, 그 후에 miner.stop() 으로 취소하지 않는 한 채굴이 자동으로 시작됩니다 .
+miner.start() 명령은 노드의 채굴을 중지합니다.
+
+```
+> miner.stop()
+null
+```
+
+
+
+네트워크의 동기화 되지 않고 채굴을 진행하면, 새로운 블록체인을 만들어 나가는 것과 같으므로 의미가 없습니다. 따라서 ETH-ECC 노드는 동기화가 완료될 때까지 채굴을 지연하고, 동기화과 완료된 후에 채굴이 자동으로 진행됩니다.
+
+그런 다음 콘솔에서 동기화 진행률을 확인하려면 다음을 수행하십시오.
+
+```sh
+eth.syncing
+```
+
+동기화가 올바르게 진행 중인 경우 출력은 다음과 유사하게 표시됩니다.
+
+`{ currentBlock: 13891665, healedBytecodeBytes: 0, healedBytecodes: 0, healedTrienodeBytes: 0, healedTrienodes: 0, healingBytecode: 0, healingTrienodes: 0, highestBlock: 14640000, startingBlock: 13891665, syncedAccountBytes: 0, syncedAccounts: 0, syncedBytecodeBytes: 0, syncedBytecodes: 0, syncedStorage: 0, syncedStorageBytes: 0 }`
+
+블록체인이 동기화되면 채굴을 시작할 수 있습니다. 마이닝을 시작하려면 Ethminer를 실행하고 새 터미널에서 Geth에 연결해야 합니다. OpenCL은 광범위한 GPU에 사용할 수 있으며 CUDA는 특히 Nvidia GPU에 사용할 수 있습니다.
+
+
+
+
+
+
+
+
+
+
 
 GPU 마이닝과 마찬가지로 etherbase 계정을 설정해야 합니다. 이는 기본적으로 키 저장소의 기본 계정이지만 --miner.etherbase 명령을 사용하여 대체 주소로 설정할 수 있습니다.
 
