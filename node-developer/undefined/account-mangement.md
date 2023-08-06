@@ -135,6 +135,6 @@ This will cause Clef to enter the new password twice, followed by the Clef maste
 
 
 {% hint style="info" %}
-See the clef section of the go-ethereum docs for details.
+See the [clef](https://geth.ethereum.org/docs/tools/clef/introduction) section of the go-ethereum docs for details.
 {% endhint %}
 
