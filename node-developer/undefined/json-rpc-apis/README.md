@@ -2,10 +2,8 @@
 
 For interacting with the blockchain, ETH-ECC provides a **JSON-RPC API**. The JSON-RPC API interacts with ETH-ECC in the form of JSON objects. RPC (Remote Procedure Call) refers to the function of sending a request to the ETH-ECC node as a JSON object from the outside. You can interact with ETH-ECC by sending a JSON request to the RPC port exposed by ETH-ECC. Since JSON-RPC is not user-friendly, APIs such as web3 built on top of JSON-RPC provide user-friendly interfaces.
 
-
-
 {% hint style="info" %}
-ETH-ECC supports the same **JSON-RPC** module as **Ethereum**.  See [Ethereum's JSON-RPC API](https://ethereum.org/en/developers/docs/apis/json-rpc/) for details.
+ETH-ECC supports the same JSON-RPC module as Ethereum. See the JSON-RPC APIs of [ethereum](https://ethereum.org/en/developers/docs/apis/json-rpc/#json-rpc-methods) and [go-ethereum](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-admin) for details.
 {% endhint %}
 
 
@@ -18,7 +16,7 @@ ETH-ECC has three transport protocols that can use the JSON-RPC API. The followi
 
 
 
-### HTTP 서버 <a href="#http-server" id="http-server"></a>
+### HTTP Server <a href="#http-server" id="http-server"></a>
 
 HTTP is a one-way transport protocol that connects clients and servers. The client sends a request to the server and the server returns a response to the client. The HTTP connection is closed after the response to the given request has been sent. HTTP is the most commonly used because it is a very common and familiar protocol. Including the -http flag in the command launches the HTTP server.
 
