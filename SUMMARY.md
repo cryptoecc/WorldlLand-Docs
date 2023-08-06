@@ -38,14 +38,7 @@
 * [Security](node-developer/undefined/security.md)
 * [Account Mangement](node-developer/undefined/account-mangement.md)
 * [JSON-RPC Server](node-developer/undefined/json-rpc-server.md)
-* [JSON-RPC APIs](node-developer/undefined/json-rpc-apis/README.md)
-  * [Admin](node-developer/undefined/json-rpc-apis/admin.md)
-  * [Debug](node-developer/undefined/json-rpc-apis/debug.md)
-  * [Eth](node-developer/undefined/json-rpc-apis/eth.md)
-  * [Miner](node-developer/undefined/json-rpc-apis/miner.md)
-  * [Net](node-developer/undefined/json-rpc-apis/net.md)
-  * [Personal](node-developer/undefined/json-rpc-apis/personal.md)
-  * [Txpool](node-developer/undefined/json-rpc-apis/txpool.md)
+* [JSON-RPC APIs](node-developer/json-rpc-apis.md)
 
 ## 📱 dApp Developer
 
