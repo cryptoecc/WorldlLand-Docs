@@ -86,11 +86,6 @@ You can also create an account by importing the user's existing hexadecimal priv
 $ ./clef importraw <hexkey>
 ```
 
-The terminal responds with the following message, indicating that the account was successfully created.
-
-```
-```
-
 
 
 ### List accounts
@@ -103,9 +98,6 @@ In the clef console, you can use the following CLI command to list your accounts
 
 This will return a JSON object with your account address.
 
-```
-```
-
 You can also list accounts using eth.accounts , but require authorization from Clef .
 
 You can list all wallets managed by clef with the following command
@@ -115,9 +107,6 @@ You can list all wallets managed by clef with the following command
 ```
 
 returns:
-
-```
-```
 
 
 
@@ -130,9 +119,6 @@ $ ./worldland account import -datadir /YOUR_DIR ./KEY_DIR
 ```
 
 The following information is displayed in the terminal indicating a successful import.
-
-```
-```
 
 
 
