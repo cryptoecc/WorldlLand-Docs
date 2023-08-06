@@ -52,9 +52,9 @@ Add '\*' to allow all web pages.
 ./worldland -http.corsdomain '*'
 ```
 
-### &#x20;<a href="#websockets-server" id="websockets-server"></a>
 
-### 웹소켓 서버 <a href="#websockets-server" id="websockets-server"></a>
+
+### Websocket server
 
 Websocket is a persistent, bidirectional transport protocol that keeps connections alive until terminated. Suitable for sending a large number of requests as it saves the handshake procedure. The flag command pattern is the same as for the HTTP server. The http command is replaced by ws. The default port for ws is 8546.
 
@@ -76,7 +76,7 @@ HTTP and Websocket servers allow external connections. This means that an extern
 
 
 
-### IPC 서버 <a href="#ipc-server" id="ipc-server"></a>
+### IPC server
 
 IPC can usually be used in a local environment where the node and console exist on the same machine. ETH-ECC creates a local file socket to connect to the node. The IPC server is enabled by default and has access to all JSON-RPC modules. Sockets are placed in the same directory as the node.
 
