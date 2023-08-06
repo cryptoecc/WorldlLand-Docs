@@ -110,7 +110,7 @@ returns:
 
 
 
-### import account
+### Import account
 
 Clef also supports creating an account using a pre-existing private key. You can bring the address created in a wallet such as Metamask to Clef and interact with it. You can import your account by running the command below and entering your password. Like I said, protect your passwords and back them up.
 
@@ -122,7 +122,7 @@ The following information is displayed in the terminal indicating a successful i
 
 
 
-### account update
+### Account update
 
 Clef can be used to set and remove passwords for existing keystore files. To set a new password, pass the account address to setpw.
 

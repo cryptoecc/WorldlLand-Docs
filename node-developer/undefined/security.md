@@ -36,7 +36,7 @@ Please refer to the link below:
 
 
 
-**P2P 포트**를 변경하고 싶다면, 명령줄 옵션의 `-port 옵션들을 참고하십시오.`
+If you want to change the **P2P port**, see the `-port` options in Command Line Options.
 
 ```
     --discovery.port value         (default: 30303)
