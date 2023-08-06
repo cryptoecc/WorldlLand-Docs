@@ -1,6 +1,6 @@
 # JSON-RPC Server
 
-Geth와 상호 작용하려면 특정 JSON-RPC API 메서드에 요청을 보내야 합니다. Geth는 모든 표준 [JSON-RPC API](https://github.com/ethereum/execution-apis) 끝점을 지원합니다. RPC 요청은 노드로 전송되어야 하며 응답은 일부 전송 프로토콜을 사용하여 클라이언트로 반환되어야 합니다. 이 페이지에서는 Geth에서 사용 가능한 전송 프로토콜에 대해 설명하고 사용자가 특정 사용자 시나리오에 대한 전송 프로토콜을 선택하는 데 필요한 정보를 제공합니다.
+
 
 ### 소개 <a href="#introduction" id="introduction"></a>
 
