@@ -11,10 +11,12 @@ sudo apt update
 sudo apt upgrade
 ```
 
-Install node.js
+Install nvm
 
 ```sh
-sudo apt install npm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
+nvm install --lts
 ```
 
 Create and change a directory.
@@ -24,9 +26,13 @@ mkdir [YOUR_DIR_NAME]
 cd [YOUR_DIR_NAME]
 ```
 
-Install Truffle.
+Install and initialize Truffle.
 
 ```sh
-sudo npm install -g truffle
+npm install -g truffle
+truffle init
 ```
 
+Now, you can add WorldLand Network via **truffle-config.js**
+
+{% embed url="https://trufflesuite.com/docs/truffle/reference/configuration/#networks" %}
