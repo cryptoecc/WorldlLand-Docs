@@ -59,7 +59,7 @@ Enter 'ok' to proceed:
 
 ETH-ECC can be started in a separate terminal. To connect to Clef, make sure the data directory matches the path provided to Clef and pass the location of the Clef IPC file. Clef saves this file to the path provided in the -configdir flag.
 
-<pre class="language-sh"><code class="lang-sh"><strong>$ ./worldland -signer=/CLEF_DIR/clef/clef.ipc
+<pre class="language-sh"><code class="lang-sh"><strong>$ ./worldland &#x3C;other flags> -signer=/CLEF_DIR/clef/clef.ipc
 </strong></code></pre>
 
 ### **New Account** <a href="#interacting-with-clef" id="interacting-with-clef"></a>
@@ -98,7 +98,7 @@ In the clef console, you can use the following CLI command to list your accounts
 
 This will return a JSON object with your account address.
 
-You can also list accounts using eth.accounts , but require authorization from Clef .
+You can also list accounts using `eth.accounts` but require authorization from Clef.
 
 You can list all wallets managed by clef with the following command
 

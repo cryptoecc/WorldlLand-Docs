@@ -11,7 +11,7 @@ The **WorldLand** blockchain is a proof-of-work blockchain. Nodes in **WorldLand
 Even when the ETH-ECC node starts, it does not mine by default. Mining requires direct setup. You can start a node as a miner with the `-mine` option.
 
 ```sh
-$ ./worldland -mine
+$ ./worldland <other flags> -mine
 ```
 
 
@@ -82,12 +82,12 @@ false
 
 ### Etherbase
 
-You need to set up an etherbase account to be recorded as a miner. The etherbase account defaults to being the first account in `eth.accounts` , which is a node's account.set. However, you can set it to an alternate address using the `-miner.etherbase` command.
+You need to set up an etherbase account to be recorded as a miner. The etherbase account defaults to being the first account in `eth.accounts` , which is a node's account set. However, you can set it to an alternate address using the `-miner.etherbase` command.
 
-<pre class="language-sh"><code class="lang-sh"><strong>$ ./worldland -miner.etherbase 'YOUR_ACCOUNT' -mine
+<pre class="language-sh"><code class="lang-sh"><strong>$ ./worldland &#x3C;other flags> -miner.etherbase 'YOUR_ACCOUNT' -mine
 </strong></code></pre>
 
-If no account is available, an account will be created automatically and set to etherbase. You can manually change the Etherbase using the console's minor module. Etherbase does not have to be included on the local node, existing accounts are fine.
+If no account is available, an account will be created automatically and set to etherbase. You can manually change the Etherbase using the console's minor module. Etherbase does not have to be included on the local node. Existing accounts are fine.
 
 ```sh
 miner.setEtherbase(eth.accounts[2])

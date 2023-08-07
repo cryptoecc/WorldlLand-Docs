@@ -26,7 +26,7 @@ The `net.peercount` command returns the number of active peers among the peers o
 
 You can get detailed information about peers through the admin module of the JSON-RPC API.&#x20;
 
-The `admin.peers` command can get detailed information about all currently connected peers. You can get most of the information such as ip address, current protocol status, enode information, etc.
+The `admin.peers` command can get detailed information about all currently connected peers. You can get most of the information such as IP address, current protocol status, enode information, etc.
 
 ```sh
 > admin.peers
@@ -106,7 +106,7 @@ The `admin.peers` command can get detailed information about all currently conne
 
 
 
-Also, node information of the local node can be obtained through the management module.&#x20;
+Also, node information on the local node can be obtained through the management module.&#x20;
 
 The `admin.nodeInfo` command returns detailed node information of the local node.
 
@@ -184,10 +184,10 @@ var GwangjuBootnodes = []string{
 
 
 
-Bootnodes can also be specified at startup by supplying the `--bootnode` flag with comma-separated bootnode addresses in enodes format. for example:
+Bootnodes can be specified at startup by supplying the `--bootnode` flag with comma-separated bootnode addresses in enodes format. for example:
 
 ```sh
-$ ./worldland -bootnodes enode://pubkey1@ip1:port1,enode://pubkey2@ip2:port2,enode://pubkey3@ip3:port3
+$ ./worldland <other flags> -bootnodes enode://pubkey1@ip1:port1,enode://pubkey2@ip2:port2,enode://pubkey3@ip3:port3
 ```
 
 
@@ -195,16 +195,14 @@ $ ./worldland -bootnodes enode://pubkey1@ip1:port1,enode://pubkey2@ip2:port2,eno
 There are cases where the discovery process is unnecessary, such as when running local tests on the Gwangju or Seoul networks where bootnodes exist. In this case, you can disable the discovery protocol on startup via the `-nodiscover` option.
 
 ```
-$ ./worldland -nodiscover
+$ ./worldland <other flags> -nodiscover
 ```
-
-
 
 
 
 ## Static Node <a href="#static-nodes" id="static-nodes"></a>
 
-ETH-ECC node users can add static nodes via manual addition. A static node is a specific peer to which a connection is always maintained. Even if the ETH-ECC node is stopped and running again, the node connects to the static node again. Static nodes can be added directly through the console, or through command line commands.
+ETH-ECC node users can add static nodes via manual addition. A static node is a specific peer to which a connection is always maintained. Even if the ETH-ECC node is stopped and running again, the node connects to the static node. Static nodes can be added directly through the console or through command line commands.
 
 
 
@@ -213,7 +211,7 @@ ETH-ECC node users can add static nodes via manual addition. A static node is a 
 Run the command below to create the configuration file config.toml described in the [command line options section](command-line-options.md).
 
 ```sh
-geth --datadir <datadir> dumpconfig > config.toml
+./worldland <other flags> -datadir <datadir> dumpconfig > config.toml
 ```
 
 You can then go to the **\[Node.P2P] section** inside the config file and add it as a list to the **StaticNodes** field. When the ETH-ECC node is running, it tries to connect directly to the corresponding **StaticNodes**, and the static nodes are connected.
@@ -242,7 +240,7 @@ EnableMsgEvents = false
 
 ### Command line
 
-You can also add **static nodes** through JSON-RPC's admin module. By entering the enode address in `admin.addPeer()`, a static node is added in the console.
+You can also add **static nodes** through JSON-RPC's admin module. By entering the enode address in `admin.addPeer()`, a static node is added to the console.
 
 ```javascript
 admin.addPeer(

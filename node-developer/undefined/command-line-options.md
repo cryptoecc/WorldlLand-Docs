@@ -5,31 +5,31 @@
 **ETH-ECC** is primarily controlled using the **command line**. ETH-ECC is started using the `worldland` command. Stop it by pressing **ctrl-c**.
 
 ```
-./worldland
+./worldland <flags>
 ```
 
-You can configure ETH-ECC using command line options (aka flags). ETH-ECC also has subcommands that can be used to invoke functions such as console or blockchain import/export.
+You can configure ETH-ECC using command line options (aka flags). ETH-ECC also has subcommands that can invoke functions such as console or blockchain import/export.
 
 As an alternative to passing the numerous flags to the `worldland`binary, you can also pass a configuration file via:
 
 ```
-$ ./worldland --config /path/to/your_config.toml
+$ ./worldland <other flags> --config /path/to/your_config.toml
 ```
 
 
 
 ### **Config File**
 
-To get an idea how the file should look like you can use the `dumpconfig` subcommand to export your existing configuration:
+To get an idea of how the file should look, you can use the `dumpconfig` subcommand to export your existing configuration:
 
 ```
-$ ./worldland --YOUR-FAVOURITE-FLAGS dumpconfig >> CONFIG_DIR
+$ ./worldland <other flags> dumpconfig >> CONFIG_DIR
 ```
 
 **Exmaple:**
 
 ```
-$ ./worldland -gwangju dumpconfig -datadir /home/worldland/gwangju >> config.toml
+$ ./worldland <other flags> -gwangju dumpconfig -datadir /home/worldland/gwangju >> config.toml
 ```
 
 **Return:**
