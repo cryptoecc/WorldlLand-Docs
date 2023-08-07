@@ -1,6 +1,6 @@
 # Table of contents
 
-## 🌐 WorldLand
+## WorldLand
 
 * [WorldLand Docs](README.md)
 * [Learn](learn/learn/README.md)
