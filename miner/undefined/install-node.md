@@ -154,7 +154,7 @@ C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go mod tidy
 To run the WorldLand, write the following command.
 
 ```
-C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland
+C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir "USER_DATA_DIR" console
 ```
 
 
