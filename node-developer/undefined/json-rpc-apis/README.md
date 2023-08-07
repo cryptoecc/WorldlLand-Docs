@@ -4,12 +4,6 @@ For interacting with the blockchain, ETH-ECC provides a **JSON-RPC API**. The JS
 
 
 
-{% hint style="info" %}
-ETH-ECC supports the same JSON-RPC module as Ethereum. See the JSON-RPC APIs of [ethereum](https://ethereum.org/en/developers/docs/apis/json-rpc/#json-rpc-methods) and [go-ethereum](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-admin) for details.
-{% endhint %}
-
-
-
 ## JSON-RPC Server
 
 ETH-ECC has three transport protocols that can use the JSON-RPC API. The following table summarizes the comparison of the three transport protocols. IPC is a private and secure protocol. HTTP is a friendly protocol and reduces message overhead for intermittent requests. For continuous request processing, a websocket server is a good choice.
@@ -155,6 +149,12 @@ exit
 ```
 
 ### &#x20;<a href="#non-interactive-use" id="non-interactive-use"></a>
+
+## APIs
+
+{% hint style="info" %}
+ETH-ECC supports the same JSON-RPC module as Ethereum. See the JSON-RPC APIs of [ethereum](https://ethereum.org/en/developers/docs/apis/json-rpc/#json-rpc-methods) and [go-ethereum](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-admin) for details.
+{% endhint %}
 
 ### &#x20;<a href="#non-interactive-use" id="non-interactive-use"></a>
 
