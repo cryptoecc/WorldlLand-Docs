@@ -1,9 +1,9 @@
 ---
-cover: .gitbook/assets/로고3.jpg
+cover: .gitbook/assets/로고2.jpg
 coverY: 0
 ---
 
-# WorldLand
+# WorldLand Docs
 
 #### WorldLand is an L2 or side chain of Ethereum, designed as a bottom-up solution to enhance the Ethereum ecosystem. Recognizing that the blockchain trilemma cannot be fully addressed by a single blockchain, WorldLand proposes the utilization of decentralized security blockchains, referred to as DeSecure blockchains, to achieve scalability while preserving decentralization and security.&#x20;
 
