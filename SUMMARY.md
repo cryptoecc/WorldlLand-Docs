@@ -41,7 +41,6 @@
 
 ## 📱 dApp Developer
 
-* [Ethereum / Worldland](dapp-developer/ethereum-and-worldland.md)
 * [Development Environment](dapp-developer/development-environment/README.md)
   * [Remix](dapp-developer/development-environment/remix.md)
   * [Truffle](dapp-developer/development-environment/truffle.md)
