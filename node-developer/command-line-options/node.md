@@ -1,12 +1,12 @@
 # Node
 
-ETH-ECC nodes connect to the WorldLand network and synchronize to keep up with the latest state of the WorldLand network. There are two types of node methods and two types of synchronization methods that use different mechanisms to synchronize up to the head of the chain.
+**ETH-ECC nodes** connect to the WorldLand network and synchronize to keep up with the latest state of the WorldLand network. There are **two types** of **node method**s and two types of **synchronization methods** that use different mechanisms to synchronize up to the head of the chain.
 
 ## **Node**
 
 ### Full Node(default) <a href="#summary" id="summary"></a>
 
-The basic node method is the Full Node method. The main feature of full nodes is to save storage space by maintaining the state of 128 blocks at the latest block height and removing past state data. It removes past state data but keeps checkpoints from which state data can be recreated. If you need historical data, you can recreate it with checkpoints. The full node approach effectively saves storage space but is inefficient when fast querying of historical data is required.
+The basic node method is the **Full Node** method. The main feature of full nodes is to save storage space by maintaining the state of **128 blocks** at the latest block height and removing past state data. It removes past state data but keeps **checkpoints** from which state data can be recreated. If you need historical data, you can **recreate** it with checkpoints. The full node approach effectively **saves** storage space but is inefficient when fast querying of historical data is required.
 
 ```
 $ ./worldland <other flags> -gcmode full
@@ -14,7 +14,7 @@ $ ./worldland <other flags> -gcmode full
 
 ### Archive node
 
-The archive node does not remove all historical data. It retains it by itself. All data is directly accessible from the node itself, so there is no need to regenerate data with checkpoints. Since the node owns all blockchain data, it is a true blockchain node. However, since Archivenode takes up a lot of disk space, it is not suitable for all users.
+The archive node does not remove **all historical data**. It retains it by itself. All data is **directly accessible** from the node itself, so there is no need to regenerate data with checkpoints. Since the node owns all blockchain data, it is a true blockchain node. However, since Archive node takes up a **lot of disk space**, it is not suitable for all users.
 
 ```
 $ ./worldland <other flags> -gcmode archive
@@ -24,7 +24,7 @@ $ ./worldland <other flags> -gcmode archive
 
 **The key differences between an Archive Node and a Full Node:**
 
-<table><thead><tr><th width="219"></th><th align="center">Full Node</th><th align="center">Archive Node</th></tr></thead><tbody><tr><td>Data Retention</td><td align="center">Retains only the latest block data</td><td align="center">Retains all block data</td></tr><tr><td>Data Storage Size</td><td align="center">Relatively smaller</td><td align="center">Very large</td></tr><tr><td>Synchronization Time</td><td align="center">Comparatively shorter</td><td align="center">Lengthy</td></tr><tr><td>Purpose</td><td align="center">Transaction broadcasting and network security maintenance</td><td align="center">Block exploration and historical data verification</td></tr><tr><td>Higher Storage Costs</td><td align="center">No</td><td align="center">Yes</td></tr></tbody></table>
+<table><thead><tr><th width="219"></th><th>Full Node</th><th>Archive Node</th></tr></thead><tbody><tr><td>Data Retention</td><td>Retains only the latest block data</td><td>Retains all block data</td></tr><tr><td>Data Storage Size</td><td>Relatively smaller</td><td>Very large</td></tr><tr><td>Synchronization Time</td><td>Comparatively shorter</td><td>Lengthy</td></tr><tr><td>Purpose</td><td>Transaction broadcasting and network security maintenance</td><td>Block exploration and historical data verification</td></tr><tr><td>Higher Storage Costs</td><td>No</td><td>Yes</td></tr></tbody></table>
 
 ### Hardware Requirements(2023-08-08)
 
@@ -56,7 +56,7 @@ $ ./worldland <other flags> -syncmode snap
 
 ### Full
 
-Full block-by-block synchronization starts with the **genesis block** and executes all blocks to create the current state. Full sync re-executes transactions across the entire historical sequence of blocks to independently verify block origins and all state transitions. Only the most recent 128 block states are stored across all nodes. Stale block states are periodically pruned and marked as a series of checkpoints from which old states can be recreated on demand. **128 blocks** is a record of about 21.3 minutes with a block time of 10 seconds.
+Full block-by-block synchronization starts with the **genesis block** and executes all blocks to create the current state. Full sync re-executes transactions across the entire historical sequence of blocks to independently verify block origins and all state transitions. Only the most recent 128 block states are stored across all nodes. Stale block states are periodically pruned and marked as a series of checkpoints from which old states can be recreated on demand. **128 blocks** is a record of about **21.3 minutes** with a block time of 10 seconds.
 
 ```
 $ ./worldland <other flags> -syncmode full

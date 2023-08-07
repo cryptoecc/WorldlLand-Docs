@@ -18,7 +18,7 @@ You can also search by **wallet address**.
 
 ## Import ETH-ECC wallet account to Metamask
 
-This part explains how to link your Metamask account to the ETH-ECC console and link your Eth-ECC account to Metamask.
+This part explains how to link your **Metamask** account to the **ETH-ECC** console and link your Eth-ECC account to Metamask.
 
 {% hint style="info" %}
 Please refer to the [**Wallet**](../../user/user/wallet.md) section for information regarding **installing Metamask.**
@@ -30,7 +30,7 @@ You can find **Account details** in the menu to the right of your **Metamask acc
 
 <figure><img src="../../.gitbook/assets/account_details.png" alt=""><figcaption></figcaption></figure>
 
-Press the **export private key** button and enter the **password** to obtain the private key.
+Press the **export private key** button and enter the **password** to obtain the **private key.**
 
 <figure><img src="../../.gitbook/assets/export_private_key.png" alt=""><figcaption></figcaption></figure>
 
@@ -71,7 +71,7 @@ We generated the address :**`0xb8C941069cC2B71B1a00dB15E6E00A200d387039`**. You 
 
 
 
-You can find your key file in **`YOUR_GETH_DATADIR/keystore`**
+You can find your key file in  **`YOUR_GETH_DATADIR/keystore`**
 
 If not configured, the data storage location is **`~/.ethereum.`**
 
@@ -83,17 +83,17 @@ For Windows, the location is
 
 <figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/UTCFILE.png" alt=""><figcaption></figcaption></figure>
 
-Save the file in **json format**. `UTC--2023....json`
+Save the file in **JSON format**. <`UTC--2023... > +`**`.json`**
 
 Open metamask, select the network and then select "**Import Account**"
 
 <figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/import%20account.png" alt=""><figcaption></figcaption></figure>
 
-Select JSON File from **Select Type** and import the file. And enter the **password** you entered when creating your account.
+Select **JSON File** from **Select Type** and import the file. And enter the **password** you entered when creating your account.
 
 <figure><img src="../../.gitbook/assets/import_json.png" alt=""><figcaption></figcaption></figure>
 
-then, you can import account to **Metamask!**
+Then, you can import an account to **Metamask!**
 
 
 
