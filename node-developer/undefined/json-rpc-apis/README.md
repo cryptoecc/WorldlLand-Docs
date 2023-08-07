@@ -139,7 +139,7 @@ eth.sendTransaction({
 You can also load a **pre-built Javascript file** into the console by passing the --preload flag when starting the console.
 
 ```sh
-geth console --preload "/my/scripts/folder/utils.js"
+./worldland console --preload "/my/scripts/folder/utils.js"
 ```
 
 You can close the console by typing exit or **CTRL-D**.
