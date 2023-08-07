@@ -26,7 +26,7 @@ $ sudo apt update
 $ sudo apt upgrade
 ```
 
-For building ETH-ECC, it requires Go (version 1.18 or later). You can install them using the following commands.
+For building ETH-ECC, it requires **Go** (version 1.18 or later). You can install them using the following commands.
 
 ```
 $ sudo apt install gcc
@@ -37,7 +37,7 @@ $ sudo snap install go --classic
 
 Then Go will be installed
 
-Check the version of Go (version 1.18 or later)
+Check the **version of Go** (version 1.18 or later)
 
 ```
 $ go version
@@ -45,7 +45,7 @@ $ go version
 
 ### 2. Installation
 
-You can download **ETH-ECC** by cloning the ETH-ECC repository.
+You can download **ETH-ECC** by cloning the **ETH-ECC** repository.
 
 ```
 $ git clone https://github.com/cryptoecc/ETH-ECC
@@ -59,10 +59,18 @@ $ cd ETH-ECC
 $ make worldland
 ```
 
-or to build the full suite of utilities:
+or to **build** the full suite of utilities:
 
 ```
 $ make all
+```
+
+**Installation complete!**
+
+To **run** the WorldLand, write the following command.
+
+```
+./worldland -datadir <YOUR_DATA_DIR> console
 ```
 
 
@@ -71,15 +79,15 @@ $ make all
 
 ### 1. Install Chocolatey
 
-The Chocolatey package manager provides an easy way to install the build tools you need.
+The **Chocolatey package** manager provides an easy way to install the build tools you need.
 
-**Run Windows Terminal or PowerShell in administrator mode.**
+Run **PowerShell** in **administrator** mode.
 
 ```
 PS C:\WINDOWS\system32>
 ```
 
-With PowerShell, you must ensure [Get-ExecutionPolicy](https://go.microsoft.com/fwlink/?LinkID=135170) is not Restricted.&#x20;
+With **PowerShell**, you must ensure [Get-ExecutionPolicy](https://go.microsoft.com/fwlink/?LinkID=135170) is not Restricted.&#x20;
 
 ```
 PS C:\WINDOWS\system32> Get-ExecutionPolicy
@@ -103,11 +111,13 @@ Now run the following command:
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-Wait a few seconds for the command to complete. If you don't see any errors, you are ready to use Chocolatey!&#x20;
+Wait a few seconds for the command to complete. If you don't see any errors, you are ready to use **Chocolatey**!&#x20;
 
 ### **2.** Installation
 
-Then you can run the following command from an administrator command prompt to install the build tools:
+Then you can run the following command from an **administrator** command prompt to install the build tools:
+
+Installing these packages sets the path environment variable.&#x20;
 
 ```
 C:\Windows\system32> choco install git
@@ -115,13 +125,15 @@ C:\Windows\system32> choco install golang
 C:\Windows\system32> choco install mingw
 ```
 
-Installing these packages sets the path environment variable.&#x20;
+
+
+
 
 {% hint style="danger" %}
 You will need to open a **new command prompt** to get the new path.
 {% endhint %}
 
-To install **ETH-ECC**, you can first create a Go workspace directory, then create and build the **ETH-ECC** source code.
+To install **ETH-ECC**, you can first create a **Go workspace** directory, then create and build the **ETH-ECC** source code.
 
 ```
 C:\Users\xxx> mkdir src\github.com\cryptoecc
@@ -131,21 +143,23 @@ C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go get -u -v golang.org/x/net/con
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go install -v ./cmd/...
 ```
 
-If you get `fatal: detected dubious ownership in repository at` error Execute the command below indicated in the log message.
+
+
+If you get `fatal: detected dubious ownership in repository at` **error** Execute the command below indicated in the log message.
 
 ```
 git config --global --add safe.directory <YOUR_DATA_DIR>
 ```
 
-
-
-If the build fails, run the command below and retry.
+or the build fails, run the command below and retry.
 
 ```
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go mod tidy
 ```
 
-To run the WorldLand, write the following command.
+**Installation complete!**
+
+To **run** the WorldLand, write the following command.
 
 ```
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir <YOUR_DATA_DIR> console
