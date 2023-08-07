@@ -38,9 +38,13 @@ Write down this 12-word Secret Recovery Phrase and save it in a place that you t
 3. Write down and store in multiple secret Places
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 When the wallet creation is complete, you can see the wallet screen as shown below.
+
+
+
+<figure><img src="../../.gitbook/assets/그림1 (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
