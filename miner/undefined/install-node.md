@@ -1,24 +1,10 @@
 # Install Node
 
-#### _Please contact us if you have any questions._ [_https://open.kakao.com/o/gXdk2J5e_](https://open.kakao.com/o/gXdk2J5e)
-
-This page explains how to download and build the **ETH-ECC** source code and install the Worldland node.
+This page explains how to download and build the **ETH-ECC** source code and install the **Worldland nod**e.
 
 ## Hardware Requirements
 
-Minimum:
-
-* CPU with 2+ cores
-* 4GB RAM
-* 500GB free storage space to sync the Mainnet
-* 8 MBit/sec download Internet service
-
-Recommended:
-
-* Fast CPU with 4+ cores
-* 16GB+ RAM
-* High-performance SSD with at least 500GB of free space
-* 25+ MBit/sec download Internet service
+<table><thead><tr><th width="147.33333333333331"></th><th>Minimum</th><th>Recommended</th></tr></thead><tbody><tr><td>CPU</td><td>2+ cores</td><td>Fast CPU with 4+ cores</td></tr><tr><td>RAM</td><td>4GB</td><td>16GB+ RAM</td></tr><tr><td>Storage </td><td>500GB free storage</td><td>500 high-performance SSD </td></tr><tr><td>Internet</td><td>8 MBit/sec</td><td>25+ MBit/sec</td></tr></tbody></table>
 
 
 
