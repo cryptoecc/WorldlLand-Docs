@@ -75,6 +75,12 @@ You can find your key file in **`YOUR_GETH_DATADIR/keystore`**
 
 If not configured, the data storage location is **`~/.ethereum.`**
 
+{% hint style="info" %}
+For Windows, the location is
+
+&#x20;C:\Users\\_**\[Username]**_\AppData\Local\Ethereum\\_**\[seoul/gwangju]**_\keystore
+{% endhint %}
+
 <figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/UTCFILE.png" alt=""><figcaption></figcaption></figure>
 
 Save the file in **json format**. `UTC--2023....json`

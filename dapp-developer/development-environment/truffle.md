@@ -1,14 +1,32 @@
-# Start Developing
+# Truffle
 
-트러플 하드햇 등등관련 내용...\
-\
+(For Windows 10+, use WSL2 Ubuntu)
 
+{% embed url="https://learn.microsoft.com/en-us/windows/wsl/install" %}
 
-참고 사이트>
+In the Ubuntu Terminal, write the commands below.
 
-{% embed url="https://docs.arbitrum.io/getting-started-devs" %}
+```bash
+sudo apt update
+sudo apt upgrade
+```
 
-{% embed url="https://github.com/ethereum-optimism/optimism-tutorial/tree/main/getting-started" %}
+Install node.js
 
-\
-\
+```sh
+sudo apt install npm
+```
+
+Create and change a directory.
+
+```sh
+mkdir [YOUR_DIR_NAME]
+cd [YOUR_DIR_NAME]
+```
+
+Install Truffle.
+
+```sh
+sudo npm install -g truffle
+```
+
