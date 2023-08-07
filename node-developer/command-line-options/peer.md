@@ -208,7 +208,7 @@ ETH-ECC node users can add static nodes via manual addition. A static node is a 
 
 ### Console <a href="#static-nodes" id="static-nodes"></a>
 
-Run the command below to create the configuration file config.toml described in the [command line options section](command-line-options.md).
+Run the command below to create the configuration file config.toml described in the [command line options section](./).
 
 ```sh
 ./worldland <other flags> -datadir <datadir> dumpconfig > config.toml
@@ -217,7 +217,7 @@ Run the command below to create the configuration file config.toml described in 
 You can then go to the **\[Node.P2P] section** inside the config file and add it as a list to the **StaticNodes** field. When the ETH-ECC node is running, it tries to connect directly to the corresponding **StaticNodes**, and the static nodes are connected.
 
 {% hint style="warning" %}
-Passing --config instructs ETH-ECC to pull configuration values from this file, so make sure the other lines in config.toml are also set correctly before starting Geth. An example of a full config.toml file can be found [here](command-line-options.md).
+Passing --config instructs ETH-ECC to pull configuration values from this file, so make sure the other lines in config.toml are also set correctly before starting Geth. An example of a full config.toml file can be found [here](./).
 {% endhint %}
 
 **config.toml**
