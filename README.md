@@ -1,5 +1,5 @@
 ---
-cover: .gitbook/assets/로고2.png
+cover: .gitbook/assets/로고2 (1).png
 coverY: 0
 layout:
   cover:
