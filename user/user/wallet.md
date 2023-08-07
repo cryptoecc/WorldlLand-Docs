@@ -24,6 +24,8 @@ After installation, click the puzzle-shaped expansion icon on the top right corn
 
 Click the **Create Wallet** button and enter your **password**.
 
+<figure><img src="../../.gitbook/assets/그림2.png" alt=""><figcaption></figcaption></figure>
+
 A **12-word** phrase appears. Only this phrase can recover your wallet, so be careful not to expose it.
 
 Write down your **Secret Recovery Phrase**
