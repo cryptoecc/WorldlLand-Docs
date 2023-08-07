@@ -8,10 +8,9 @@ We explain the wallet guide using the Metamask wallet. If you already have a [**
 
 _We use the Chrome browser as an example. Please refer_ [_here_](https://www.google.com/chrome) _to download the Chrome browser._
 
-* Install MetaMask
-* Run MetaMask
 
-## 1. Install MetaMask
+
+## 1. Install Metamask
 
 Go to the Chrome Web Store, search for the [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) extension, and add it.
 
@@ -21,7 +20,7 @@ After installation, click the puzzle-shaped expansion icon on the top right corn
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## 2.  Run MetaMask
+## 2.  Run Metamask
 
 Click the Create Wallet button and enter your password.
 
