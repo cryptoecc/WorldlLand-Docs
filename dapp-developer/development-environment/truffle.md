@@ -4,6 +4,8 @@
 
 {% embed url="https://learn.microsoft.com/en-us/windows/wsl/install" %}
 
+***
+
 In the Ubuntu Terminal, write the commands below.
 
 ```bash
@@ -33,6 +35,10 @@ npm install -g truffle
 truffle init
 ```
 
+<figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/development-environment_truffle_01.png" alt=""><figcaption></figcaption></figure>
+
 Now, you can add WorldLand Network via **truffle-config.js**
 
 {% embed url="https://trufflesuite.com/docs/truffle/reference/configuration/#networks" %}
+
+***
