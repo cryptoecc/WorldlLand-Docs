@@ -145,6 +145,14 @@ C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go get -u -v golang.org/x/net/con
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go install -v ./cmd/...
 ```
 
+If you get `fatal: detected dubious ownership in repository at` error Execute the command below indicated in the log message.
+
+```
+git config --global --add safe.directory <YOUR_DATA_DIR>
+```
+
+
+
 If the build fails, run the command below and retry.
 
 ```
@@ -154,7 +162,7 @@ C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go mod tidy
 To run the WorldLand, write the following command.
 
 ```
-C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir "USER_DATA_DIR" console
+C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir <YOUR_DATA_DIR> console
 ```
 
 
