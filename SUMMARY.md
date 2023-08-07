@@ -45,7 +45,6 @@
 * [Development Environment](dapp-developer/development-environment/README.md)
   * [Remix](dapp-developer/development-environment/remix.md)
   * [Truffle](dapp-developer/development-environment/truffle.md)
-* [Useful Addresses](dapp-developer/useful-addresses.md)
 * [Web3 Libraries](dapp-developer/web3-libraries.md)
 * [Web3 API](dapp-developer/apis.md)
 
