@@ -10,6 +10,12 @@ $ rm -rf ~/.ethereum
 
 
 
+{% hint style="info" %}
+These documents are based on **Unix** documentation. For **Windows**, type **worldland** instead of **./worldland**.
+{% endhint %}
+
+
+
 First, you'll need to make a directory to store block information. For example, `ETHECC_TEST` directory. Then move to `/ETH-ECC/build/bin`, and follow this.
 
 ```
