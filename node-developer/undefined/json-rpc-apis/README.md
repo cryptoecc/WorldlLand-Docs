@@ -148,7 +148,7 @@ You can close the console by typing exit or **CTRL-D**.
 exit
 ```
 
-### &#x20;<a href="#non-interactive-use" id="non-interactive-use"></a>
+
 
 ## APIs
 
