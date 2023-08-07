@@ -1,4 +1,9 @@
-# WorldLand Documentation
+---
+cover: .gitbook/assets/로고3.jpg
+coverY: 0
+---
+
+# WorldLand
 
 <figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/worldland_01.PNG" alt=""><figcaption></figcaption></figure>
 
