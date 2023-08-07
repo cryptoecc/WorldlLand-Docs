@@ -1,6 +1,6 @@
 ---
 cover: .gitbook/assets/로고3.jpg
-coverY: 0
+coverY: 32.82133333333333
 layout:
   cover:
     visible: true
