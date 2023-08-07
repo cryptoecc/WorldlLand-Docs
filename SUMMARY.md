@@ -4,7 +4,6 @@
 
 * [WorldLand Docs](README.md)
 * [Learn](learn/learn/README.md)
-  * [Introduction](learn/learn/introduction.md)
   * [What is WorldLand?](learn/learn/what-is-worldland.md)
   * [WorldLand Technology](learn/learn/worldland-technology.md)
   * [Design Principles](learn/learn/design-principles.md)
@@ -12,6 +11,7 @@
   * [WorldLand Tokenomics](learn/learn/worldland-tokenomics.md)
   * [WorldLand Governance](learn/learn/worldland-governance.md)
   * [Charter of WorldLand](learn/learn/charter-of-worldland.md)
+  * [Introduction](learn/learn/introduction.md)
 
 ## 🧑💻 User
 
