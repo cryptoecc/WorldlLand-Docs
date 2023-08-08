@@ -12,10 +12,7 @@ This page explains how to download and build the **ETH-ECC** source code and ins
 
 ### 1. Environment
 
-**ETH-ECC** package uses the following two environment
-
-* **Linux Ubuntu 18.04 or later**
-* **Go (version 1.18 or later)**
+#### **Linux**
 
 We wrote the document based on **Ubuntu**, but it is expected to work on **UNIX-like operating systems** as well.
 
@@ -35,6 +32,30 @@ $ sudo apt install snapd
 $ sudo snap install go --classic
 ```
 
+
+
+#### **Mac**
+
+We wrote the document based on **Ubuntu**, but it is expected to work on **UNIX-like operating systems** as well.
+
+Download the basic packages needed for the build.
+
+```
+$ sudo brew update
+$ sudo brew upgrade
+```
+
+For building ETH-ECC, it requires **Go** (version 1.18 or later). You can install them using the following commands.
+
+```
+$ sudo brew install gcc
+$ sudo brew install make
+$ sudo brew install snapd
+$ sudo brew install go --classic
+```
+
+
+
 Then Go will be installed
 
 Check the **version of Go** (version 1.18 or later)
@@ -42,6 +63,8 @@ Check the **version of Go** (version 1.18 or later)
 ```
 $ go version
 ```
+
+
 
 ### 2. Installation
 
