@@ -70,7 +70,7 @@ $ make all
 To **run** the WorldLand, write the following command.
 
 ```
-./worldland -datadir "USER_DATA_DIR" console
+./worldland --datadir "USER_DATA_DIR" console
 ```
 
 
