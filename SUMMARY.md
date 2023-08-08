@@ -44,11 +44,11 @@
 * [Development Environment](dapp-developer/development-environment/README.md)
   * [Remix](dapp-developer/development-environment/remix.md)
   * [Truffle](dapp-developer/development-environment/truffle.md)
+  * [Truffle](dapp-developer/development-environment/truffle-1.md)
+  * [Remix](dapp-developer/development-environment/remix-1.md)
+  * [Hardhat](dapp-developer/development-environment/hardhat.md)
 * [Web3 Libraries](dapp-developer/web3-libraries.md)
 * [Web3 API](dapp-developer/apis.md)
-* [Truffle](dapp-developer/truffle.md)
-* [Remix](dapp-developer/remix.md)
-* [Hardhat](dapp-developer/hardhat.md)
 
 ## ↗ Links
 

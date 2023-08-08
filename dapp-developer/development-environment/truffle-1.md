@@ -316,6 +316,6 @@ Summary
 
 Copy block number(10615) and check it on [explore(LV Scanner)](http://3.39.29.150:3000/block/0x4aab14e298e8b3c01dd6d56ea056b8e8cb24f501c730ec661efd546e79b9acce?network=ETH-ECC)!
 
-[![image](https://github.com/cryptoecc/WorldlLand-Docs/raw/master/.gitbook/assets/deployed.PNG)](../.gitbook/assets/deployed.PNG)
+[![image](https://github.com/cryptoecc/WorldlLand-Docs/raw/master/.gitbook/assets/deployed.PNG)](../../.gitbook/assets/deployed.PNG)
 
 \{% hint style="success" %\} You can confirm Timestamp, Hash, and others about your contract. \{% endhint %\}
