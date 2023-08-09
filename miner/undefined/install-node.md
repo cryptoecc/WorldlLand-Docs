@@ -108,6 +108,10 @@ Download the installer **exe** file from the [**latest release**](https://github
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
+If blue window like the picture below appears, click **More Information** and run it.
+
+<figure><img src="../../.gitbook/assets/image (17).png" alt="" width="375"><figcaption></figcaption></figure>
+
 Run the downloaded installer file.
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
