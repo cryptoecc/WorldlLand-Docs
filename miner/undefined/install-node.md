@@ -100,9 +100,31 @@ To **run** the WorldLand, write the following command.
 
 ## Window
 
-### Installer
+You can use the **Windows Installer** or **build** the ETH-ECC **source code** yourself.
 
-ETH-ECC 리퍼지토리의 최신 릴리즈에서 인스톨러 파일을 다운받으십시오.
+### Using Installer
+
+Download the installer **exe** file from the [**latest release**](https://github.com/cryptoecc/ETH-ECC/releases) of the **ETH-ECC repository**.
+
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+Run the downloaded installer file.
+
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**Installation complete!**
+
+To **run** the WorldLand, write the following command.
+
+```
+C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir "USER_DATA_DIR" console
+```
+
+
+
+
 
 
 
@@ -146,6 +168,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 Wait a few seconds for the command to complete. If you don't see any errors, you are ready to use **Chocolatey**!&#x20;
 
+
+
 ### **2.** Installation
 
 Then you can run the following command from an **administrator** command prompt to install the build tools:
@@ -157,8 +181,6 @@ C:\Windows\system32> choco install git
 C:\Windows\system32> choco install golang
 C:\Windows\system32> choco install mingw
 ```
-
-
 
 
 
@@ -197,8 +219,6 @@ To **run** the WorldLand, write the following command.
 ```
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir "USER_DATA_DIR" console
 ```
-
-
 
 
 
