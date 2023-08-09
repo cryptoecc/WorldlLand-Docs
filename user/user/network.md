@@ -26,7 +26,7 @@ If there is a problem with the link, follow the order below to manually add the 
 
 3. Fill in the blanks using the **Network table** above.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Other wallets
 

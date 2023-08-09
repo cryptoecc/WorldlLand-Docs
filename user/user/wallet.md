@@ -18,7 +18,7 @@ Go to the **Chrome Web Store,** search for the [**MetaMask**](https://chrome.goo
 
 After installation, click the puzzle-shaped expansion icon on the top right corner to find MetaMask.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2.  Run Metamask
 

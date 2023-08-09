@@ -112,6 +112,16 @@ Run the downloaded installer file.
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
+If the following error message is displayed, You must manually add the installation path to **environment variables**. Add the **installation path** to **Path** in your environment variables.&#x20;
+
+**Default installation path:**
+
+```
+C:\Program Files\worldland
+```
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 
 
 **Installation complete!**
@@ -121,10 +131,6 @@ To **run** the WorldLand, write the following command.
 ```
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir "USER_DATA_DIR" console
 ```
-
-
-
-
 
 
 
