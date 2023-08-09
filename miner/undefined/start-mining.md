@@ -70,7 +70,7 @@ First we have to set miner's address. For this, we will use 3 commands
 GPU mining is not supported yet :(
 {% endhint %}
 
-Setting miner's address:
+**Setting miner's address:**
 
 ```
 > miner.setEtherbase("0xb8c941069cc2b71b1a00db15e6e00a200d387039")
