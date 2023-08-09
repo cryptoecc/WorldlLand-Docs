@@ -100,6 +100,16 @@ To **run** the WorldLand, write the following command.
 
 ## Window
 
+### Installer
+
+ETH-ECC 리퍼지토리의 최신 릴리즈에서 인스톨러 파일을 다운받으십시오.
+
+
+
+
+
+### Run and Build
+
 ### 1. Install Chocolatey
 
 The **Chocolatey package** manager provides an easy way to install the build tools you need.
