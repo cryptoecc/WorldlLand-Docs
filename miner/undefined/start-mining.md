@@ -80,7 +80,7 @@ true
 Starting mining:
 
 ```
-> miner.start(1)
+> miner.start()
 null
 INFO [08-06|21:42:38.198] Updated mining threads                   threads=1
 INFO [08-06|21:42:38.198] Transaction pool price threshold updated price=1000000000
