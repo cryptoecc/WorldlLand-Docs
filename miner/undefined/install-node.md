@@ -118,13 +118,21 @@ Run the downloaded installer file.
 
 If the following error message is displayed, You must manually add the installation path to **environment variables**. Add the **installation path** to **Path** in your environment variables.&#x20;
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Add the **installation path** to **Path** in your environment variables.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (20).png" alt="" width="224"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (21).png" alt="" width="563"><figcaption></figcaption></figure>
+
 **Default installation path:**
 
 ```
 C:\Program Files\worldland
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt="" width="399"><figcaption></figcaption></figure>
 
 
 
