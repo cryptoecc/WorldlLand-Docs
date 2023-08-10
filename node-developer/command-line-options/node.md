@@ -38,7 +38,7 @@ $ ./worldland <other flags> -gcmode archive
 **Archive Node:**
 
 * Fast CPU with 4+ cores
-* 16GB+ RAM
+* 8GB+ RAM
 * High-performance SSD with at least 1TB of free space
 * 25+ MBit/sec download Internet service
 
