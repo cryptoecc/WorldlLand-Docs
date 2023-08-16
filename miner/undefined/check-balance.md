@@ -87,7 +87,7 @@ For Windows, the location is
 &#x20;C:\Users\\_**\[Username]**_\AppData\Local\Ethereum\\_**\[seoul/gwangju]**_\keystore
 {% endhint %}
 
-<figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/UTCFILE.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 Open metamask, select the network and then select "**Import Account**"
 
