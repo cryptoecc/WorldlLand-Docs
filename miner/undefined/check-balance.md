@@ -89,8 +89,6 @@ For Windows, the location is
 
 <figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/UTCFILE.png" alt=""><figcaption></figcaption></figure>
 
-Save the file in **JSON format**. <`UTC--2023... > +`**`.json`**
-
 Open metamask, select the network and then select "**Import Account**"
 
 <figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/import%20account.png" alt=""><figcaption></figcaption></figure>
@@ -98,6 +96,12 @@ Open metamask, select the network and then select "**Import Account**"
 Select **JSON File** from **Select Type** and import the file. And enter the **password** you entered when creating your account.
 
 <figure><img src="../../.gitbook/assets/import_json.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+This process may take **5 minutes** :)
+{% endhint %}
+
+
 
 Then, you can import an account to **Metamask!**
 
