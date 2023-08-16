@@ -17,7 +17,7 @@ You can improve account security by utilizing **Clef**, an external account mana
 Generating new account:
 
 ```
-> personal.newAccount("YOUR_PASSWORD")
+> personal.newAccount(YOUR_PASSWORD)
 ```
 
 returns data that looks like:
