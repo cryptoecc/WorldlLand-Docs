@@ -97,33 +97,35 @@ Worldland를 실행하려면 다음 명령을 작성하세요.
 
 
 
-## Windowkzx
+## Window
 
-### Using Installer
+윈도우 전용 Build파일을 다운로드합니다.
 
-Download the installer **exe** file from the [**latest release**](https://github.com/cryptoecc/ETH-ECC/releases) of the **ETH-ECC repository**.
+### 설치 프로그램 사용
+
+ETH-ECC repogitory의 최신 릴리즈에서 설치 프로그램 **exe** 파일을 다운로드합니다.
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-If blue window like the picture below appears, click **More Information** and run it.
+아래 그림과 같은 파란색 창이 나타나면 **추가정보**를 클릭하여 실행합니다.
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Run the downloaded installer file.
+다운로드한 설치 파일을 실행합니다.
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-If the following error message is displayed, You must manually add the installation path to **environment variables**. Add the **installation path** to **Path** in your environment variables.&#x20;
+다음 오류 메세지가 표시되면 설치경로를 환경변수에 수동으로 추가해야 합니다. 환경변수의 **Path**에 설치 경로를 추가합니다.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Add the **installation path** to **Path** in your environment variables.&#x20;
+환경변수의 Path에 설치경로를 추가합니다.
 
 <figure><img src="../../.gitbook/assets/image (20).png" alt="" width="224"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (21).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Default installation path:**
+**기본 설치 경로 :**
 
 ```
 C:\Program Files\worldland
@@ -135,7 +137,7 @@ C:\Program Files\worldland
 
 **Installation complete!**
 
-To **run** the WorldLand, write the following command.
+Worldland를 실행하려면 다음 명령어를 작성하십시오.
 
 ```
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir "USER_DATA_DIR" console
@@ -149,47 +151,47 @@ C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir "USER_DATA_DI
 
 ### 1. Install Chocolatey
 
-The **Chocolatey package** manager provides an easy way to install the build tools you need.
+**Chocolatey package**는 필요한 build 도구를 쉽게 설치할 수 있는 방법을 제공합니다.
 
-Run **PowerShell** in **administrator** mode.
+PowerShell 을 **관리자 모드**로 실행합니다.
 
 ```
 PS C:\WINDOWS\system32>
 ```
 
-With **PowerShell**, you must ensure [Get-ExecutionPolicy](https://go.microsoft.com/fwlink/?LinkID=135170) is not Restricted.&#x20;
+PowerShell을 사용하여 Get-ExecutionPolicy가 제한되지 않았는지 확인해야 합니다.
 
 ```
 PS C:\WINDOWS\system32> Get-ExecutionPolicy
 ```
 
-If it is Restricted, set it to **AllSigned** or **Bypass.**
+Restricted인 경우 AllSigned 또는 Bypass로 설정합니다.
 
 ```
 PS C:\WINDOWS\system32> Set-ExecutionPolicy AllSigned
 ```
 
-or
+또는
 
 ```
 PS C:\WINDOWS\system32> Set-ExecutionPolicy Bypass -Scope Process
 ```
 
-Now run the following command:
+이제 다음 명령을 실행합니다.
 
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-Wait a few seconds for the command to complete. If you don't see any errors, you are ready to use **Chocolatey**!&#x20;
+명령이 완료될 때까지 몇 초간 기다립니다. 오류가 표시되지 않으면 Chocolatey를 사용할 준비가 된 것입니다.
 
 
 
 ### **2.** Installation
 
-Then you can run the following command from an **administrator** command prompt to install the build tools:
+관리자 명령 프롬프트에서 다음 명령을 실행하여 build 도구를 설치ㄹ할 수 있습니다.
 
-Installing these packages sets the path environment variable.&#x20;
+패키지를 설치하면 환경변수에 경로가 추가됩니다.
 
 ```
 C:\Windows\system32> choco install git
@@ -200,10 +202,10 @@ C:\Windows\system32> choco install mingw
 
 
 {% hint style="danger" %}
-You will need to open a **new command prompt** to get the new path.
+새로운 경로를 얻으려면 새 명령 프롬프트를 열어야 합니다.
 {% endhint %}
 
-To install **ETH-ECC**, you can first create a **Go workspace** directory, then create and build the **ETH-ECC** source code.
+ETH-ECC를 설치하려면 먼저 Go 작업공간 디렉토리를 생상한 다음 ETH-ECC 소스 코드를 생성 및 빌드할 수 있습니다.
 
 ```
 C:\Users\xxx> mkdir src\github.com\cryptoecc
@@ -215,13 +217,13 @@ C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go install -v ./cmd/...
 
 
 
-If you get `fatal: detected dubious ownership in repository at` **error** Execute the command below indicated in the log message.
+오류가 발생하면 로그 메세지에 표시된 아래 명령을 실행하십시오. `fatal: detected dubious ownership in repository at`&#x20;
 
 ```
 git config --global --add safe.directory "USER_DATA_DIR"
 ```
 
-or the build fails, run the command below and retry.
+또는 build가 실패하면 아래 명령을 실행하고 다시 시도하세요.
 
 ```
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go mod tidy
@@ -229,41 +231,11 @@ C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go mod tidy
 
 **Installation complete!**
 
-To **run** the WorldLand, write the following command.
+Worldland를 실행하려면 다음 명령을 작성하세요.
 
 ```
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir "USER_DATA_DIR" console
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
