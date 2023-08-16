@@ -18,10 +18,16 @@ You can also search by **wallet address**.
 
 ## Import ETH-ECC wallet account to Metamask
 
-This part explains how to link your **Metamask** account to the **ETH-ECC** console and link your Eth-ECC account to Metamask.
+This part explains how to link your **Metamask** account to the **ETH-ECC** console and your Eth-ECC account to Metamask.
+
+
+
+{% hint style="warning" %}
+**Metamask** must be installed and connected to the **Worldland** network for this to work.
+{% endhint %}
 
 {% hint style="info" %}
-Please refer to the [**Wallet**](../../user/user/wallet.md) section for information regarding **installing Metamask.**
+Please refer to the [**Wallet** ](../../user/user/wallet.md)and [**Network** ](../../user/user/network.md)section for information on installing and connecting Metamask.&#x20;
 {% endhint %}
 
 ### Metamask account  to Eth-ECC
