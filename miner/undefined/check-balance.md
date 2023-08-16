@@ -77,7 +77,7 @@ We generated the address :**`0xb8C941069cC2B71B1a00dB15E6E00A200d387039`**. You 
 
 
 
-You can find your key file in  **`YOUR_GETH_DATADIR/keystore`**
+You can find your key file in  **`YOUR_DATADIR/keystore`**
 
 If not configured, the data storage location is **`~/.ethereum.`**
 
