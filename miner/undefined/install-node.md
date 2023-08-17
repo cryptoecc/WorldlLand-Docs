@@ -99,33 +99,33 @@ Worldland를 실행하려면 다음 명령을 작성하세요.
 
 ## Window
 
-윈도우 전용 Build파일을 다운로드합니다.
+You can use the **Windows Installer** or **build** the ETH-ECC **source code** yourself.
 
-### 설치 프로그램 사용
+### Using Installer
 
-ETH-ECC repogitory의 최신 릴리즈에서 설치 프로그램 **exe** 파일을 다운로드합니다.
+Download the installer **exe** file from the [**latest release**](https://github.com/cryptoecc/ETH-ECC/releases) of the **ETH-ECC repository**.
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-아래 그림과 같은 파란색 창이 나타나면 **추가정보**를 클릭하여 실행합니다.
+If blue window like the picture below appears, click **More Information** and run it.
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt="" width="375"><figcaption></figcaption></figure>
 
-다운로드한 설치 파일을 실행합니다.
+Run the downloaded installer file.
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-다음 오류 메세지가 표시되면 설치경로를 환경변수에 수동으로 추가해야 합니다. 환경변수의 **Path**에 설치 경로를 추가합니다.
+If the following error message is displayed, You must manually add the installation path to **environment variables**. Add the **installation path** to **Path** in your environment variables.&#x20;
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-환경변수의 Path에 설치경로를 추가합니다.
+Add the **installation path** to **Path** in your environment variables.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (20).png" alt="" width="224"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (21).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**기본 설치 경로 :**
+**Default installation path:**
 
 ```
 C:\Program Files\worldland
@@ -137,13 +137,11 @@ C:\Program Files\worldland
 
 **Installation complete!**
 
-Worldland를 실행하려면 다음 명령어를 작성하십시오.
+To **run** the WorldLand, write the following command.
 
 ```
 C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir "USER_DATA_DIR" console
 ```
-
-
 
 
 
