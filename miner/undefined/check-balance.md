@@ -1,12 +1,12 @@
-# 지갑 잔액 확인
+# Check Balance
 
-## **탐색기에서 채굴된 블록 확인**
+## **Check mined block in explorer**
 
 {% hint style="info" %}
-탐색기에 대한 자세한 내용은 [**Block Explorer**](../../user/user/block-explorer.md) 항목을 참조하세요.
+See the [**Block Explorer**](../../user/user/block-explorer.md) tab for more information about explorers.
 {% endhint %}
 
-**채굴된 블록** 의 내용은 **block explorer** 에서 확인할 수 있습니다.
+You can check the contents of the **mined block** in the **block explorer**.
 
 Search the **mined block number** in the explorer.
 
