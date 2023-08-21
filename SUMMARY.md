@@ -13,7 +13,7 @@
   * [Charter of WorldLand](learn/learn/charter-of-worldland.md)
   * [Introduction](learn/learn/introduction.md)
 
-## 🧑💻 User
+## 🧑💻 🧑💻 User
 
 * [Wallet](user/user/wallet.md)
 * [Network](user/user/network.md)
@@ -46,6 +46,10 @@
   * [Truffle](dapp-developer/development-environment/truffle.md)
 * [Web3 Libraries](dapp-developer/web3-libraries.md)
 * [Web3 API](dapp-developer/apis.md)
+
+## ❓ Q\&A
+
+* [Discord](https://discord.gg/yJERYVnE6a)
 
 ## ↗ Links
 
