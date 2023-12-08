@@ -19,17 +19,17 @@ We wrote the document based on **Ubuntu**, but it is expected to work on **UNIX-
 Download the basic packages needed for the build.
 
 ```
-$ sudo apt update
-$ sudo apt upgrade
+sudo apt update
+sudo apt upgrade
 ```
 
 For building ETH-ECC, it requires **Go** (version 1.18 or later). You can install them using the following commands.
 
 ```
-$ sudo apt install gcc
-$ sudo apt install make
-$ sudo apt install snapd
-$ sudo snap install go --classic
+sudo apt install gcc
+sudo apt install make
+sudo apt install snapd
+sudo snap install go --classic
 ```
 
 
@@ -41,17 +41,17 @@ We wrote the document based on **Ubuntu**, but it is expected to work on **UNIX-
 Download the basic packages needed for the build.
 
 ```
-$ sudo brew update
-$ sudo brew upgrade
+sudo brew update
+sudo brew upgrade
 ```
 
 For building ETH-ECC, it requires **Go** (version 1.18 or later). You can install them using the following commands.
 
 ```
-$ sudo brew install gcc
-$ sudo brew install make
-$ sudo brew install snapd
-$ sudo brew install go --classic
+sudo brew install gcc
+sudo brew install make
+sudo brew install snapd
+sudo brew install go --classic
 ```
 
 
@@ -71,21 +71,21 @@ $ go version
 You can download **ETH-ECC** by cloning the **ETH-ECC** repository.
 
 ```
-$ git clone https://github.com/cryptoecc/ETH-ECC
+git clone https://github.com/cryptoecc/ETH-ECC
 ```
 
 Once dependencies are installed, You can install ETH-ECC using the following command.\
 Then move to `/ETH-ECC`, and follow this.
 
 ```
-$ cd ETH-ECC
-$ make worldland
+cd ETH-ECC
+make worldland
 ```
 
 or to **build** the full suite of utilities:
 
 ```
-$ make all
+make all
 ```
 
 **Installation complete!**
@@ -93,7 +93,7 @@ $ make all
 To **run** the WorldLand, write the following command.
 
 ```
-./worldland --datadir "USER_DATA_DIR" console
+./worldland console
 ```
 
 
