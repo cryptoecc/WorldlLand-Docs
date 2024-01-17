@@ -93,7 +93,7 @@ make all
 To **run** the WorldLand, write the following command.
 
 ```
-./worldland console
+./build/bin/worldland --datadir "USER_DATA_DIR" console
 ```
 
 
