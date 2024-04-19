@@ -13,7 +13,7 @@
   * [Charter of WorldLand](learn/learn/charter-of-worldland.md)
   * [Introduction](learn/learn/introduction.md)
 
-## 🧑💻 User
+## 🧑‍💻 User
 
 * [Wallet](user/user/wallet.md)
 * [Network](user/user/network.md)
@@ -21,7 +21,7 @@
 * [Transfer Tokens](user/user/transfer-tokens.md)
 * [Block Explorer](user/user/block-explorer.md)
 
-## ⛏ Miner
+## ⛏️ Miner
 
 * [Install Node](miner/undefined/install-node.md)
 * [Run Node](miner/undefined/run-node.md)
@@ -51,7 +51,7 @@
 
 * [Discord](https://discord.gg/yJERYVnE6a)
 
-## ↗ Links
+## ↗️ Links
 
 * [WorldLand](https://worldland.foundation/)
 * [Seoul Block Explorer](http://scan.worldland.foundation/)

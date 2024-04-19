@@ -50,8 +50,8 @@ For building ETH-ECC, it requires **Go** (version 1.18 or later). You can instal
 ```
 sudo brew install gcc
 sudo brew install make
-sudo brew install snapd
-sudo brew install go --classic
+sudo brew install snap
+sudo brew install go
 ```
 
 
