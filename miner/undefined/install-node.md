@@ -1,6 +1,6 @@
 # Install Node
 
-This page explains how to download and build the **ETH-ECC** source code and install the **Worldland nod**e.
+This page explains how to download and build the WorldLand source code and install the **Worldland nod**e.
 
 ## Hardware Requirements
 
@@ -23,7 +23,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-For building ETH-ECC, it requires **Go** (version 1.18 or later). You can install them using the following commands.
+For building WorldLand, it requires **Go** (version 1.18 or later). You can install them using the following commands.
 
 ```
 sudo apt install gcc
@@ -45,7 +45,7 @@ sudo brew update
 sudo brew upgrade
 ```
 
-For building ETH-ECC, it requires **Go** (version 1.18 or later). You can install them using the following commands.
+For building WorldLand, it requires **Go** (version 1.18 or later). You can install them using the following commands.
 
 ```
 sudo brew install gcc
@@ -68,17 +68,17 @@ $ go version
 
 ### 2. Installation
 
-You can download **ETH-ECC** by cloning the **ETH-ECC** repository.
+You can download WorldLand by cloning the WorldLand repository.
 
 ```
-git clone https://github.com/cryptoecc/ETH-ECC
+git clone https://github.com/cryptoecc/WorldLand
 ```
 
-Once dependencies are installed, You can install ETH-ECC using the following command.\
-Then move to `/ETH-ECC`, and follow this.
+Once dependencies are installed, You can install WorldLand using the following command.\
+Then move to `/WorldLand`, and follow this.
 
 ```
-cd ETH-ECC
+cd WorldLand
 make worldland
 ```
 
@@ -100,11 +100,11 @@ To **run** the WorldLand, write the following command.
 
 ## Window
 
-You can use the **Windows Installer** or **build** the ETH-ECC **source code** yourself.
+You can use the **Windows Installer** or **build** the WorldLand **source code** yourself.
 
 ### Using Installer
 
-Download the installer **exe** file from the [**latest release**](https://github.com/cryptoecc/ETH-ECC/releases) of the **ETH-ECC repository**.
+Download the installer **exe** file from the [**latest release**](https://github.com/cryptoecc/ETH-ECC/releases) of the WorldLand **repository**.
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
@@ -141,7 +141,7 @@ C:\Program Files\worldland
 To **run** the WorldLand, write the following command.
 
 ```
-C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland --datadir "USER_DATA_DIR" console
+C:\Users\xxx\src\github.com\cryptoecc\WorldLand> worldland --datadir "USER_DATA_DIR" console
 ```
 
 
@@ -206,14 +206,14 @@ C:\Windows\system32> choco install mingw
 You will need to open a **new command prompt** to get the new path.
 {% endhint %}
 
-To install **ETH-ECC**, you can first create a **Go workspace** directory, then create and build the **ETH-ECC** source code.
+To install WorldLand, you can first create a **Go workspace** directory, then create and build the WorldLand source code.
 
 ```
 C:\Users\xxx> mkdir src\github.com\cryptoecc
-C:\Users\xxx> git clone https://github.com/cryptoecc/ETH-ECC src\github.com\cryptoecc\ETH-ECC
-C:\Users\xxx> cd src\github.com\cryptoecc\ETH-ECC 
-C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go get -u -v golang.org/x/net/context
-C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go install -v ./cmd/...
+C:\Users\xxx> git clone https://github.com/cryptoecc/WorldLand src\github.com\cryptoecc\WorldLand
+C:\Users\xxx> cd src\github.com\cryptoecc\WorldLand
+C:\Users\xxx\src\github.com\cryptoecc\WorldLand> go get -u -v golang.org/x/net/context
+C:\Users\xxx\src\github.com\cryptoecc\WorldLand> go install -v ./cmd/...
 ```
 
 
@@ -227,7 +227,7 @@ git config --global --add safe.directory "USER_DATA_DIR"
 or the build fails, run the command below and retry.
 
 ```
-C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go mod tidy
+C:\Users\xxx\src\github.com\cryptoecc\WorldLand> go mod tidy
 ```
 
 **Installation complete!**
@@ -235,7 +235,7 @@ C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> go mod tidy
 To **run** the WorldLand, write the following command.
 
 ```
-C:\Users\xxx\src\github.com\cryptoecc\ETH-ECC> worldland console
+C:\Users\xxx\src\github.com\cryptoecc\WorldLand> worldland console
 ```
 
 
