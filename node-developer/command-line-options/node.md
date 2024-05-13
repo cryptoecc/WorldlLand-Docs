@@ -1,6 +1,6 @@
 # Node
 
-**ETH-ECC nodes** connect to the WorldLand network and synchronize to keep up with the latest state of the WorldLand network. There are **two types** of **node method**s and two types of **synchronization methods** that use different mechanisms to synchronize up to the head of the chain.
+**WorldLand nodes** connect to the WorldLand network and synchronize to keep up with the latest state of the WorldLand network. There are **two types** of **node method**s and two types of **synchronization methods** that use different mechanisms to synchronize up to the head of the chain.
 
 ## **Node**
 
