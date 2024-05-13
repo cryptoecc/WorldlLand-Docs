@@ -16,21 +16,19 @@ You can also search by **wallet address**.
 
 <figure><img src="https://raw.githubusercontent.com/cryptoecc/WorldlLand-Docs/master/.gitbook/assets/scan_2.png" alt=""><figcaption></figcaption></figure>
 
-## Import ETH-ECC wallet account to Metamask
+## Import WorldLand wallet account to Metamask
 
-This part explains how to link your **Metamask** account to the **ETH-ECC** console and your Eth-ECC account to Metamask.
-
-
+This part explains how to link your **Metamask** account to the WorldLand console and your WorldLand account to Metamask.
 
 {% hint style="warning" %}
 **Metamask** must be installed and connected to the **Worldland** network for this to work.
 {% endhint %}
 
 {% hint style="info" %}
-Please refer to the [**Wallet** ](../../user/user/wallet.md)and [**Network** ](../../user/user/network.md)section for information on installing and connecting Metamask.&#x20;
+Please refer to the [**Wallet** ](../../user/user/wallet.md)and [**Network** ](../../user/user/network.md)section for information on installing and connecting Metamask.
 {% endhint %}
 
-### Metamask account  to Eth-ECC
+### Metamask account to WorldLand
 
 You can find **Account details** in the menu to the right of your **Metamask account**.
 
@@ -40,7 +38,7 @@ Press the **export private key** button and enter the **password** to obtain the
 
 <figure><img src="../../.gitbook/assets/export_private_key.png" alt=""><figcaption></figcaption></figure>
 
-Enter the obtained **private key** and **password** into the **ETH-ECC** console.
+Enter the obtained **private key** and **password** into the WorldLand console.
 
 **`web3.personal.importRawKey("PRIVATE_KEY", "METAMASK_PASSWORD"`**`)`
 
@@ -75,16 +73,14 @@ We generated the address :**`0xb8C941069cC2B71B1a00dB15E6E00A200d387039`**. You 
 ["0xb8c941069cc2b71b1a00db15e6e00a200d387039"]
 ```
 
-
-
-You can find your key file in  **`YOUR_DATADIR/keystore`**
+You can find your key file in **`YOUR_DATADIR/keystore`**
 
 If not configured, the data storage location is **`~/.ethereum.`**
 
 {% hint style="info" %}
 For Windows, the location is
 
-&#x20;C:\Users\\_**\[Username]**_\AppData\Local\Ethereum\\_**\[seoul/gwangju]**_\keystore
+C:\Users\\_**\[Username]**_\AppData\Local\Ethereum\\_**\[seoul/gwangju]**_\keystore
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
@@ -101,9 +97,4 @@ Select **JSON File** from **Select Type** and import the file. And enter the **p
 This process may take **5 minutes** :)
 {% endhint %}
 
-
-
 Then, you can import an account to **Metamask!**
-
-
-
