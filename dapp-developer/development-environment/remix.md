@@ -88,7 +88,7 @@ If there are parameters of the contract constructor, write them by clicking the 
 
 Click the TRANSACT button to deploy the contract.
 
-Finally, you can deploy contract to ETH-ECC
+Finally, you can deploy contract to **WorldLand**
 
 [![](https://github.com/cryptoecc/WorldlLand-Docs/raw/794a0d6c1c642d3f58f60de5e586ed1c395ce515/.gitbook/assets/remix\_result.png)](https://github.com/cryptoecc/WorldlLand-Docs/blob/794a0d6c1c642d3f58f60de5e586ed1c395ce515/.gitbook/assets/remix\_result.png)
 
