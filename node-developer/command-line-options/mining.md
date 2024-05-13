@@ -2,13 +2,13 @@
 
 
 
-The **WorldLand** blockchain is a proof-of-work blockchain. Nodes in **WorldLand** compete by running a specific algorithm called **ECCPoW**. The node that solved the algorithm the fastest creates and propagates the block. Other nodes verify that the received block actually solved the algorithm and accept the block only if it is verified. The series of processes that solve **proof-of-work** algorithms and generate blocks is called mining. ETH-ECC supports **CPU mining** of **ECCPoW** via the built-in miner.
+The **WorldLand** blockchain is a proof-of-work blockchain. Nodes in **WorldLand** compete by running a specific algorithm called **ECCPoW**. The node that solved the algorithm the fastest creates and propagates the block. Other nodes verify that the received block actually solved the algorithm and accept the block only if it is verified. The series of processes that solve **proof-of-work** algorithms and generate blocks is called mining. **WorldLand** supports **CPU mining** of **ECCPoW** via the built-in miner.
 
 
 
 ### Start mining
 
-Even when the **ETH-ECC** node starts, it does not mine by default. Mining requires direct setup. You can start a node as a miner with the `-mine` option.
+Even when the **WorldLand** node starts, it does not mine by default. Mining requires direct setup. You can start a node as a miner with the `-mine` option.
 
 ```sh
 $ ./worldland <other flags> -mine
@@ -36,7 +36,7 @@ null
 
 ### Syncing
 
-If you proceed with mining without **synchronizing** the network, it is meaningless as it is the same as creating a new blockchain. Therefore, the **ETH-ECC** node delays mining until synchronization is complete, and mining proceeds automatically after synchronization and completion.&#x20;
+If you proceed with mining without **synchronizing** the network, it is meaningless as it is the same as creating a new blockchain. Therefore, the **WorldLand** node delays mining until synchronization is complete, and mining proceeds automatically after synchronization and completion.&#x20;
 
 Then, to check the sync progress in the console:
 
