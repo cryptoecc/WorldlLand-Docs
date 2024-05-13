@@ -49,7 +49,7 @@ Enter the obtained **private key** and **password** into the WorldLand console.
 
 then can you check account :)
 
-### ETH-ECC account to metamask
+### WorldLand account to metamask
 
 Generating new account:
 
