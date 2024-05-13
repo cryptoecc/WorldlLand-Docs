@@ -2,7 +2,7 @@
 
 
 
-Since the **Worldland** blockchain network is a peer-to-peer network, it must be able to communicate with all nodes. The **default port settings** of ETH-ECC are as follows.
+Since the **Worldland** blockchain network is a peer-to-peer network, it must be able to communicate with all nodes. The **default port settings** of **WorldLand** are as follows.
 
 | Communication | Port  |
 | ------------- | ----- |
