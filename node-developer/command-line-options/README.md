@@ -1,14 +1,14 @@
 # Command-line options
 
-### Run ETH-ECC
+### Run WorldLand
 
-**ETH-ECC** is primarily controlled using the **command line**. ETH-ECC is started using the `worldland` command. Stop it by pressing **ctrl-c**.
+**WorldLand** is primarily controlled using the **command line**. WorldLand is started using the `worldland` command. Stop it by pressing **ctrl-c**.
 
 ```
 ./worldland <flags>
 ```
 
-You can configure ETH-ECC using **command line options** (**flags**). ETH-ECC also has sub-commands that can invoke functions such as console or blockchain import/export.
+You can configure WorldLand using **command line options** (**flags**). WorldLand also has sub-commands that can invoke functions such as console or blockchain import/export.
 
 As an alternative to passing the numerous flags to the worldland binary, you can also pass a **configuration file** via:
 
@@ -155,7 +155,7 @@ InfluxDBOrganization = "geth"
 
 ### Command-line Options <a href="#command-line-options" id="command-line-options"></a>
 
-A full list of command line help is listed below. You can always get the same information from your own **ETH-ECC** instance by running the following command:
+A full list of command line help is listed below. You can always get the same information from your own WorldLand instance by running the following command:
 
 ```
 ./worldland -help
@@ -163,7 +163,7 @@ A full list of command line help is listed below. You can always get the same in
 
 ```
 NAME:
-   worldland - the ETH-ECC command line interface
+   worldland - the WorldLand command line interface
 
 USAGE:
    worldland [global options] command [command options] [arguments...]
@@ -730,5 +730,5 @@ GLOBAL OPTIONS:
    
 
 COPYRIGHT:
-   Copyright 2023- The ETH-ECC and go-ethereum Authors
+   Copyright 2023- The WorldLand and go-ethereum Authors
 ```
