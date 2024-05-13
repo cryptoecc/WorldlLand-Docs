@@ -1,12 +1,12 @@
 # JSON-RPC APIs
 
-For interacting with the blockchain, ETH-ECC provides a **JSON-RPC API**. The JSON-RPC API interacts with ETH-ECC in the form of **JSON objects**. **RPC(Remote Procedure Call)** refers to sending a request to the ETH-ECC node as a JSON object from the outside. You can interact with ETH-ECC by sending a **JSON request** to the **RPC port** exposed by ETH-ECC. Since JSON-RPC is not user-friendly, APIs such as **web3** built on top of JSON-RPC provide user-friendly interfaces.
+For interacting with the blockchain, **WorldLand** provides a **JSON-RPC API**. The JSON-RPC API interacts with **WorldLand** in the form of **JSON objects**. **RPC(Remote Procedure Call)** refers to sending a request to the **WorldLand** node as a JSON object from the outside. You can interact with **WorldLand** by sending a **JSON request** to the **RPC port** exposed by **WorldLand**. Since JSON-RPC is not user-friendly, APIs such as **web3** built on top of JSON-RPC provide user-friendly interfaces.
 
 
 
 ## JSON-RPC Server
 
-ETH-ECC has three transport protocols that can use the JSON-RPC API. The following table summarizes the comparison of the three transport protocols. IPC is a private and secure protocol. **HTTP** is a friendly protocol and reduces message overhead for intermittent requests. For continuous request processing, a **WebSocket** server is a good choice.
+**WorldLand** has three transport protocols that can use the JSON-RPC API. The following table summarizes the comparison of the three transport protocols. IPC is a private and secure protocol. **HTTP** is a friendly protocol and reduces message overhead for intermittent requests. For continuous request processing, a **WebSocket** server is a good choice.
 
 <table data-header-hidden><thead><tr><th width="285"></th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td><strong>HTTP</strong></td><td><strong>WebSoket</strong></td><td><strong>IPC</strong></td></tr><tr><td>Subscribe to events</td><td>N</td><td><strong>Y</strong></td><td><strong>Y</strong></td></tr><tr><td>Remote Access</td><td><strong>Y</strong></td><td><strong>Y</strong></td><td>N</td></tr><tr><td>Metadata overhead per message</td><td>high</td><td>low</td><td>low</td></tr></tbody></table>
 
@@ -73,14 +73,14 @@ Protecting webpage API requests is also the same, so use the `-ws.origins` flag 
 
 
 {% hint style="danger" %}
-**HTTP and Websocket** servers allow external connections. This means that an **external attacker** can control the account inside ETH-ECC, so when the HTTP and Websocket servers are activated, the **node account** is **locked**. You can forcefully unlock an account by including the **`--allow-insecure-unlock` flag**, but this is not secure. Be aware that there are attacker bots constantly browsing the Ethereum HTTP server.
+**HTTP and Websocket** servers allow external connections. This means that an **external attacker** can control the account inside **WorldLand**, so when the HTTP and Websocket servers are activated, the **node account** is **locked**. You can forcefully unlock an account by including the **`--allow-insecure-unlock` flag**, but this is not secure. Be aware that there are attacker bots constantly browsing the Ethereum HTTP server.
 {% endhint %}
 
 
 
 ### IPC server
 
-**IPC** can usually be used in a **local environment** where the node and console exist on the same machine. ETH-ECC creates a **local file socket** to connect to the node. The IPC server is enabled by default and has access to all JSON-RPC modules. Sockets are placed in the same directory as the node.
+**IPC** can usually be used in a **local environment** where the node and console exist on the same machine. **WorldLand** creates a **local file socket** to connect to the node. The IPC server is enabled by default and has access to all JSON-RPC modules. Sockets are placed in the same directory as the node.
 
 ```sh
 ~/DATA_DIR/geth.ipc
@@ -104,7 +104,7 @@ The location of the socket can be changed using the **`-ipcpath` flag** and disa
 
 
 
-You can also start an **interactive session** by providing a **console** command when ETH-ECC starts. This will start the node and run the console in the same terminal. In this case, the **log** is output as well, so if not necessary, hide the log by redirecting it.
+You can also start an **interactive session** by providing a **console** command when **WorldLand** starts. This will start the node and run the console in the same terminal. In this case, the **log** is output as well, so if not necessary, hide the log by redirecting it.
 
 ```
 ./worldland <other flags> console 2> /dev/null
@@ -153,8 +153,8 @@ exit
 ## APIs
 
 {% hint style="info" %}
-ETH-ECC supports the same JSON-RPC module as Ethereum. See the JSON-RPC APIs of [ethereum](https://ethereum.org/en/developers/docs/apis/json-rpc/#json-rpc-methods) and [go-ethereum](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-admin) for details.
+**WorldLand** supports the same JSON-RPC module as Ethereum. See the JSON-RPC APIs of [ethereum](https://ethereum.org/en/developers/docs/apis/json-rpc/#json-rpc-methods) and [go-ethereum](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-admin) for details.
 {% endhint %}
 
-### &#x20;<a href="#non-interactive-use" id="non-interactive-use"></a>
+
 

@@ -2,7 +2,7 @@
 
 **Account security** is very important in blockchain networks. You should make sure that your account's private key and password are inaccessible to anyone but yourself. If someone else obtains your account's private key and password, they can control all assets associated with your account. You should safely back up your account. If you lose your key file or password, your account assets are inaccessible and permanently lost.
 
-**ETH-ECC's node client** has an internal account management tool. However, for better security, an off-client account management tool is desirable. **Clef**, an **external account management tool** supported by ETH-ECC, can be run separately from the client and operates on independent hardware. Clef requires manual review of account-related actions by the owner, and is more **secure** than traditional account management because signing is done inside Clef.
+**WorldLand's node client** has an internal account management tool. However, for better security, an off-client account management tool is desirable. **Clef**, an **external account management tool** supported by WorldLand, can be run separately from the client and operates on independent hardware. Clef requires manual review of account-related actions by the owner, and is more **secure** than traditional account management because signing is done inside Clef.
 
 {% hint style="warning" %}
 **Keep your account safe and backed up!**
@@ -26,18 +26,18 @@ Please remember the **master seed** generated and keep it safe. The **master see
 
 
 
-### Connecting ETH-ECC and Clef
+### Connecting **WorldLand** and Clef
 
-In order for **Clef** and **ETH-ECC** to communicate with each other, Cleft needs to know the **chain ID** of the network and the location of the node's **keystore**. Keystores are usually located inside the node data directory.
+In order for **Clef** and **WorldLand** to communicate with each other, Cleft needs to know the **chain ID** of the network and the location of the node's **keystore**. Keystores are usually located inside the node data directory.
 
-&#x20;Run the following command to start a Clef configured for ETH-ECC nodes connecting to the **Seoul mainnet.**
+&#x20;Run the following command to start a Clef configured for **WorldLand** nodes connecting to the **Seoul mainnet.**
 
 {% hint style="info" %}
 For Gwangju testnet, modify the chain ID to **10359**.
 {% endhint %}
 
 ```sh
-$ ./clef -chainid 103 -keystore ~/ETH-ECC_DIR/keystore -configdir /CLEF_DIR/clef --http
+$ ./clef -chainid 103 -keystore ~/WorldLand_DIR/keystore -configdir /CLEF_DIR/clef --http
 ```
 
 Clef starts running in the terminal, starting with a disclaimer and prompting to click "OK".
@@ -59,14 +59,14 @@ Enter 'ok' to proceed:
 >
 ```
 
-**ETH-ECC** can be started in a separate terminal. To connect to **Clef**, make sure the data directory matches the path provided to Clef and pass the location of the **Clef IPC file**. Clef saves this file to the path provided in the `-configdir` flag.
+**WorldLand** can be started in a separate terminal. To connect to **Clef**, make sure the data directory matches the path provided to Clef and pass the location of the **Clef IPC file**. Clef saves this file to the path provided in the `-configdir` flag.
 
 <pre class="language-sh"><code class="lang-sh"><strong>$ ./worldland &#x3C;other flags> -signer=/CLEF_DIR/clef/clef.ipc
 </strong></code></pre>
 
 ### **New Account** <a href="#interacting-with-clef" id="interacting-with-clef"></a>
 
-A new key file has been added to the **keystore** for ETH-ECC . A **JSON response** is returned with the new account address in the result field.
+A new key file has been added to the **keystore** for **WorldLand**. A **JSON response** is returned with the new account address in the result field.
 
 ```
 {"jsonrpc": "2.0", "id": 0, "result": "0x168bc315a2ee09042d83d7c5811b533620531f67"}
