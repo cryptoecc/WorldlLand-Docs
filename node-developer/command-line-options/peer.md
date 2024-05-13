@@ -1,6 +1,6 @@
 # Peer
 
-The WorldLand blockchain network is a **peer-to-peer** network. When an ETH-ECC node is running, the node runs a **peer discovery protocol**. ETH-ECC nodes will continue to try to connect to other EVM-compatible nodes on the internet. Upon discovering an EVM-compatible node, the nodes exchange protocol details. If both nodes use the Worldland blockchain protocol, the nodes exchange blockchain data.
+The WorldLand blockchain network is a **peer-to-peer** network. When an WorldLand node is running, the node runs a **peer discovery protocol**. WorldLand nodes will continue to try to connect to other EVM-compatible nodes on the internet. Upon discovering an EVM-compatible node, the nodes exchange protocol details. If both nodes use the Worldland blockchain protocol, the nodes exchange blockchain data.
 
 
 
@@ -158,9 +158,9 @@ The `admin.nodeInfo` command returns detailed node information of the **local no
 
 ## Bootnodes
 
-In order for a **new node** to join the WorldLand network, it must discover the WorldLand node through the peer discovery protocol. However, it is **not easy** to quickly **find a node** without any clues on the vast internet. WorldLand supports new nodes through **bootstrap nodes(bootnodes)**. The **bootnode** is hardcoded inside the **ETH-ECC code**. When an ETH-ECC node starts up, it automatically tries to connect to a set of bootnodes. Below is currently hardcoded. This is a list of boot nodes in the Seoul network and the Gwangju network.
+In order for a **new node** to join the WorldLand network, it must discover the WorldLand node through the peer discovery protocol. However, it is **not easy** to quickly **find a node** without any clues on the vast internet. WorldLand supports new nodes through **bootstrap nodes(bootnodes)**. The **bootnode** is hardcoded inside the WorldLand **code**. When an WorldLand node starts up, it automatically tries to connect to a set of bootnodes. Below is currently hardcoded. This is a list of boot nodes in the Seoul network and the Gwangju network.
 
-[**ETH-ECC/params/bootnodes.go**](https://github.com/cryptoecc/ETH-ECC/blob/dbbde3d95e52d827fe294035270ecc1ca684f3d2/params/bootnodes.go#L85)
+[**WorldLand/params/bootnodes.go**](https://github.com/cryptoecc/WorldLand/blob/worldland/params/bootnodes.go)
 
 ```
 // SeoulBootnodes are the enode URLs of the P2P bootstrap nodes running on the
@@ -200,7 +200,7 @@ $ ./worldland <other flags> -nodiscover
 
 ## Static Node <a href="#static-nodes" id="static-nodes"></a>
 
-**ETH-ECC** node users can add **static nodes** via **manual addition**. A static node is a specific peer to which a connection is **always maintained**. Even if the ETH-ECC node is stopped and running again, the node connects to the static node. Static nodes can be added directly through the console or through command line commands.
+**WorldLand** node users can add **static nodes** via **manual addition**. A static node is a specific peer to which a connection is **always maintained**. Even if the **WorldLand** node is stopped and running again, the node connects to the static node. Static nodes can be added directly through the console or through command line commands.
 
 
 
@@ -212,10 +212,10 @@ Run the command below to create the **configuration** file **config.toml** descr
 ./worldland <other flags> -datadir <datadir> dumpconfig > config.toml
 ```
 
-You can then go to the **\[Node.P2P] section** inside the config file and add it as a list to the **StaticNodes** field. When the ETH-ECC node is running, it tries to connect directly to the corresponding **StaticNodes**, and the static nodes are connected.
+You can then go to the **\[Node.P2P] section** inside the config file and add it as a list to the **StaticNodes** field. When the **WorldLand** node is running, it tries to connect directly to the corresponding **StaticNodes**, and the static nodes are connected.
 
 {% hint style="warning" %}
-Passing --config instructs ETH-ECC to pull configuration values from this file, so make sure the other lines in config.toml are also set correctly before starting Geth. An example of a full config.toml file can be found [here](./).
+Passing --config instructs WorldLand to pull configuration values from this file, so make sure the other lines in config.toml are also set correctly before starting Geth. An example of a full config.toml file can be found [here](./).
 {% endhint %}
 
 **config.toml**
