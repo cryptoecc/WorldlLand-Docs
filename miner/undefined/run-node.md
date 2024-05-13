@@ -1,6 +1,6 @@
 # Run Node
 
-### Running ETH-ECC and connecting to Worldland
+### Running WorldLand and connecting to Worldland
 
 If you're running **WorldLand** node for the first time, or if you've run a different version of **EVM-compitable chain** with a different network number, run the following to initialize your locally stored block data
 
@@ -16,7 +16,7 @@ These documents are based on **Unix** documentation. For **Windows**, type **wor
 
 
 
-First, you'll need to make a directory to store block information. For example, `ETHECC_TEST` directory. Then move to `/ETH-ECC/build/bin`, and follow this.
+First, you'll need to make a directory to store block information. For example, `ETHECC_TEST` directory. Then move to `/WorldLand/build/bin`, and follow this.
 
 ```
 $ ./worldland console
