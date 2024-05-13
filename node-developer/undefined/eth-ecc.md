@@ -1,6 +1,6 @@
 # WorldLand
 
-### [https://github.com/cryptoecc/WorldLand](eth-ecc.md#https-github.com-cryptoecc-worldland)
+### [https://github.com/cryptoecc/WorldLand](https://github.com/cryptoecc/WorldLand)
 
 ### What is WorldLand?
 
