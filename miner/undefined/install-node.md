@@ -104,7 +104,7 @@ You can use the **Windows Installer** or **build** the WorldLand **source code**
 
 ### Using Installer
 
-Download the installer **exe** file from the[ ](https://github.com/cryptoecc/WorldLand/releases)[**latest release**](#user-content-fn-1)[^1][ ](https://github.com/cryptoecc/WorldLand/releases)of the WorldLand **repository**.
+Download the installer **exe** file from the[ **latest release**](https://github.com/cryptoecc/WorldLand/releases)[ ](https://github.com/cryptoecc/WorldLand/releases)of the WorldLand **repository**.
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
@@ -253,5 +253,3 @@ C:\Users\xxx\src\github.com\cryptoecc\WorldLand> worldland console
 
 
 ***
-
-[^1]: 
